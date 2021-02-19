@@ -10,7 +10,6 @@ class CusuarioModel{
         $resultado= $conexion->conectar()->query($query);
         if ($resultado){
             return "ok";
-           // header("Location: ./Vista/html/adminusuarios.php");
         }else{
             echo "No se ha podido guardar el registro";
         }
