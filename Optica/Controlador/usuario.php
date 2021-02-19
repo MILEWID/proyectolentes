@@ -81,7 +81,7 @@ class Usuario extends Controlador{
 
     // metodo para eliminar usuario
     function eliminarControlador(){
-        $id = $_REQUEST['idUsuario'];
+        $id = $_REQUEST['id'];
         //echo $id;
 
         $registro = new CusuarioModel();
