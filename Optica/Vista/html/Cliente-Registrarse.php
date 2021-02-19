@@ -95,7 +95,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <form action="" name="form-registro">
+          <form action="<?php echo URL; ?>usuario/registrarcontroladorCliente" method="POST" name="form-registro">
             <label for="nombre-usuario">Usuario:</label>
             <p><input type="text" id="nombre-usuario" required> </input> </p>
             <label for="nombre-cliente"> Nombre: </label>
