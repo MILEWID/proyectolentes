@@ -80,7 +80,7 @@ class Usuario extends Controlador{
     }
 
     // metodo para eliminar usuario
-    function eliminarControlador($id){
+    function eliminarControlador(){
         $id = $_REQUEST['idUsuario'];
         //echo $id;
 
