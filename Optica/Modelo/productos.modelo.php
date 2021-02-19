@@ -6,6 +6,7 @@ class ProductoModelo{
         $nuevaconexion = new Cconexion();
         $query = "INSERT INTO producto(nombre, marca, tipo, precio, material, sexo) VALUES('$nombre', '$marca', '$tipo', '$precio', '$material', '$sexo')";
         $resul = $nuevaconexion->conectar()->query($query);
+        //imprimir el valor de resul
         var_dump ($resul);
         if($resul){
             return "okey";
@@ -54,4 +55,5 @@ class ProductoModelo{
             echo "Se actualizo correctamente";
         }
 
+    }
 }
