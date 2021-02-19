@@ -96,19 +96,18 @@
         </div>
         <div class="modal-body">
           <form action="<?php echo URL; ?>usuario/registrarcontroladorCliente" method="POST" name="form-registro">
-            <label for="nombre-usuario">Usuario:</label>
-            <p><input type="text" id="nombre-usuario" required> </input> </p>
-            <label for="nombre-cliente"> Nombre: </label>
-            <p><input type="text" id="nombre-cliente" required> </input> </p>           
-            <label for="apellido-cliente"> Apellido: </label>
-            <p><input type="text" id="apellido-cliente" required> </input></p>       
-            <label for="correo-cliente"> Correo: </label>
-            <p><input type="email" id="correo-cliente" required></input></p> 
-            <label for="contraseña-cliente">Contraseña:</label>
-            <p><input type="password" id="contraseña-cliente" required> </input></p>              
+          <label for="nombre-usuario"> Nombre de Usuario</label>
+            <p><input type="text" name="nombre-usuario" id="nombre-usuario"> </input> </p>
+            <label for="nombre-cliente"> Nombre </label>
+            <p><input type="text"  name="nombre-cliente" id="nombre-cliente"> </input> </p>           
+            <label for="apellido-cliente"> Apellido </label>
+            <p><input type="text" name="apellido-cliente" id="apellido-cliente"> </input></p>       
+            <label for="correo-cliente"> Correo </label>
+            <p><input type="email" name="correo-cliente" id="correo-cliente"></input></p> 
+            <label for="contraseña-cliente">Contraseña</label>
+            <p><input type="password"  name="contrasena-cliente" id="contraseña-cliente"> </input></p>              
             <input type="submit" value="Crear Cuenta" class="btn btn-primary"></input>
-            <p></p>
-            <input type="button" value="Cancelar"class="btn btn-warning"> </input>          
+            <input type="button" value="Cancelar"class="btn btn-warning"> </input>
           </form>
         </div>      
       </div>
