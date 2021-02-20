@@ -53,7 +53,7 @@
                             <label for="validationServer03">Fecha de consulta:</label>
                             <!-- is-valid es una clase para validar campos -->
                             <input type="date" class="form-control " id="validationServer03"
-                                placeholder="ejemplo@example.com" required>
+                                placeholder="01/01/2021" required>
                             <div class="valid-feedback">
                                 Es correcto
                             </div>
@@ -77,7 +77,7 @@
                             <div class="col-md-6 mb-3">
                                 <div class="form-group col-md-6">
                                     <label for="validationServer05">Motivo de consulta: </label>
-                                    <input type="textarea" rows="10" cols="50" id="validationServer05" class="form-control" name="motivo">
+                                    <input type="textarea" rows="10" cols="50" id="validationServer05" class="form-control" name="motivo" required>
                                 </div>
                             </div>
                         </div>
