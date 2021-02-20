@@ -94,10 +94,11 @@ class Usuario extends Controlador{
 
     }
 
-    // carga la vista principal de editar usuario
+    // carga la vista para editar los usuarios
     function editar(){
-        parent::cargarvista('html/admineditarusuarios');
+        parent::cargarvista("html/admineditarusuarios");
     }
+
 
 }
 ?>
