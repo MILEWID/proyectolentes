@@ -39,7 +39,7 @@
                         <div class="col-md-6 mb-3">
                             <label for="validationServer01">Nombre:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control " id="validationServer01" placeholder="First name"
+                            <input type="text" class="form-control " id="validationServer01"
                                 value="Mark" required>
                             <div class="valid-feedback">
                                 Es correcto
@@ -51,7 +51,7 @@
                         <div class="col-md-6 mb-3">
                             <label for="validationServer01">Apellido:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control " id="validationServer01" placeholder="First name"
+                            <input type="text" class="form-control " id="validationServer01"
                                 value="Mark" required>
                             <div class="valid-feedback">
                                 Correcto
@@ -61,16 +61,17 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <div class="form-group col-md-6">
                                 <label for="inputDate">Fecha de consulta: </label>
-                                <input type="datetime-local" id="inputDate" class="form-control" name="fechanac">
+                                <input type="datetime-local" id="inputDate" class="form-control" name="fecha">
                               </div>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="validationServer03">Hora de consulta:</label>
-                            <input type="time" class="form-control" id="validationServer03" placeholder="Motivo"
+                            <input type="time" class="form-control" id="validationServer03"
                                 required>
                             <div class="valid-feedback">
                                 Correcto
@@ -78,6 +79,14 @@
                             <div class="invalid-feedback">
                                 Por favor ingrese una ciudad válida.
                             </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="form-group col-md-6">
+                                <label for="inputDate">Motivo de consulta: </label>
+                                <input type="textarea" rows="10" cols="50" id="inputDate" class="form-control" name="motivo">
+                              </div>
                         </div>
                     </div>
                     <br>
