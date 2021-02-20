@@ -15,89 +15,79 @@
 </head>
 
 <body>
-    <div id="menu"></div>
+    <?php include "menu.php" ?>
     <div class="container">
         <div class="row justify-content-center">
             <form>
                 <class class="form-row">
                     <div class="h1">MODIFICAR CITAS</div>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="validationServer01">ID:</label>
-                            <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control " id="validationServer01" value="1234_ejemplo"
-                                disabled>
-                            <div class="valid-feedback">
-                                Es correcto
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationServer01">Nombre:</label>
+                                <!-- is-valid es una clase para validar campos -->
+                                <input type="text" class="form-control " id="validationServer01"
+                                    placeholder="Mark" required>
+                                <div class="valid-feedback">
+                                    Es correcto
+                                </div>
+                                <div class="invalid-feedback">
+                                    Es Incorrecto
+                                </div>
                             </div>
-                            <div class="invalid-feedback">
-                                Es Incorrecto
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="validationServer01">Nombre:</label>
-                            <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control " id="validationServer01"
-                                value="Mark" required>
-                            <div class="valid-feedback">
-                                Es correcto
-                            </div>
-                            <div class="invalid-feedback">
-                                Es Incorrecto
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="validationServer01">Apellido:</label>
-                            <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control " id="validationServer01"
-                                value="Mark" required>
-                            <div class="valid-feedback">
-                                Correcto
-                            </div>
-                            <div class="invalid-feedback">
-                                Incorrecto
+                            <div class="col-md-6 mb-3">
+                                <label for="validationServer02">Apellido:</label>
+                                <!-- is-valid es una clase para validar campos -->
+                                <input type="text" class="form-control " id="validationServer02"
+                                    placeholder="Mark" required>
+                                <div class="valid-feedback">
+                                    Correcto
+                                </div>
+                                <div class="invalid-feedback">
+                                    Incorrecto
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="row">
+                        <div class="row">
                         <div class="col-md-6 mb-3">
-                            <div class="form-group col-md-6">
-                                <label for="inputDate">Fecha de consulta: </label>
-                                <input type="datetime-local" id="inputDate" class="form-control" name="fecha">
-                              </div>
+                            <label for="validationServer03">Fecha de consulta:</label>
+                            <!-- is-valid es una clase para validar campos -->
+                            <input type="date" class="form-control " id="validationServer03"
+                                placeholder="ejemplo@example.com" required>
+                            <div class="valid-feedback">
+                                Es correcto
+                            </div>
+                            <div class="invalid-feedback">
+                                Es Incorrecto
+                            </div>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="validationServer03">Hora de consulta:</label>
-                            <input type="time" class="form-control" id="validationServer03"
+                            <label for="validationServer04">Hora:</label>
+                            <input type="time" class="form-control" id="validationServer04" placeholder="20:00"
                                 required>
                             <div class="valid-feedback">
                                 Correcto
                             </div>
                             <div class="invalid-feedback">
-                                Por favor ingrese una ciudad válida.
+                                Por favor ingrese una hora válida.
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <div class="form-group col-md-6">
-                                <label for="inputDate">Motivo de consulta: </label>
-                                <input type="textarea" rows="10" cols="50" id="inputDate" class="form-control" name="motivo">
-                              </div>
                         </div>
-                    </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="form-group col-md-6">
+                                    <label for="validationServer05">Motivo de consulta: </label>
+                                    <input type="textarea" rows="10" cols="50" id="validationServer05" class="form-control" name="motivo">
+                                </div>
+                            </div>
+                        </div>
                     <br>
                     <br>
-
-
-        </div>
-        <button id="btnG" class="btn btn-primary" type="submit">GUARDAR DATOS</button>
-        <a class="btn btn-dark" href="adminCitas.html">CANCELAR</a>
+                </div>
+                <button class="btn btn-primary" type="submit">GUARDAR DATOS</button>
+        <a class="btn btn-dark" href="<?php echo URL ?>/usuario">CANCELAR</a>
         </form>
-    </div>
+        </div>
     </div>
 
 

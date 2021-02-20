@@ -50,7 +50,7 @@ class CitaModelo{
             
             $query = "UPDATE cita set nombre = '$nombre', apellido = '$apellido', fecha = '$fecha', hora = '$hora', maotivo = '$motivo' WHERE id=$id";
             mysqli_query($con, $query);
-            echo "Se actualizo correctamente";
+            echo "Se actualizó correctamente";
         }
 
     }

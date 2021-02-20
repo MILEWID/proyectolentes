@@ -38,7 +38,7 @@ class Citas extends Controlador
 
         //se realiza la consulta
         $consulta = new CitaModelo();
-        $result = $consulta->ingresarCita
+        $result = $consulta->registrarCita()
 
         // se valida si la consulta fue existosa
         if ($consulta == "okey"){
@@ -51,12 +51,12 @@ class Citas extends Controlador
 
     // carga la vista para agregar los productos
     function agregar(){
-        parent::cargarvista("html/adminagregarproductos");
+        parent::cargarvista("html/adminCitas");
     }
 
     // carga la vista para editar los productos
     function editar(){
-        parent::cargarvista("html/admineditarproductos");
+        parent::cargarvista("html/adminModificarCitas");
     }
 
 }

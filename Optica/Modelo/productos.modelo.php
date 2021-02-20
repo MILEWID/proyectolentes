@@ -52,7 +52,7 @@ class ProductoModelo{
             
             $query = "UPDATE producto set nombre = '$nombre', marca = '$marca', tipo = '$tipo', precio = '$precio', material = '$material', sexo = '$sexo' WHERE id=$id";
             mysqli_query($con, $query);
-            echo "Se actualizo correctamente";
+            echo "Se actualizó correctamente";
         }
 
     }
