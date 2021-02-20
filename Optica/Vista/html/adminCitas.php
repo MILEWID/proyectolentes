@@ -7,15 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/adminmenu.css">
-    <link rel="stylesheet" href="../css/directorios.css">
-    <link rel="stylesheet" href="../css/adminListaCita.css">
+        <link rel="stylesheet" href="<?php echo URL ?>vista/css/adminmenu.css">
+        <link rel="stylesheet" href="<?php echo URL ?>vista/css/directorios.css">
     <title>Administrar Citas</title>
 
 </head>
 
 <body>
-    <div id="menu"></div>
+<?php include "menu.php" ?>
     <div class="container">
         <div class="h1">REGISTRO DE CITAS</div>
         <div class="row justify-content-end">
@@ -40,15 +39,18 @@
             <table class="table table-striped table-dark">
                 <thead>
                     <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Apellido:</th>
+                        <th scope="col">ID</th>
                         <th scope="col">Nombre:</th>
+                        <th scope="col">Apellido:</th>
                         <th scope="col">Fecha:</th>
-                        <th scope="col">Correo:</th>
-                        <th scope="col">Opciónes:</th>
+                        <th scope="col">Hora:</th>
+                        <th scope="col">Motivo:</th>
                     </tr>
                 </thead>
                 <tbody>
+                <?php
+                    while($row=$valorescontrolador->fetch_assoc()){
+                    ?>
                     <tr>
                         <th scope="row">1</th>
                         <td>Mark</td>
@@ -56,7 +58,7 @@
                         <td>20/03/2021</td>
                         <td>@MO</td>
                         <td>
-                            <a href="adminModificarCita.html" class="btn btn-light">
+                            <a href="adminModificarCita.php" class="btn btn-light">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-pencil-square" viewBox="0 0 16 16">
                                     <path
