@@ -8,9 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../css/adminmenu.css">
-    <link rel="stylesheet" href="../css/directorios.css">
-    <link rel="stylesheet" href="../css/agregar.css">
+    <link rel="stylesheet"  href="<?php echo URL ?>vista/css/adminmenu.css">
+    <link rel="stylesheet" href="<?php echo URL ?>vista/css/directorios.css">
+    <link rel="stylesheet" href="<?php echo URL ?>vista/css/agregar.css">
     <title>Modificar cita</title>
 </head>
 
@@ -64,13 +64,13 @@
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <div class="form-group col-md-6">
-                                <label for="inputDate">Fecha y hora de consulta: </label>
+                                <label for="inputDate">Fecha de consulta: </label>
                                 <input type="datetime-local" id="inputDate" class="form-control" name="fechanac">
                               </div>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="validationServer03">Motivo de consulta:</label>
-                            <input type="datetime" class="form-control" id="validationServer03" placeholder="Motivo"
+                            <label for="validationServer03">Hora de consulta:</label>
+                            <input type="time" class="form-control" id="validationServer03" placeholder="Motivo"
                                 required>
                             <div class="valid-feedback">
                                 Correcto
