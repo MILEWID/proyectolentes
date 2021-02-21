@@ -59,7 +59,7 @@
                         <td><?php echo $row['apellido']; ?></td>
                         <td><?php echo $row['fecha']; ?></td>
                         <td><?php echo $row['hora']; ?></td>
-                        <td><?php echo $row['mptivo']; ?></td>
+                        <td><?php echo $row['motivo']; ?></td>
                         <td>
                             <a href="adminModificarCita.php" class="btn btn-light">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"

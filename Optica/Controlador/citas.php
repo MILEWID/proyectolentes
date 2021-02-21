@@ -37,8 +37,8 @@ class Citas extends Controlador
         header("location: ".URL."citas");
 
         //se realiza la consulta
-        $consulta = new CitaModelo();
-        $result = $consulta->registrarCita();
+        //$consulta = new CitaModelo();
+        //$result = $consulta->registrarCita();
 
         // se valida si la consulta fue existosa
         if ($consulta == "okey"){

@@ -68,6 +68,15 @@ INSERT INTO `usuario` (`nombreUsuario`, `idUsuario`, `nombre`, `apellido`, `tipo
 -- Índices para tablas volcadas
 --
 
+CREATE TABLE `citas` (
+  `id` int(100) NOT NULL,
+  `nombre` varchar(50) NOT NULL,
+  `apellido` varchar(50) NOT NULL,
+  `fecha` date NOT NULL,
+  `hora` time (100) NOT NULL,
+  `motivo` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 --
 -- Indices de la tabla `producto`
 --
