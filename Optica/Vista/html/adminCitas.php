@@ -81,7 +81,9 @@
                             </a>
                         </td>
                     </tr>
-                    
+                    <?php
+                    }
+                    ?>
                 </tbody>
             </table>
         </div>
@@ -128,5 +130,3 @@
   </div>
         
 </body>
-
-</html>

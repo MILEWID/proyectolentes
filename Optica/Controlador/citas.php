@@ -38,7 +38,7 @@ class Citas extends Controlador
 
         //se realiza la consulta
         $consulta = new CitaModelo();
-        $result = $consulta->registrarCita()
+        $result = $consulta->registrarCita();
 
         // se valida si la consulta fue existosa
         if ($consulta == "okey"){
