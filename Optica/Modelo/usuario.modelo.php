@@ -34,7 +34,7 @@ class CusuarioModel{
     }
 
 //funcion modificar
-    function modificar( $nombreUsuario, $idUsuario, $nombre, $apellido, $tipoUsuario, $correoElectronico, $contrasena){
+    function modificarControlador( $nombreUsuario, $idUsuario, $nombre, $apellido, $tipoUsuario, $correoElectronico, $contrasena){
 
         // intanciamos la conexion
         $conexion = new Cconexion();

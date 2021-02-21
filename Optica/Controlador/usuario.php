@@ -23,7 +23,7 @@ class Usuario extends Controlador{
     }
 
      // carga la vista para editar los usuarios
-   function editar(){
+   function modificarControlador(){
         parent::cargarvista("html/admineditarusuarios");
     }
 
