@@ -96,7 +96,7 @@ class Usuario extends Controlador{
 
     // carga la vista para editar los usuarios
     function editar(){
-        parent::cargarvista("html/admineditarusuarios");
+        parent::cargarvista("Location: ".URL."usuario/admineditarusuarios");
     }
 
 
