@@ -22,6 +22,12 @@ class Usuario extends Controlador{
         parent::cargarvista("html/adminagregarusuarios");
     }
 
+     // carga la vista para editar los usuarios
+    function modificar(){
+        parent::cargarvista("html/admineditarusuarios");
+    }
+
+
     // recibe los datos dela vista de usuario
     function registrarcontrolador(){
         $nombre=$_POST['validationServer01'];
@@ -95,10 +101,25 @@ class Usuario extends Controlador{
     }
 
     // carga la vista para editar los usuarios
-    function editar(){
-        parent::cargarvista("Location: ".URL."usuario/admineditarusuarios");
+    function modificarControlador(){
+
+         $id = $_REQUEST['id'];
+         $nombre=$_POST['nombre-cliente'];
+        $apellido=$_POST['apellido-cliente'];
+        $email=$_POST['correo-cliente'];
+        $contrasena=$_POST['contrasena-cliente'];
+        $nombreUsuario=$_POST['nombre-usuario'];
+        $tipoUsuario="Cliente";
+
+        // instancia del modelo
+        $registro = new CusuarioModel();
+        $consulta = $registro->modificar($nombre ,$apellido,$email,$contrasena,$nombreUsuario,$tipoUsuario);
+        if ($consulta == "ok"){
+            header("Location: ".URL."usuario/mostrarcontrolador");
+        }
+        else{
+            echo "No se ha podido editar el registro";
+        }
     }
-
-
 }
 ?>
