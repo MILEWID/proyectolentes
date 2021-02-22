@@ -27,7 +27,8 @@ class Productos extends Controlador
 
     // funcion que permite ingresar los productos
     function ingresarProdu(){
-        //verificar nombre de variable aun no existe (como ella :'v)
+        //verificar nombre de variable aun no existe (como ella :'v) 
+        // reply: nunca existio bro :c
         $nombre = $_POST["validationServer01"];
         $marca = $_POST["validationServer02"];
         $tipo = $_POST["validationServer03"];
