@@ -1,7 +1,6 @@
 <?php 
-// todas las rutas deben establecese desde el index
 
-// se requiere el modelo de productos
+// se requiere el modelo de citas
 include("./Modelo/citas.modelo.php");
 
 class Citas extends Controlador
@@ -23,6 +22,11 @@ class Citas extends Controlador
         // y se le pasa los datos a la vista
         parent::cargarvista("html/adminCitas",$result);
 
+    }
+
+
+    function modificarCita(){
+        parent::cargarvista("html/adminModificarCita");
     }
 
     // funcion que permite ingresar los productos
@@ -47,6 +51,16 @@ class Citas extends Controlador
         }
     }
 
+    function mostrarCita(){
+        // se obtienen los datos del modelo usuario (BDD)
+        $registro = new CitaModelo();
+        $consulta = $registro->mostrar();
+
+        // ejecutan el metodo heredado de controlador para cargar la vista
+        // y se le pasa los datos a la vista
+        parent::cargarvista("html/adminCitas",$consulta);
+    }
+
     // carga la vista para agregar los productos
     function agregar(){
         parent::cargarvista("html/adminCitas");
@@ -54,7 +68,7 @@ class Citas extends Controlador
 
     // carga la vista para editar los productos
     function editar(){
-        parent::cargarvista("html/adminModificarCitas");
+        parent::cargarvista("html/adminModificarCita");
     }
 
     function eliminarCita(){
