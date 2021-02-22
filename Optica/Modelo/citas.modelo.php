@@ -16,7 +16,7 @@ class CitaModelo{
     }
     function mostrar(){
         $conexion = new Cconexion();
-        $query="SELECT * FROM cita";
+        $query="SELECT * FROM citas";
         $resultado= $conexion->conectar()->query($query);
         return $resultado;
     }
