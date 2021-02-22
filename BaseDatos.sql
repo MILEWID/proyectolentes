@@ -73,9 +73,12 @@ CREATE TABLE `citas` (
   `nombre` varchar(50) NOT NULL,
   `apellido` varchar(50) NOT NULL,
   `fecha` date NOT NULL,
-  `hora` time (100) NOT NULL,
+  `hora` time NOT NULL,
   `motivo` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+ALTER TABLE `citas`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indices de la tabla `producto`
