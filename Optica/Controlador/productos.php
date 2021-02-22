@@ -59,4 +59,19 @@ class Productos extends Controlador
         parent::cargarvista("html/admineditarproductos");
     }
 
+    function eliminarProdu(){
+        $id = $_REQUEST['id'];
+
+        $registro = new ProductoModelo();
+
+        $consulta = $registro->eliminarProdu($id);
+        if ($consulta == "ok"){
+            header("Location: ".URL."productos/index");
+            //echo "Si se elimino";
+        }else{
+            echo "No se ha podido eliminar el registro";
+        }
+
+    }
+
 }

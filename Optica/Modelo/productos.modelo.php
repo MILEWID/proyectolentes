@@ -14,11 +14,24 @@ class ProductoModelo{
             return "error";
         }
     }
+
     function mostrar(){
         $conexion = new Cconexion();
         $query="SELECT * FROM producto";
         $resultado= $conexion->conectar()->query($query);
         return $resultado;
+    }
+
+    //funcion para eliminar
+    function eliminarProdu($id){
+        $conexion = new Cconexion();
+        $query= "DELETE FROM producto WHERE id='$id'";
+        $resultado = $conexion->conectar()->query($query);
+        if ($resultado){
+            return "ok";
+        }else{
+            echo "No existe el producto que desea eliminar";
+        }
     }
 
     // función modificar
