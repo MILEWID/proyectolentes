@@ -26,7 +26,7 @@
                                 <label for="validationServer01">Nombre:</label>
                                 <!-- is-valid es una clase para validar campos -->
                                 <input type="text" class="form-control " id="validationServer01"
-                                    placeholder="Mark" required>
+                                     required>
                                 <div class="valid-feedback">
                                     Es correcto
                                 </div>
@@ -38,7 +38,7 @@
                                 <label for="validationServer02">Apellido:</label>
                                 <!-- is-valid es una clase para validar campos -->
                                 <input type="text" class="form-control " id="validationServer02"
-                                    placeholder="Mark" required>
+                                    required>
                                 <div class="valid-feedback">
                                     Correcto
                                 </div>
@@ -53,7 +53,7 @@
                             <label for="validationServer03">Fecha de consulta:</label>
                             <!-- is-valid es una clase para validar campos -->
                             <input type="date" class="form-control " id="validationServer03"
-                                placeholder="01/01/2021" required>
+                                required>
                             <div class="valid-feedback">
                                 Es correcto
                             </div>
@@ -63,7 +63,7 @@
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="validationServer04">Hora:</label>
-                            <input type="time" class="form-control" id="validationServer04" placeholder="20:00"
+                            <input type="time" class="form-control" id="validationServer04"
                                 required>
                             <div class="valid-feedback">
                                 Correcto

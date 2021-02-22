@@ -11,7 +11,7 @@
     <link rel="stylesheet"  href="<?php echo URL ?>vista/css/adminmenu.css">
     <link rel="stylesheet" href="<?php echo URL ?>vista/css/directorios.css">
     <link rel="stylesheet" href="<?php echo URL ?>vista/css/agregar.css">
-    <title>Agregar Usuarios</title>
+    <title>Bucar Cita</title>
 </head>
 
 <body>
@@ -20,12 +20,31 @@
         <div class="row justify-content-center">
             <form action="<?php echo URL; ?>usuario/registrarcontrolador" method="POST">
                 <class class="form-row">
-                    <div class="h1">AGREGAR USUARIOS</div>
+                    <div class="h1">Buscar Cita</div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="IDBuscar">ID a buscar::</label>
+                            <!-- is-valid es una clase para validar campos -->
+                            <input type="text" class="form-control " name="IDBuscar" id="IDBuscar" placeholder="Ingrese el código a buscar"
+                                required>
+                            <div class="valid-feedback">
+                                Es correcto
+                            </div>
+                            <div class="invalid-feedback">
+                                Es Incorrecto
+                            </div>
+                            <br>
+                            <button class="btn btn-primary" type="submit">Buscar</button>
+                        </div>
+                    </div>
+
+
+
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="validationServer01">Nombre:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control " name="validationServer01" id="validationServer01" placeholder="María Paula"
+                            <input type="text" class="form-control " name="validationServer01" id="validationServer01" 
                                 required>
                             <div class="valid-feedback">
                                 Es correcto
@@ -37,7 +56,7 @@
                         <div class="col-md-6 mb-3">
                             <label for="validationServer02">Apellido:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control " name="validationServer02" id="validationServer02" placeholder="Cando Chimbo"
+                            <input type="text" class="form-control " name="validationServer02" id="validationServer02" 
                                 required>
                             <div class="valid-feedback">
                                 Correcto
@@ -50,10 +69,10 @@
                     <!--  eso es un comentario -->
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="validationServer03">Email:</label>
+                            <label for="validationServer03">Fecha:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="email" class="form-control " name="validationServer03" id="validationServer03"
-                                placeholder="ejemplo@example.com" required>
+                            <input type="date" class="form-control " name="validationServer03" id="validationServer03"
+                                 required>
                             <div class="valid-feedback">
                                 Es correcto
                             </div>
@@ -62,8 +81,8 @@
                             </div>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="validationServer04">Contraseña:</label>
-                            <input type="password" class="form-control" name="validationServer04" id="validationServer04" placeholder="abc123"
+                            <label for="validationServer04">Hora:</label>
+                            <input type="time" class="form-control" name="validationServer04" id="validationServer04" 
                                 required>
                             <div class="valid-feedback">
                                 Correcto
@@ -75,13 +94,10 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="validationServerUsername">Nombre de Usuario</label>
+                            <label for="validationServerUsername">Motivo</label>
                             <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="inputGroupPrepend3">@</span>
-                                </div>
-                                <input type="text" class="form-control " name="validationServerUsername" id="validationServerUsername"
-                                    placeholder="@mariapaula" aria-describedby="inputGroupPrepend3" required>
+                                <input type="textarea" rows="10" cols="50" class="form-control " name="validationServerUsername" id="validationServerUsername"
+                                    placeholder="Aqui va el motivo de la consulta" aria-describedby="inputGroupPrepend3" required>
                                 <div class="valid-feedback">
                                     Correcto
                                 </div>
@@ -90,17 +106,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="validationServer05">Tipo de Usuario</label>
-                            <select class="form-select form-select" name="validationServer05" aria-label=".form-select-lg example">
-                                <option selected value="Cliente">Cliente</option>
-                                <option value="Administrador">Administrador</option>
-                            </select>
-                        </div>
                     </div>
         </div>
-        <button class="btn btn-primary" type="submit">GUARDAR DATOS</button>
-        <a class="btn btn-dark" href="<?php echo URL ?>/usuario">CANCELAR</a>
+        <button class="btn btn-primary" type="reset">Limpiar</button>
+        <a class="btn btn-dark" href="<?php echo URL ?>/usuario">Regresar</a>
         </form>
     </div>
     </div>
