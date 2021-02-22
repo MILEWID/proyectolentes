@@ -39,12 +39,12 @@
             <table class="table table-striped table-dark">
                 <thead>
                     <tr>
-                        <th scope="col">Identificador:</th>
-                        <th scope="col">Nombre:</th>
+                        <th scope="col">Identificador</th>
+                        <th scope="col">Nombre</th>
                         <th scope="col">Apellido</th>
-                        <th scope="col">Fecha:</th>
-                        <th scope="col">Hora:</th>
-                        <th scope="col">Motivo:</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Hora</th>
+                        <th scope="col">Motivo</th>
                         <th scope="col">Opciones:</th>
                     </tr>
                 </thead>
