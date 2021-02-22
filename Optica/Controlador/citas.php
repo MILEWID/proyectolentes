@@ -39,11 +39,9 @@ class Citas extends Controlador
         $hora = $_POST["validationServer05"];
         $motivo = $_POST["validationServer06"];
         header("location: ".URL."citas");
-
         //se realiza la consulta
-        //$consulta = new CitaModelo();
-        //$result = $consulta->registrarCita();
-
+        $consulta = new CitaModelo();
+        $result = $consulta->registrarCita($id, $nombre, $apellido, $fecha, $hora, $motivo);
         // se valida si la consulta fue existosa
         if ($consulta == "okey"){
             echo "Si se guardo";
@@ -72,5 +70,17 @@ class Citas extends Controlador
     function editar(){
         parent::cargarvista("html/adminModificarCita");
     }
+
+    function eliminarCita(){
+        $id = $_REQUEST['id'];
+        $registro = new CitaModelo();
+        $consulta = $registro->eliminarCita($id);
+        if ($consulta == "ok"){
+            header("Location: ".URL."citas/index"); // puede que de error
+        }else{
+            echo "No se ha podido eliminar el registro";
+        }
+    }
+
 
 }
