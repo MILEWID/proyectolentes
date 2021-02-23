@@ -24,7 +24,6 @@ class Citas extends Controlador
 
     }
 
-
     function modificarCita(){
         parent::cargarvista("html/adminModificarCita");
     }
