@@ -62,7 +62,7 @@
                         <td><?php echo $row['motivo']; ?></td>
                         <td>
                             
-                            <a href="<?php echo URL; ?>vista/html/adminModificarCita.php" class="btn btn-light">
+                            <a href="<?php echo URL; ?>citas/editar?id=<?php echo $row['id'];?> " class="btn btn-light">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-pencil-square" viewBox="0 0 16 16">
                                     <path

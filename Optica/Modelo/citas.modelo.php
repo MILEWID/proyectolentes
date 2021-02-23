@@ -14,6 +14,7 @@ class CitaModelo{
             return "error";
         }
     }
+    
     function mostrar(){
         $conexion = new Cconexion();
         $query="SELECT * FROM citas";

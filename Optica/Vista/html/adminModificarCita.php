@@ -63,7 +63,7 @@
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="validationServer04">Hora:</label>
-                            <input type="time" class="form-control" id="validationServer04"
+                            <input type="time" min="09:00:00" max="17:30:00" class="form-control" id="validationServer04"
                                 required>
                             <div class="valid-feedback">
                                 Correcto
