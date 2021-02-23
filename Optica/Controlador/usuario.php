@@ -99,8 +99,6 @@ class Usuario extends Controlador{
         }
 
     }
+}
 
-?>
-
-});
 
