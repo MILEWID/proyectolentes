@@ -115,7 +115,7 @@
                             <input type="text" class="form-control" placeholder="ej: 10" name="buscar" required> 
                         </div>
                         <div class="col-4">
-                            <a href="<?php echo URL; ?>vista/html/BuscarCitas.html" type="button" value= "Buscar" class="btn btn-dark">
+                            <a href="<?php echo URL; ?>citas/buscarcita" type="button" value= "Buscar" class="btn btn-dark">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-search" viewBox="0 0 16 16">
                                     <path
