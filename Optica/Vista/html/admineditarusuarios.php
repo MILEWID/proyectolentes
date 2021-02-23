@@ -19,7 +19,8 @@
     <?php include "menu.php" ?>
     <div class="container">
         <div class="row justify-content-center">
-            <form action="../../Modelo/registrar.php" method="POST">
+            <form action="editar.php" method="POST">
+                <input type="hidden" name="id" id="update_id">
                 <class class="form-row">
                     <div class="h1">EDITAR USUARIO #<span name="idusuario">1234</span></div>
                     <div class="row">
@@ -100,7 +101,7 @@
                         </div>
                     </div>
         </div>
-        <button class="btn btn-primary edition"  type="submit">GUARDAR DATOS</button>
+        <button class="btn btn-primary editbtn"  type="submit">GUARDAR DATOS</button>
         <a class="btn btn-dark" href="<?php echo URL; ?>/usuario">CANCELAR</a>
         </form>
     </div>

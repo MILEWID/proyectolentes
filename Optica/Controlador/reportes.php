@@ -1,22 +1,26 @@
 <?php 
 
-//include("./Modelo/reportes.modelo.php");
+include("./Modelo/reportesmodelo.php");
 
 class reportes extends Controlador
-{
+{   
     function __construct()
     {
-        // parent funcion que permite llamar los metodos heredados 
-		// de la clase padre
         parent:: __construct();
     }
 
-	// Index encargado de cargar la vista por defecto de la seccion
     function index(){
-
         parent::cargarvista("html/reportes");
-
+    }
+    function reporteadmin(){
+        $consulta = new ReporteModelo();
+        $result  = $consulta->reporteadmin();
+        parent::cargarvista("FpdfReportes/reporteadministradores", $result);
     }
 
-    // funcion que permite ingresar los productos
+    function reporteModcLI(){
+        $consulta = new ReporteModelo();
+        $result  = $consulta->reportemodcli();
+        parent::cargarvista("FpdfReportes/reporteModCliente", $result);
+    }
 }
