@@ -50,6 +50,10 @@ class Citas extends Controlador
         }
     }
 
+    function buscarcita(){
+        parent::cargarvista("html/BuscarCitas");
+    }
+
     function mostrarCita(){
         // se obtienen los datos del modelo usuario (BDD)
         $registro = new CitaModelo();
