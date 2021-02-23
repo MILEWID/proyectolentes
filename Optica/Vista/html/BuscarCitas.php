@@ -1,3 +1,28 @@
+<?php
+include("conexionprueba.php");
+
+if(empty($_REQUEST['id'])){
+    echo "No se encuentra el id";
+    mysqli_close($conexion);
+}
+$id = $_REQUEST['id'];
+$sql = mysqli_query($conexion, "SELECT * FROM citas WHERE id = $id");
+$resul_sql = mysqli_num_rows($sql);
+
+if($resul_sql ==0){
+    echo "algo salio mal";
+} else{
+    while($mostrar = mysqli_fetch_array($sql)){
+        $nombre = $mostrar['nombre'];
+        $apellido = $mostrar['apellido'];
+        $fecha = $mostrar['fecha'];
+        $hora = $mostrar['hora'];
+        $motivo = $mostrar['motivo'];
+    }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 <!--hola-->
@@ -20,19 +45,19 @@
         <div class="row justify-content-center">
             <form>
                 <class class="form-row">
-                    <div class="h1"> Datos del usuario <span> </span></div>
+                    <div class="h1"> Datos del usuario <span> <?php $apellido ?> </span></div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="validationServer01">Nombre:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control " disabled
+                            <input type="text" class="form-control" value=<?php echo $nombre ?> disabled
                                 required>
              
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="validationServer02">Apellido:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control "  disabled
+                            <input type="text" class="form-control " value=<?php echo $apellido ?>  disabled
                                 required>
                         </div>
                     </div>
@@ -41,13 +66,13 @@
                         <div class="col-md-6 mb-3">
                             <label >Fecha de consulta:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="date" class="form-control " id="validationServer03"
+                            <input type="date" class="form-control " value=<?php echo $fecha ?> id="validationServer03"
                             disabled required>
                            
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="validationServer04">Hora:</label>
-                            <input type="time" class="form-control" id="validationServer04" disabled
+                            <input type="time" class="form-control" id="validationServer04" value=<?php echo $hora ?> disabled
                                 required>
                         </div>
                     </div>
@@ -55,14 +80,14 @@
                         <div class="col-md-6 mb-3">
                             <label for="validationServerUsername">Motivo de consulta</label>
                             <div class="input-group">
-                                <input type="textarea" class="form-control " id="validationServerUsername"
+                                <input type="textarea" class="form-control " value=<?php echo $motivo ?> id="validationServerUsername"
                                 disabled aria-describedby="inputGroupPrepend3" required>
                             </div>
                         </div>
                     </div>
         </div>
-        <a href="<?php echo URL ?>/citas" class="btn btn-primary" type="submit">LISTO</a>
-        <a class="btn btn-dark" href="<?php echo URL ?>/citas">CANCELAR</a>
+        <a href="<?php echo URL ?>citas" class="btn btn-primary" type="submit">LISTO</a>
+        <a class="btn btn-dark" href="<?php echo URL ?>citas">CANCELAR</a>
         </form>
     </div>
     </div>
