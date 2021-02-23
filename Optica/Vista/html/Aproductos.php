@@ -27,8 +27,7 @@ class Productos extends Controlador
 
     // funcion que permite ingresar los productos
     function ingresarProdu(){
-        //verificar nombre de variable aun no existe (como ella :'v) 
-        // reply: nunca existio bro :c
+        //verificar nombre de variable aun no existe (como ella :'v)
         $nombre = $_POST["validationServer01"];
         $marca = $_POST["validationServer02"];
         $tipo = $_POST["validationServer03"];
@@ -58,21 +57,6 @@ class Productos extends Controlador
     // carga la vista para editar los productos
     function editar(){
         parent::cargarvista("html/admineditarproductos");
-    }
-
-    function eliminarProdu(){
-        $id = $_REQUEST['id'];
-
-        $registro = new ProductoModelo();
-
-        $consulta = $registro->eliminarProdu($id);
-        if ($consulta == "ok"){
-            header("Location: ".URL."productos/index");
-            //echo "Si se elimino";
-        }else{
-            echo "No se ha podido eliminar el registro";
-        }
-
     }
 
 }

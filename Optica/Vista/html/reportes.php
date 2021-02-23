@@ -7,16 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/adminmenu.css">
-    <link rel="stylesheet" href="../css/directorios.css">
-    <link rel="stylesheet" href="../css/reportes.css">
+        <link rel="stylesheet"  href="<?php echo URL ?>vista/css/adminmenu.css">
+        <link rel="stylesheet" href="<?php echo URL ?>vista/css/directorios.css">
+        <link rel="stylesheet" href="<?php echo URL ?>vista/css/reportes.css">
     <title>Administrar Usuarios</title>
 
 </head>
 
 <body>
-    <div id="menu"></div>
-    <script src="../js/jquery-3.2.1.min.js"></script>
+<?php include "menu.php" ?>
     <div class="container">
         <div class="h1">REPORTES</div>
         <div class="row">
@@ -53,9 +52,9 @@
             <div class="col-sm-4">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Reporte clientes por enfermedad</h5>
-                        <p class="card-text">Describe los clientes por el tipo de enfermedad de la vista que poseen </p>
-                        <a href="#" class="btn btn-dark">Descargar pdf
+                        <h5 class="card-title">Reporte de Administradores</h5>
+                        <p class="card-text">Describe los usuarios  del tipo administrador que se encuentran registrados</p>
+                        <a href="<?php echo URL ?>reportes/reporteadmin" class="btn btn-dark">Descargar pdf
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-file-earmark-text-fill" viewBox="0 0 16 16">
                                 <path
@@ -164,10 +163,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-        $("#menu").load("adminmenu.html header");
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>

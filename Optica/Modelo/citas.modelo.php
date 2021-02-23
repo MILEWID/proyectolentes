@@ -14,9 +14,10 @@ class CitaModelo{
             return "error";
         }
     }
+    
     function mostrar(){
         $conexion = new Cconexion();
-        $query="SELECT * FROM cita";
+        $query="SELECT * FROM citas";
         $resultado= $conexion->conectar()->query($query);
         return $resultado;
     }
@@ -26,6 +27,7 @@ class CitaModelo{
 
         // intanciamos la conexion
         $conexion = new Cconexion();
+        // i don't understood why you do select query if you want update...
         if (isset($_GET["id"])) //adquirimos el parametro del id
         {
             $id = $_GET["id"];
@@ -53,5 +55,17 @@ class CitaModelo{
             echo "Se actualizó correctamente";
         }
 
+    }
+
+    function eliminarCita($id){
+        // intanciamos la conexion
+        $conexion = new Cconexion();
+        $query = "DELETE FROM cita WHERE id=$id";
+        $resultado = $conexion->conectar()->query($query);
+        if ($resultado){
+            return "ok";
+        }else{
+            echo "No existe la cita con ella :c, asi que no se pudo eliminar 😢😿";
+        }
     }
 }

@@ -1,7 +1,6 @@
 <?php 
-// todas las rutas deben establecese desde el index
 
-// se requiere el modelo de productos
+// se requiere el modelo de citas
 include("./Modelo/citas.modelo.php");
 
 class Citas extends Controlador
@@ -25,6 +24,10 @@ class Citas extends Controlador
 
     }
 
+    function modificarCita(){
+        parent::cargarvista("html/adminModificarCita");
+    }
+
     // funcion que permite ingresar los productos
     function ingresarCita(){
         //verificar nombre de variable aun no existe (como ella :'v)
@@ -35,11 +38,9 @@ class Citas extends Controlador
         $hora = $_POST["validationServer05"];
         $motivo = $_POST["validationServer06"];
         header("location: ".URL."citas");
-
         //se realiza la consulta
-        //$consulta = new CitaModelo();
-        //$result = $consulta->registrarCita();
-
+        $consulta = new CitaModelo();
+        $result = $consulta->registrarCita($id, $nombre, $apellido, $fecha, $hora, $motivo);
         // se valida si la consulta fue existosa
         if ($consulta == "okey"){
             echo "Si se guardo";
@@ -49,6 +50,20 @@ class Citas extends Controlador
         }
     }
 
+    function buscarcita(){
+        parent::cargarvista("html/BuscarCitas");
+    }
+
+    function mostrarCita(){
+        // se obtienen los datos del modelo usuario (BDD)
+        $registro = new CitaModelo();
+        $consulta = $registro->mostrar();
+
+        // ejecutan el metodo heredado de controlador para cargar la vista
+        // y se le pasa los datos a la vista
+        parent::cargarvista("html/adminCitas",$consulta);
+    }
+
     // carga la vista para agregar los productos
     function agregar(){
         parent::cargarvista("html/adminCitas");
@@ -56,7 +71,19 @@ class Citas extends Controlador
 
     // carga la vista para editar los productos
     function editar(){
-        parent::cargarvista("html/adminModificarCitas");
+        parent::cargarvista("html/adminModificarCita");
     }
+
+    function eliminarCita(){
+        $id = $_REQUEST['id'];
+        $registro = new CitaModelo();
+        $consulta = $registro->eliminarCita($id);
+        if ($consulta == "ok"){
+            header("Location: ".URL."citas/index"); // puede que de error
+        }else{
+            echo "No se ha podido eliminar el registro";
+        }
+    }
+
 
 }
