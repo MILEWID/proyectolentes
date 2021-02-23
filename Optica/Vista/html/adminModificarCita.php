@@ -1,6 +1,5 @@
 <?php
 include("conexionprueba.php");
-
 if(empty($_REQUEST['id'])){
     echo "No se encuentra el id";
     mysqli_close($conexion);
