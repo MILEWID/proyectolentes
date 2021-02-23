@@ -10,7 +10,7 @@ $sql = mysqli_query($conexion, "SELECT * FROM citas WHERE id = $id");
 $resul_sql = mysqli_num_rows($sql);
 
 if($resul_sql ==0){
-    header("location:index.php");
+    echo "algo salio mal";
 } else{
     while($mostrar = mysqli_fetch_array($sql)){
         $nombre = $mostrar['nombre'];
@@ -43,7 +43,7 @@ if($resul_sql ==0){
     <?php include "menu.php" ?>
     <div class="container">
         <div class="row justify-content-center">
-            <form>
+            <form method="POST" action="posteditar.php">
                 <class class="form-row">
                     <div class="h1">MODIFICAR CITAS</div>
                         <div class="row">
@@ -110,7 +110,7 @@ if($resul_sql ==0){
                     <br>
                 </div>
                 <button class="btn btn-primary" type="submit">GUARDAR DATOS</button>
-        <a class="btn btn-dark" href="<?php echo URL ?>/usuario">CANCELAR</a>
+        <a class="btn btn-dark" href="<?php echo URL ?>citas">CANCELAR</a>
         </form>
         </div>
     </div>
