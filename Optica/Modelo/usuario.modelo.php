@@ -33,7 +33,7 @@ class CusuarioModel{
         }
     }
 //buscar
-    function buscar($idUsuario){
+    function buscarU($idUsuario){
         $conexion = new Cconexion();
         $query="SELECT * FROM usuario WHERE idUsuario = '$idUsuario'";
         $resultado= $conexion->conectar()->query($query);
@@ -56,7 +56,7 @@ class CusuarioModel{
         $con = new Cconexion();
         // i don't understood why you do select query if you want update...            
         $query = "UPDATE usuario set nombreUsuario = '$nombreUsuario', nombre= 'nombre',apellido = '$apellido', tipoUsuario = '$tipoUsuario', correoElectronico = '$correoElectronico', contrasena = '$contrasena' WHERE idUsuario ='$idUsuario'";
-        $resultado = $con->conectar()->query($query);
+        $resultado = $con->conexionPDO()->query($query);
          
         print_r($resultado->errorInfo());
 

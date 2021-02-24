@@ -27,10 +27,10 @@ class Usuario extends Controlador{
         parent::cargarvista("html/admineditarusuarios");
     }
 
-    //cargar la vista para buscar los usuarios
+  /*  //cargar la vista para buscar los usuarios
     function buscar(){
         parent::cargarvista("html/adminbuscarusuarios");
-    }
+    }*/
 
 
     // recibe los datos dela vista de usuario
@@ -107,10 +107,10 @@ class Usuario extends Controlador{
 
     }
 
-        function buscarcita(){
+        function buscarU(){
         if(isset($_POST['idUsuario'])){
-            $consulta = new CusuarioModel();
-            $resultado = $consulta->mostrarByID($_POST['idUsuario']);
+            $registro = new CusuarioModel();
+            $consulta = $registro->mostrarByID($_POST['idUsuario']);
             parent::cargarvista("html/adminbuscarusuarios",$resultado);
         }
         else{
