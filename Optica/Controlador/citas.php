@@ -70,8 +70,35 @@ class Citas extends Controlador
     }
 
     // carga la vista para editar los productos
-    function editar(){
-        parent::cargarvista("html/adminModificarCita");
+    function editar(){ 
+        if(!empty($_GET['id'])){
+            $consulta = new CitaModelo();
+            $resultado = $consulta->mostrarByID($_GET['id']);
+            parent::cargarvista("html/adminModificarCita",$resultado);
+        }else{
+            echo "no hay";
+        }
+    }
+
+    function editar2(){
+        if(isset($_POST['id'])){
+            $id = $_POST['id'];
+            $nombre = $_POST['nombre'];
+            $apellido = $_POST['apellido'];
+            $fecha = $_POST['fecha'];
+            $hora = $_POST['hora'];
+            $motivo = $_POST['motivo'];
+            $consulta = new CitaModelo();
+            $resultado = $consulta->modificar($id, $nombre, $apellido, $fecha, $hora, $motivo);
+            if($resultado == 'ok'){
+                header("location:" .URL. "citas");
+            }
+            else{
+                echo 'algo salio mal';
+            }           
+        }else{
+            echo "no llego";
+        }
     }
 
     function eliminarCita(){
