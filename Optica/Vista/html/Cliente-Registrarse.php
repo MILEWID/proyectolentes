@@ -38,7 +38,7 @@
             </li>             
             <li class="nav-item dropdown">
               <div class="dropdown">
-                <a class="nav-link" href="#"><i class="fas fa-user-circle fa-2x mx-2"></i></a>
+                <a class="nav-link" href="#"><i class="fas fa-user-circle fa-2x mx-2"></i>INGRESAR</a>
                 <div class="dropdown-content fixed">
                   <a href="" data-toggle="modal" data-target="#inicio-cliente">Iniciar Sesión </a>              
                   <a href="" data-toggle="modal" data-target="#registrarse-cliente" >Crear Cuenta</a>
@@ -50,7 +50,7 @@
       </nav>
     </div>
 
-    <section class="section-1 container-fluid p-0">
+    <section class="section-1 container-fluid p-0 " style="height: 100vh;">
       
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -60,17 +60,17 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="<?php echo URL; ?>vista/imágenes/pexels-andrew-wilus-5515756.jpg" alt="First slide">
+              <img class="d-block w-100" style="height: 100vh;" src="<?php echo URL; ?>vista/imágenes/pexels-andrew-wilus-5515756.jpg" alt="First slide">
               <div class="carousel-caption d-none d-md-block">              
                 <h2 style="padding-bottom: 50px; font-size: 50px; font-family: 'Bungee Inline', cursive;"><span class="word" id="word"></span></h2>
                 <h1  style="padding-bottom: 190px; font-size: 70px; font-family: 'Monoton', cursive;">"BIENVENIDO"</h1>               
               </div>
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="<?php echo URL; ?>vista/imágenes/pexels-helena-lopes-933964.jpg" alt="Second slide">
+              <img class="d-block w-100" style="height: 100vh;"  src="<?php echo URL; ?>vista/imágenes/pexels-helena-lopes-933964.jpg" alt="Second slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="<?php echo URL; ?>vista/imágenes/pexels-aline-viana-prado-3491678.jpg" alt="Third slide">
+              <img class="d-block w-100" style="height: 100vh;"  src="<?php echo URL; ?>vista/imágenes/pexels-aline-viana-prado-3491678.jpg" alt="Third slide">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -88,8 +88,8 @@
   <div class="modal fade" id="registrarse-cliente" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Registrarse</h5>
+        <div class="modal-header">   
+          <h3 class="modal-title" id="exampleModalLabel" style="text-align: center;"><i class="fas fa-users"></i>  REGISTRARSE</h3>                  
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -107,6 +107,7 @@
             <label for="contraseña-cliente">Contraseña</label>
             <p><input type="password"  name="contrasena-cliente" id="contraseña-cliente"> </input></p>              
             <input type="submit" value="Crear Cuenta" class="btn btn-primary"></input>
+            <p></p>              
             <input type="button" value="Cancelar"class="btn btn-warning"> </input>          
           </form>
         </div>      
@@ -163,7 +164,7 @@
 
             <div class="card">
               <div class="inner">
-                <img class="card-img-top" src="<?php echo URL; ?>vista/imágenes/Tratamientos_Servicio.jpg" alt="Card image cap">
+                <img class="card-img-top" src="<?php echo URL; ?>vista/imágenes/Consulta_Servicio.jpg" alt="Card image cap">
               </div>
               <div class="card-body">
                 <div class="title">

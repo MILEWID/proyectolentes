@@ -22,9 +22,14 @@ class Usuario extends Controlador{
         parent::cargarvista("html/adminagregarusuarios");
     }
 
-     // carga la vista para editar los usuarios
-   function modificarControlador(){
+    //cargar la vista para modificar los usuarios
+   function modificar(){
         parent::cargarvista("html/admineditarusuarios");
+    }
+
+    //cargar la vista para buscar los usuarios
+    function buscar(){
+        parent::cargarvista("html/adminbuscarusuarios");
     }
 
 
@@ -54,6 +59,8 @@ class Usuario extends Controlador{
     function registrarcliente(){
         parent::cargarvista("html/agregarcliente");
     }
+
+
 
     function registrarcontroladorCliente(){
         $nombre=$_POST['nombre-cliente'];
@@ -99,6 +106,56 @@ class Usuario extends Controlador{
         }
 
     }
-}
+
+    function buscarControlador(){
+        $id = $_REQUEST['id'];
+
+        $registro = new CusuarioModel();
+
+        $consulta = $registro->buscar($id);
+        if ($consulta == "ok"){
+            header("Location: ".URL."usuario/mostrarcontrolador");
+        }else{
+            echo "No se ha podido encontrado el registro";
+        }
+
+    }
+
+
+    // carga la vista para editar los productos
+    function editar(){ 
+        if(!empty($_GET['idUsuario'])){
+            $consulta = new CusuarioModel();
+            $resultado = $consulta->mostrarByID($_GET['idUsuario']);
+            parent::cargarvista("html/admineditarusuarios",$resultado);
+        }else{
+            echo "no hay";
+        }
+    }
+
+    function editar2(){
+        if(isset($_POST['idUsuario'])){
+            $id = $_POST['idUsuario'];
+            $nombreUsuario = $_POST['nombre'];
+            $nombre=$_POST['nombreUsuario'];
+            $apellido = $_POST['apellido'];
+            $tipoUsuario= $_POST['tipoUsuario'];
+            $correoElectronico = $_POST['correoElectronico'];
+            $contrasena = $_POST['contrasena'];
+            $consulta = new CusuarioModel();
+            $resultado = $consulta->modificar($nombreUsuario, $idUsuario,$nombre ,$apellido,$tipoUsuario, $correoElectronico,$contrasena);
+            if($resultado == 'ok'){
+                header("location:" .URL. "usuario");
+            }
+            else{
+                echo 'algo salio mal';
+            }           
+        }else{
+            echo "no llego";
+        }
+    }
+
+    }
+
 
 

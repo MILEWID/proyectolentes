@@ -34,6 +34,17 @@ class ProductoModelo{
         }
     }
 
+    function buscarProdu($id){
+        $conexion = new Cconexion();
+        $query= "SELECT FROM producto WHERE id='$id'";
+        $resultado = $conexion->conectar()->query($query);
+        if ($resultado){
+            return "ok";
+        }else{
+            echo "No existe el producto que desea buscar";
+        }
+    }
+
     // función modificar
     function modificar( $id, $nombre, $marca, $tipo, $precio, $material, $sexo){
 
