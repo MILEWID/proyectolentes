@@ -22,9 +22,14 @@ class Usuario extends Controlador{
         parent::cargarvista("html/adminagregarusuarios");
     }
 
-     // carga la vista para editar los usuarios
-   function modificarControlador(){
+    //cargar la vista para modificar los usuarios
+   function modificar(){
         parent::cargarvista("html/admineditarusuarios");
+    }
+
+    //cargar la vista para buscar los usuarios
+    function buscar(){
+        parent::cargarvista("html/adminbuscarusuarios");
     }
 
 
@@ -99,6 +104,65 @@ class Usuario extends Controlador{
         }
 
     }
+
+    function buscarControlador(){
+        $id = $_REQUEST['id'];
+
+        $registro = new CusuarioModel();
+
+        $consulta = $registro->buscar($id);
+        if ($consulta == "ok"){
+            header("Location: ".URL."usuario/mostrarcontrolador");
+        }else{
+            echo "No se ha podido encontrado el registro";
+        }
+
+    }
+
+
+    //metodo para modificar usuario
+     function modificarControlador(){
+         $id = $_GET['id'];
+        $nombre=$_POST['nombre-cliente'];
+        $apellido=$_POST['apellido-cliente'];
+        $email=$_POST['correo-cliente'];
+        $contrasena=$_POST['contrasena-cliente'];
+        $nombreUsuario=$_POST['nombre-usuario'];
+        $tipoUsuario="Cliente";
+
+        // instancia del modelo
+        $registro = new CusuarioModel();
+        $consulta = $registro->registrar($nombre ,$apellido,$email,$contrasena,$nombreUsuario,$tipoUsuario);
+        if ($consulta == "ok"){
+            header("Location: ".URL."usuario/mostrareditarcontrolador");
+        }
+        else{
+            echo "No se ha podido guardar";
+        }
+   /*      $registro = new CusuarioModel();
+
+        $consulta = $registro->modificar($nombre ,$apellido,$email,$contrasena,$nombreUsuario,$tipoUsuario);
+           if ($consulta == "ok"){
+            header("Location: ".URL."usuario/mostrarcontrolador");
+        }
+        else{
+            echo "No se ha podido guardar";
+        }
+    //parent::cargarvista("html/admineditarusuarios");
+    }*/
+    }
+
+     function mostrareditarcontrolador(){
+        // se obtienen los datos del modelo usuario (BDD)
+        $registro = new CusuarioModel();
+        $consulta = $registro->modificar();
+
+        // ejecutan el metodo heredado de controlador para cargar la vista
+        // y se le pasa los datos a la vista
+        parent::cargarvista("html/admineditarusuarios",$consulta);
+    }
+
+
 }
 
 

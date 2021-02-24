@@ -33,8 +33,19 @@ class CusuarioModel{
         }
     }
 
+    function buscar($id){
+        $conexion = new Cconexion();
+        $query= "SELECT FROM usuario WHERE idUsuario='$id'";
+        $resultado = $conexion->conectar()->query($query);
+        if ($resultado){
+            return "ok";
+        }else{
+            echo "No existe el registro que desea buscar";
+        }
+    }
+
 //funcion modificar
-    function modificarControlador( $nombreUsuario, $idUsuario, $nombre, $apellido, $tipoUsuario, $correoElectronico, $contrasena){
+    function modificar( $nombreUsuario, $idUsuario, $nombre, $apellido, $tipoUsuario, $correoElectronico, $contrasena){
 
         // intanciamos la conexion
         $conexion = new Cconexion();
@@ -67,6 +78,8 @@ class CusuarioModel{
             $query = "UPDATE usuario set nombreUsuario = '$nombreUsuario ',nombre = '$nombre', apellido = '$apellido', tipoUsuario = '$tipoUsuario', correoElectronico = '$correoElectronico', contrasena = '$contrasena' WHERE idUsuario=$idUsuario";
             mysqli_query($con, $query);
             echo "Se actualizó correctamente";
+            //mysqli_query($con, $query);
+            
         }
 
     }
