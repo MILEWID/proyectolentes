@@ -1,3 +1,8 @@
+<?php
+$datos = $valorescontrolador->fetch_assoc();
+?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 <!--hola-->
@@ -26,14 +31,14 @@
                             <label for="validationServer01">Nombre:</label>
                             <!-- is-valid es una clase para validar campos -->
                             <input type="text" class="form-control " disabled
-                                required>
+                                required value="<?php echo $datos['nombre'] ?>" readonly>
              
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="validationServer02">Apellido:</label>
                             <!-- is-valid es una clase para validar campos -->
                             <input type="text" class="form-control "  disabled
-                                required>
+                                required value="<?php echo $datos['apellido'] ?>" readonly>
                         </div>
                     </div>
                     <!--  eso es un comentario -->
@@ -42,13 +47,13 @@
                             <label >Email:</label>
                             <!-- is-valid es una clase para validar campos -->
                             <input type="email" class="form-control " id="validationServer03"
-                            disabled required>
+                            disabled required value="<?php echo $datos['correoElectronico'] ?>" readonly>
                            
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="validationServer04">Contraseña:</label>
                             <input type="password" class="form-control" id="validationServer04" disabled
-                                required>
+                                required value="<?php echo $datos['contrasena'] ?>" readonly>
                         </div>
                     </div>
                     <div class="row">
@@ -59,18 +64,18 @@
                                     <span class="input-group-text" id="inputGroupPrepend3">@</span>
                                 </div>
                                 <input type="text" class="form-control " id="validationServerUsername"
-                                disabled aria-describedby="inputGroupPrepend3" required>
+                                disabled aria-describedby="inputGroupPrepend3" required value="<?php echo $datos['nombreUsuario'] ?>" readonly>
                             </div>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="validationServer05">Tipo de Usuario</label>
                             <input type="text" class="form-control "  disabled
-                            required>
+                            required value="<?php echo $datos['tipoUsuario'] ?>" readonly>
                         </div>
                     </div>
         </div>
-        <a href="<?php echo URL ?>/usuario/mostrarcontrolador" class="btn btn-primary" type="submit">GUARDAR DATOS</a>
-        <a class="btn btn-dark" href="<?php echo URL ?>/usuario/mostrarcontrolador">CANCELAR</a>
+        <a href="<?php echo URL ?>usuario" class="btn btn-primary" type="submit">LISTO</a>
+        <a class="btn btn-dark" href="<?php echo URL ?>usuario">CANCELAR</a>
         </form>
     </div>
     </div>
