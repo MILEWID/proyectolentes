@@ -1,6 +1,7 @@
 <?php
-echo $valorescontrolador->fetch_assoc();
-//var_dump($datos);
+$datos= $valorescontrolador->fetch_assoc();
+
+var_dump($datos);
 ?>
 
 <!DOCTYPE html>
@@ -30,7 +31,7 @@ echo $valorescontrolador->fetch_assoc();
                     <div class="h1">EDITAR USUARIO #<span name="idusuario">1234</span></div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <input type="hidden" name="id" value="<?php echo $datos['id']?>">
+                            <input type="hidden" name="id" value="<?php echo $datos['idUsuario']?>">
                             <label for="validationServer01">Nombre:</label>
                             <!-- is-valid es una clase para validar campos -->
                             <input type="text" class="form-control "  name="nombre-cliente" id="validationServer01" placeholder="María Paula" value=<?php echo $datos['nombre'] ?>
@@ -89,7 +90,7 @@ echo $valorescontrolador->fetch_assoc();
                                     <span class="input-group-text" id="inputGroupPrepend3">@</span>
                                 </div>
                                 <input type="text" class="form-control " id="validationServerUsername"
-                                    placeholder="@mariapaula" aria-describedby="inputGroupPrepend3" value=<?php echo $datos['contrasena'] ?> required>
+                                    placeholder="@mariapaula" aria-describedby="inputGroupPrepend3" value=<?php echo $datos['nombreUsuario'] ?> required>
                                 <div class="valid-feedback">
                                     Correcto
                                 </div>

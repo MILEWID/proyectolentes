@@ -143,7 +143,7 @@ class Usuario extends Controlador{
             $correoElectronico = $_POST['correoElectronico'];
             $contrasena = $_POST['contrasena'];
             $consulta = new CusuarioModel();
-            $resultado = $consulta->modificar($nombreUsuario, $idUsuario,$nombre ,$apellido,$email,$contrasena,$tipoUsuario);
+            $resultado = $consulta->modificar($nombreUsuario, $idUsuario,$nombre ,$apellido,$tipoUsuario, $correoElectronico,$contrasena);
             if($resultado == 'ok'){
                 header("location:" .URL. "usuario");
             }
