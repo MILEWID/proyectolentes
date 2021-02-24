@@ -23,6 +23,7 @@ var_dump($datos);
     <div class="container">
         <div class="row justify-content-center">
             <form method="POST" action="<?php echo URL?>citas/editar2">
+                <input type="hidden" name="id" id="">
                 <class class="form-row">
                     <div class="h1">MODIFICAR CITAS</div>
                         <div class="row">

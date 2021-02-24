@@ -60,6 +60,8 @@ class Usuario extends Controlador{
         parent::cargarvista("html/agregarcliente");
     }
 
+    
+
     function registrarcontroladorCliente(){
         $nombre=$_POST['nombre-cliente'];
         $apellido=$_POST['apellido-cliente'];
@@ -120,48 +122,40 @@ class Usuario extends Controlador{
     }
 
 
-    //metodo para modificar usuario
-     function modificarControlador(){
-         $id = $_GET['id'];
-        $nombre=$_POST['nombre-cliente'];
-        $apellido=$_POST['apellido-cliente'];
-        $email=$_POST['correo-cliente'];
-        $contrasena=$_POST['contrasena-cliente'];
-        $nombreUsuario=$_POST['nombre-usuario'];
-        $tipoUsuario="Cliente";
-
-        // instancia del modelo
-        $registro = new CusuarioModel();
-        $consulta = $registro->registrar($nombre ,$apellido,$email,$contrasena,$nombreUsuario,$tipoUsuario);
-        if ($consulta == "ok"){
-            header("Location: ".URL."usuario/mostrareditarcontrolador");
+    // carga la vista para editar los productos
+    function editar(){ 
+        if(!empty($_GET['id'])){
+            $consulta = new CitaModelo();
+            $resultado = $consulta->mostrarByID($_GET['id']);
+            parent::cargarvista("html/admineditarusuarios",$resultado);
+        }else{
+            echo "no hay";
         }
-        else{
-            echo "No se ha podido guardar";
-        }
-   /*      $registro = new CusuarioModel();
-
-        $consulta = $registro->modificar($nombre ,$apellido,$email,$contrasena,$nombreUsuario,$tipoUsuario);
-           if ($consulta == "ok"){
-            header("Location: ".URL."usuario/mostrarcontrolador");
-        }
-        else{
-            echo "No se ha podido guardar";
-        }
-    //parent::cargarvista("html/admineditarusuarios");
-    }*/
     }
 
-     function mostrareditarcontrolador(){
-        // se obtienen los datos del modelo usuario (BDD)
-        $registro = new CusuarioModel();
-        $consulta = $registro->modificar();
-
-        // ejecutan el metodo heredado de controlador para cargar la vista
-        // y se le pasa los datos a la vista
-        parent::cargarvista("html/admineditarusuarios",$consulta);
+    function editar2(){
+        if(isset($_POST['id'])){
+            $id = $_POST['id'];
+            $nombreUsuario = $_POST['nombre'];
+            $nombre=$_POST['nombreUsuario'];
+            $apellido = $_POST['apellido'];
+            $tipoUsuario= $_POST['tipoUsuario'];
+            $correoElectronico = $_POST['correoElectronico'];
+            $contrasena = $_POST['contrasena'];
+            $consulta = new CusuarioModel();
+            $resultado = $consulta->modificar($nombreUsuario, $idUsuario,$nombre ,$apellido,$email,$contrasena,,$tipoUsuario);
+            if($resultado == 'ok'){
+                header("location:" .URL. "usuario");
+            }
+            else{
+                echo 'algo salio mal';
+            }           
+        }else{
+            echo "no llego";
+        }
     }
 
+    }
 
 }
 
