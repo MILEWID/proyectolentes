@@ -28,13 +28,13 @@ var_dump($datos);
             <form action="<?php echo URL?>usuario/editar2" method="POST">
                 <input type="hidden" name="id" id="">
                 <class class="form-row">
-                    <div class="h1">EDITAR USUARIO #<span name="idusuario">1234</span></div>
+                    <div class="h1">EDITAR USUARIO #<span name="idUsuario"><?php echo $datos['idUsuario'] ?></span></div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <input type="hidden" name="id" value="<?php echo $datos['idUsuario']?>">
                             <label for="validationServer01">Nombre:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control "  name="nombre-cliente" id="validationServer01" placeholder="María Paula" value=<?php echo $datos['nombre'] ?>
+                            <input type="text" class="form-control "  name="nombre" id="validationServer01" placeholder="María Paula" value=<?php echo $datos['nombre'] ?>
                                 required>
                             <div class="valid-feedback">
                                 Es correcto
@@ -46,7 +46,7 @@ var_dump($datos);
                         <div class="col-md-6 mb-3">
                             <label for="validationServer02">Apellido:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control " name="apellido-cliente" id="validationServer02" placeholder="Cando Chimbo" value=<?php echo $datos['apellido'] ?>
+                            <input type="text" class="form-control " name="apellido" id="validationServer02" placeholder="Cando Chimbo" value=<?php echo $datos['apellido'] ?>
                                 required>
                             <div class="valid-feedback">
                                 Correcto
@@ -61,7 +61,7 @@ var_dump($datos);
                         <div class="col-md-6 mb-3">
                             <label for="validationServer03">Email:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="email" class="form-control " id="validationServer03"
+                            <input type="email" class="form-control "  name = "correoElectronico"id= "validationServer03"
                                 placeholder="ejemplo@example.com"  value=<?php echo $datos['correoElectronico'] ?>required>
                             <div class="valid-feedback">
                                 Es correcto
@@ -72,7 +72,7 @@ var_dump($datos);
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="validationServer04">Contraseña:</label>
-                            <input type="password" class="form-control" name="apellido-cliente" name="contrasena-cliente" id="validationServer04" placeholder="abc123" value=<?php echo $datos['contrasena'] ?>
+                            <input type="password" class="form-control"  name="contrasena" id="validationServer04" placeholder="abc123" value=<?php echo $datos['contrasena'] ?>
                                 required>
                             <div class="valid-feedback">
                                 Correcto
@@ -89,8 +89,8 @@ var_dump($datos);
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="inputGroupPrepend3">@</span>
                                 </div>
-                                <input type="text" class="form-control " id="validationServerUsername"
-                                    placeholder="@mariapaula" aria-describedby="inputGroupPrepend3" value=<?php echo $datos['nombreUsuario'] ?> required>
+                                <input type="text" class="form-control " id="validationServerUser" name="nombreUsuario"
+                                    placeholder="@mariapaula" aria-describedby="inputGroupPrepend3" name value=<?php echo $datos['nombreUsuario'] ?> required>
                                 <div class="valid-feedback">
                                     Correcto
                                 </div>
@@ -101,9 +101,9 @@ var_dump($datos);
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="validationServer05">Tipo de Usuario</label>
-                            <select class="form-select form-select" aria-label=".form-select-lg example">
-                                <option selected value="1">Cliente</option>
-                                <option value="2">Administrador</option>
+                            <select class="form-select form-select" aria-label=".form-select-lg example" name="tipoUsuario">
+                                <option selected value="Cliente">Cliente</option>
+                                <option value="Administrador">Administrador</option>
                             </select>
                         </div>
                     </div>

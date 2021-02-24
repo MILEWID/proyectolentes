@@ -108,9 +108,10 @@ class Usuario extends Controlador{
     }
 
         function buscarUsuario(){
-        if(isset($_POST['idUsuario'])){
+        if(isset($_POST['id'])){
+
             $registro = new CusuarioModel();
-            $consulta = $registro->mostrarByID($_POST['idUsuario']);
+            $resultado= $registro->mostrarByID($_POST['id']);
             parent::cargarvista("html/adminbuscarusuarios",$resultado);
         }
         else{
@@ -118,25 +119,24 @@ class Usuario extends Controlador{
         }
     }
 
-
-    // carga la vista para editar los productos
+    // carga la vista para editar los usuarios
     function editar(){ 
-        if(!empty($_GET['idUsuario'])){
+        //if(!empty($_GET['idUsuario'])){
             $consulta = new CusuarioModel();
-            $resultado = $consulta->mostrarByID($_GET['idUsuario']);
+            $resultado = $consulta->mostrarByID($_REQUEST['id']);
             
            parent::cargarvista("html/admineditarusuarios",$resultado);
            
-        }else{
-            echo "no hay";
-        }
+      //  }else{
+          //  echo "no existe";
+       // }
     }
 
     function editar2(){
-        if(isset($_POST['idUsuario'])){
-            $idUsuario = $_POST['idUsuario'];
-            $nombreUsuario = $_POST['nombre'];
-            $nombre=$_POST['nombreUsuario'];
+        if(isset($_POST['id'])){ 
+            $nombreUsuario = $_POST['nombreUsuario'];
+            $idUsuario = $_POST['id'];
+            $nombre=$_POST['nombre'];
             $apellido = $_POST['apellido'];
             $tipoUsuario= $_POST['tipoUsuario'];
             $correoElectronico = $_POST['correoElectronico'];
@@ -148,13 +148,12 @@ class Usuario extends Controlador{
             }
             else{
                 echo 'algo salio mal';
-            }           
-        }else{
+            }         
+   } else{
             echo "no llego";
         }
-    }
-
-    }
+   }
+}
 
 
 
