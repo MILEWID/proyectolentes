@@ -11,7 +11,7 @@ class ReporteModelo{
 
     function reportemodcli(){
         $conexion = new Cconexion();
-        $query="SELECT * FROM `usuario` WHERE tipoUsuario = 'Administrador'";
+        $query="SELECT * FROM `usumod`";
         $resultado= $conexion->conectar()->query($query);
         return $resultado;
     }
