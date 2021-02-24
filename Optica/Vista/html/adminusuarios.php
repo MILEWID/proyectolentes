@@ -100,7 +100,7 @@
 
     <!-- Modales -->
     <!-- Modal para buscar -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <form action="<?php echo URL?>usuario/buscarUsuario" method="POST">
@@ -115,7 +115,7 @@
                                 <input type="text" class="form-control" placeholder="ej: 10" name="id" required> 
                             </div>
                             <div class="col-4">
-                                <input type="submit" value="Buscar">
+                                <input type="submit" value="Buscar" class="btn-dark">
                             </div>
                         </div>
                     </div>
@@ -124,6 +124,28 @@
         </div>
     </div>
 
+<!-- Modal confirmacion eliminar -->
+<div class="modal fade" id="eliminarModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Eliminar Usuario</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ¿Está seguro que desea eliminar a este Usuario?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <a href="<?php echo URL; ?>usuario/eliminarControlador?id=<?php echo $row['idUsuario']; ?>" class="btn btn-danger" >Eliminar</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+  eliminar
+</button>
 </body>
 
 </html>

@@ -25,7 +25,7 @@ $datos = $valorescontrolador->fetch_assoc();
         <div class="row justify-content-center">
             <form>
                 <class class="form-row">
-                    <div class="h1"> Datos del usuario <span> <?php $apellido ?> </span></div>
+                    <div class="h1"> DATOS DE LA CITA  <span> <?php $apellido ?> </span></div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="validationServer01">Nombre:</label>

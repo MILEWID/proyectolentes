@@ -38,10 +38,10 @@ function Footer()
     // Posición: a 1,5 cm del final
     $this->SetY(-15);
     // Arial italic 8
-    $this->SetFont('Arial','I',9);
+    $this->SetFont('Arial','I',8);
     $this->SetTextColor(255, 255, 255);
     // Número de página
-    $this->Cell(0,10,utf8_decode('Riobamba Km 1 1/2    Óptica Victoria    Teléfono: 0996731042             Página ').$this->PageNo().'',0,0,'C');
+    $this->Cell(0,10,utf8_decode('Riobamba Km 1 1/2    Óptica Victoria  Teléfono: 0996731042    Correo: optivictoria@gmail.com   Página ').$this->PageNo().'',0,0,'C');
 }
 }
 

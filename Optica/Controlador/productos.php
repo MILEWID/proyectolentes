@@ -74,5 +74,9 @@ class Productos extends Controlador
         }
 
     }
+    function buscarprodu(){
+        // solo carga la vista 
+        parent::cargarvista("html/adminbuscarproductos");
+    }
 
 }
