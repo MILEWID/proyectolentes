@@ -72,8 +72,7 @@
                                 </svg>
                             </a>
 
-
-                            <a href="<?php echo URL; ?>usuario/eliminarControlador?id=<?php echo $row['idUsuario']; ?>" class="btn btn-danger">
+                            <a href="<?php echo URL; ?>citas/editar?id=<?php echo $row['id']; ?>">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-trash" viewBox="0 0 16 16">
                                     <path

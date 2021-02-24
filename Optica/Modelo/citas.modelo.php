@@ -22,39 +22,25 @@ class CitaModelo{
         return $resultado;
     }
 
+    function mostrarByID($id){
+        $conexion = new Cconexion();
+        $query="SELECT * FROM citas WHERE id = '$id'";
+        $resultado= $conexion->conectar()->query($query);
+        return $resultado;
+    }
+
     // función modificar
     function modificar( $id, $nombre, $apellido, $fecha, $hora, $motivo){
 
         // intanciamos la conexion
-        $conexion = new Cconexion();
-        // i don't understood why you do select query if you want update...
-        if (isset($_GET["id"])) //adquirimos el parametro del id
-        {
-            $id = $_GET["id"];
-            $query = "SELECT * FROM cita WHERE id=$id";
-            $result = mysqli_query($con, $query);
-            if (mysqli_num_rows($result) == 1) {
-                $row = mysqli_fetch_array($result); //Estamos ubicandonos en la tabla del id
-                $nombre = $row['nombre'];
-                $apellido = $row['apellido'];
-                $fecha = $row['fecha'];
-                $hora = $row['hora'];
-                $motivo = $row['motivo'];
-            }
-        }
-        if (isset($_POST['update'])) {
-            $id = $_GET['id'];
-            $nombre= $_POST['nombre']; //estamos modificando los datos
-            $apellido = $_POST['apellido']; 
-            $fecha = $_POST['fecha'];
-            $hora = $_POST['hora'];
-            $motivo = $_POST['motivo'];
-            
-            $query = "UPDATE cita set nombre = '$nombre', apellido = '$apellido', fecha = '$fecha', hora = '$hora', maotivo = '$motivo' WHERE id=$id";
-            mysqli_query($con, $query);
-            echo "Se actualizó correctamente";
-        }
+        $con = new Cconexion();
+        // i don't understood why you do select query if you want update...            
+        $query = "UPDATE citas set nombre = '$nombre', apellido = '$apellido', fecha = '$fecha', hora = '$hora', motivo = '$motivo' WHERE id ='$id'";
+        $resultado = $con->conexionPDO()->query($query);
+         
+        print_r($resultado->errorInfo());
 
+        return 'ok';
     }
 
     function eliminarCita($id){

@@ -62,6 +62,15 @@ class CusuarioModel{
                 $tipoUsuario = $row['tipoUsuario'];
                 $correoElectronico = $row['correoElectronico'];
                 $contrasena = $row['contrasena'];
+                //ESTO SOLO ES PARA EL REPORTE DE USUARIOS MODIFICADOS XD
+                /*$query="INSERT INTO usuariosMod (nombreUsuario, nombre, apellido, correoElectronico) VALUES('$nomusu', '$nombre', '$apellido', '$email')";
+                $resultado= $conexion->conectar()->query($query);
+                if ($resultado){
+                    return "ok";
+                }else{
+                    echo "No se ha podido guardar el registro";
+                }*/
+                ////////////////////////////////////////////////////////////////
                 
             }
         }
