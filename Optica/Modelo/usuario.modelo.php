@@ -59,7 +59,7 @@ class CusuarioModel{
         // intanciamos la conexion
         $con = new Cconexion();
         // i don't understood why you do select query if you want update...            
-        $query = "UPDATE usuario set nombreUsuario = '$nombreUsuario', idUsuario='$idUsuario', nombre= 'nombre',apellido = '$apellido', tipoUsuario = '$tipoUsuario', correoElectronico = '$correoElectronico', contrasena = '$contrasena' WHERE idUsuario ='$idUsuario'";
+        $query = "UPDATE usuario set nombreUsuario = '$nombreUsuario', nombre= 'nombre',apellido = '$apellido', tipoUsuario = '$tipoUsuario', correoElectronico = '$correoElectronico', contrasena = '$contrasena' WHERE idUsuario ='$idUsuario'";
         $resultado = $con->conectar()->query($query);
          
         print_r($resultado->errorInfo());
