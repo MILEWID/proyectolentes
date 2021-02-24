@@ -127,15 +127,17 @@ class Usuario extends Controlador{
         if(!empty($_GET['idUsuario'])){
             $consulta = new CusuarioModel();
             $resultado = $consulta->mostrarByID($_GET['idUsuario']);
-            parent::cargarvista("html/admineditarusuarios",$resultado);
+            
+           parent::cargarvista("html/admineditarusuarios",$resultado);
+           echo $resultado;
         }else{
-            echo "no hay";
+           // echo "no hay";
         }
     }
 
     function editar2(){
         if(isset($_POST['idUsuario'])){
-            $id = $_POST['idUsuario'];
+            $idUsuario = $_POST['idUsuario'];
             $nombreUsuario = $_POST['nombre'];
             $nombre=$_POST['nombreUsuario'];
             $apellido = $_POST['apellido'];
