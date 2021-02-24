@@ -60,7 +60,7 @@ class Usuario extends Controlador{
         parent::cargarvista("html/agregarcliente");
     }
 
-    
+
 
     function registrarcontroladorCliente(){
         $nombre=$_POST['nombre-cliente'];
@@ -143,7 +143,7 @@ class Usuario extends Controlador{
             $correoElectronico = $_POST['correoElectronico'];
             $contrasena = $_POST['contrasena'];
             $consulta = new CusuarioModel();
-            $resultado = $consulta->modificar($nombreUsuario, $idUsuario,$nombre ,$apellido,$email,$contrasena,,$tipoUsuario);
+            $resultado = $consulta->modificar($nombreUsuario, $idUsuario,$nombre ,$apellido,$email,$contrasena,$tipoUsuario);
             if($resultado == 'ok'){
                 header("location:" .URL. "usuario");
             }
@@ -157,6 +157,5 @@ class Usuario extends Controlador{
 
     }
 
-}
 
 
