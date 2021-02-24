@@ -107,14 +107,14 @@ class Usuario extends Controlador{
 
     }
 
-        function buscarU(){
+        function buscarUsuario(){
         if(isset($_POST['idUsuario'])){
             $registro = new CusuarioModel();
             $consulta = $registro->mostrarByID($_POST['idUsuario']);
             parent::cargarvista("html/adminbuscarusuarios",$resultado);
         }
         else{
-            echo "no llega";
+            echo "No es posible";
         }
     }
 
@@ -126,9 +126,9 @@ class Usuario extends Controlador{
             $resultado = $consulta->mostrarByID($_GET['idUsuario']);
             
            parent::cargarvista("html/admineditarusuarios",$resultado);
-           echo $resultado;
+           
         }else{
-           // echo "no hay";
+            echo "no hay";
         }
     }
 

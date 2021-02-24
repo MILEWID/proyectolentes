@@ -30,8 +30,7 @@ $datos = $valorescontrolador->fetch_assoc();
                         <div class="col-md-6 mb-3">
                             <label for="validationServer01">Nombre:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control " disabled
-                                required value="<?php echo $datos['nombre'] ?>" readonly>
+                            <input type="text" class="form-control "  value="<?php echo $datos['nombre'] ?>"  disabled required readonly>
              
                         </div>
                         <div class="col-md-6 mb-3">
@@ -74,7 +73,7 @@ $datos = $valorescontrolador->fetch_assoc();
                         </div>
                     </div>
         </div>
-        <a href="<?php echo URL ?>usuario" class="btn btn-primary" type="submit">LISTO</a>
+        <a href="<?php echo URL ?>usuario" class="btn btn-primary" type="submit">ACEPTAR</a>
         <a class="btn btn-dark" href="<?php echo URL ?>usuario">CANCELAR</a>
         </form>
     </div>
