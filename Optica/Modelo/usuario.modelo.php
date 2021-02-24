@@ -47,7 +47,7 @@ class CusuarioModel{
 
     function mostrarByID($id){
         $conexion = new Cconexion();
-        $query="SELECT * FROM usuario WHERE id = '$id'";
+        $query="SELECT * FROM usuario WHERE idUsuario = '$id'";
         $resultado= $conexion->conectar()->query($query);
         return $resultado;
     }

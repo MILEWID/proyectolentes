@@ -1,6 +1,6 @@
 <?php
-$datos = $valorescontrolador->fetch_assoc();
-var_dump($datos);
+echo $valorescontrolador->fetch_assoc();
+//var_dump($datos);
 ?>
 
 <!DOCTYPE html>

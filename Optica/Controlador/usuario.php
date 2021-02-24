@@ -124,9 +124,9 @@ class Usuario extends Controlador{
 
     // carga la vista para editar los productos
     function editar(){ 
-        if(!empty($_GET['id'])){
-            $consulta = new CitaModelo();
-            $resultado = $consulta->mostrarByID($_GET['id']);
+        if(!empty($_GET['idUsuario'])){
+            $consulta = new CusuarioModel();
+            $resultado = $consulta->mostrarByID($_GET['idUsuario']);
             parent::cargarvista("html/admineditarusuarios",$resultado);
         }else{
             echo "no hay";
@@ -134,8 +134,8 @@ class Usuario extends Controlador{
     }
 
     function editar2(){
-        if(isset($_POST['id'])){
-            $id = $_POST['id'];
+        if(isset($_POST['idUsuario'])){
+            $id = $_POST['idUsuario'];
             $nombreUsuario = $_POST['nombre'];
             $nombre=$_POST['nombreUsuario'];
             $apellido = $_POST['apellido'];
