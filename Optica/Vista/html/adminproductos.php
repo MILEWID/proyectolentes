@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <?php include "menu.php" ?>
+<?php include "menu.php" ?>
     <div class="container">
         <div class="h1">DIRECTORIO DE PRODUCTOS</div>
         <div class="row justify-content-end">
@@ -26,7 +26,7 @@
                         d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
                 </svg>
                 AGREGAR</a>
-            <button type="button" class="btn btn-dark col-2">
+                <button type="button" class="btn btn-dark col-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
                     viewBox="0 0 16 16">
                     <path
@@ -72,7 +72,7 @@
                                         d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
                                 </svg>
                             </a>
-                            <a href="<?php echo URL; ?>productos/eliminarProdu?id=<?php echo $row['id']; ?>" class="btn btn-danger">
+                            <a href="" class="btn btn-danger">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-trash" viewBox="0 0 16 16">
                                     <path
@@ -92,6 +92,31 @@
         
 
     </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form action="<?php echo URL?>productos/buscarprodu" method="POST">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Buscar Productos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body container">
+                        Ingrese el ID del usuario a buscar:
+                        <div class="row">
+                            <div class="col-8">
+                                <input type="text" class="form-control" placeholder="ej: 10" name="id" required> 
+                            </div>
+                            <div class="col-4">
+                                <input type="submit" value="Buscar">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <script src="<?php echo URL ?>vista/js/jquery-3.2.1.min.js"></script>
     <script>
         $("#menu").load("adminmenu.html header");

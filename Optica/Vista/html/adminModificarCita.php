@@ -25,7 +25,7 @@ $datos = $valorescontrolador->fetch_assoc();
             <form method="POST" action="<?php echo URL?>citas/editar2">
                 <input type="hidden" name="id" id="">
                 <class class="form-row">
-                    <div class="h1">MODIFICAR CITAS</div>
+                    <div class="h1">MODIFICAR CITA</div>
                         <div class="row">
                             <div class="col-md-6 mb-3">
                             <input type="hidden" name="id" value="<?php echo $datos['id']
