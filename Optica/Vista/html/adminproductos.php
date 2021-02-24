@@ -108,7 +108,7 @@
                                 <input type="text" class="form-control" placeholder="ej: 10" name="id" required> 
                             </div>
                             <div class="col-4">
-                                <input type="submit" value="Buscar">
+                                <input type="submit" value="Buscar" class="btn-dark">
                             </div>
                         </div>
                     </div>
