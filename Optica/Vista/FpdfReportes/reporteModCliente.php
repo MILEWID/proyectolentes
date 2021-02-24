@@ -50,11 +50,11 @@ $pdf = new PDF();
 $pdf->AddPage();
 $pdf->SetFont('Arial','B',10);
 while($row=$valorescontrolador->fetch_assoc()){
-  $pdf->Cell(10,10,$row['idUsuario'],1,0,'C',0);
+  $pdf->Cell(10,10,$row['ID'],1,0,'C',0);
   $pdf->Cell(40,10,$row['nombre'],1,0,'C',0);
   $pdf->Cell(40,10,$row['apellido'],1,0,'C',0);
-  $pdf->Cell(40,10,$row['nombreUsuario'],1,0,'C',0);
-  $pdf->Cell(60,10,$row['correoElectronico'],1,1,'C',0);
+  $pdf->Cell(40,10,$row['usuario'],1,0,'C',0);
+  $pdf->Cell(60,10,$row['correo'],1,1,'C',0);
 }
 $pdf->Output();
 ?>

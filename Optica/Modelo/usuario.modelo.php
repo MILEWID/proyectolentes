@@ -56,8 +56,8 @@ class CusuarioModel{
         $con = new Cconexion();
         $con1 = new Cconexion();
         /////////////////////////////////////////
-        $query1="INSERT INTO usumod (ID, nombre, apellido, usuario, correo) VALUES('$idUsuario','$nombre', '$apellido', '$nombreUsuario', '$correoElectronico')";
-        $resultado1 = $con1->conexionPDO()->query($query1);
+        /*$query1="INSERT INTO usumod (ID, nombre, apellido, usuario, correo) VALUES('$idUsuario','$nombre', '$apellido', '$nombreUsuario', '$correoElectronico')";
+        $resultado1 = $con1->conexionPDO()->query($query1);*/
 
         // i don't understood why you do select query if you want update...            
         $query = "UPDATE usuario set nombreUsuario = '$nombreUsuario', nombre= '$nombre',apellido = '$apellido', tipoUsuario = '$tipoUsuario', correoElectronico = '$correoElectronico', contrasena = '$contrasena' WHERE idUsuario ='$idUsuario'";
