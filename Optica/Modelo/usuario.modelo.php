@@ -32,16 +32,12 @@ class CusuarioModel{
             echo "No existe el registro que desea eliminar";
         }
     }
-
-    function buscar($id){
+//buscar
+    function buscar($idUsuario){
         $conexion = new Cconexion();
-        $query= "SELECT FROM usuario WHERE idUsuario='$id'";
-        $resultado = $conexion->conectar()->query($query);
-        if ($resultado){
-            return "ok";
-        }else{
-            echo "No existe el registro que desea buscar";
-        }
+        $query="SELECT * FROM usuario WHERE idUsuario = '$idUsuario'";
+        $resultado= $conexion->conectar()->query($query);
+        return $resultado;
     }
 
 

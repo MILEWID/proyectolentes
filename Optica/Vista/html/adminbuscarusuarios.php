@@ -1,3 +1,8 @@
+<?php
+$datos = $valorescontrolador->fetch_assoc();
+?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 <!--hola-->

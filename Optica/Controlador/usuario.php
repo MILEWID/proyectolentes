@@ -107,18 +107,15 @@ class Usuario extends Controlador{
 
     }
 
-    function buscarControlador(){
-        $id = $_REQUEST['id'];
-
-        $registro = new CusuarioModel();
-
-        $consulta = $registro->buscar($id);
-        if ($consulta == "ok"){
-            header("Location: ".URL."usuario/mostrarcontrolador");
-        }else{
-            echo "No se ha podido encontrado el registro";
+        function buscarcita(){
+        if(isset($_POST['idUsuario'])){
+            $consulta = new CusuarioModel();
+            $resultado = $consulta->mostrarByID($_POST['idUsuario']);
+            parent::cargarvista("html/adminbuscarusuarios",$resultado);
         }
-
+        else{
+            echo "no llega";
+        }
     }
 
 
