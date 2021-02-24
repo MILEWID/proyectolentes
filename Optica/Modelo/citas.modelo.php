@@ -29,6 +29,13 @@ class CitaModelo{
         return $resultado;
     }
 
+    function buscar($id){
+        $conexion = new Cconexion();
+        $query="SELECT * FROM citas WHERE id = '$id'";
+        $resultado= $conexion->conectar()->query($query);
+        return $resultado;
+    }
+
     // función modificar
     function modificar( $id, $nombre, $apellido, $fecha, $hora, $motivo){
 

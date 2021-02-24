@@ -51,7 +51,14 @@ class Citas extends Controlador
     }
 
     function buscarcita(){
-        parent::cargarvista("html/BuscarCitas");
+        if(isset($_POST['id'])){
+            $consulta = new CitaModelo();
+            $resultado = $consulta->mostrarByID($_POST['id']);
+            parent::cargarvista("html/BuscarCitas",$resultado);
+        }
+        else{
+            echo "no llega";
+        }
     }
 
     function mostrarCita(){
@@ -79,6 +86,7 @@ class Citas extends Controlador
             echo "no hay";
         }
     }
+
 
     function editar2(){
         if(isset($_POST['id'])){
