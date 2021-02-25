@@ -111,8 +111,12 @@
                     <div class="modal-body container">
                         Ingrese el ID del usuario a buscar:
                         <div class="row">
-                            <div class="col-8">
-                                <input type="text" class="form-control" placeholder="ej: 10" name="id" required> 
+                            <div class="col-4">
+                                <input type="text" class="form-control" placeholder="ej: nombre" name="nombre" required> 
+                            </div>
+
+                            <div class="col-4">
+                                <input type="text" class="form-control" placeholder="ej: apellido" name="apellido" required> 
                             </div>
                             <div class="col-4">
                                 <input type="submit" value="Buscar" class="btn-dark">
