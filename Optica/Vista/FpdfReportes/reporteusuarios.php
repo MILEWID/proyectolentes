@@ -19,7 +19,7 @@ function Header()
     $this->SetFont('Arial','B',15);
     $this->Cell(50);
     // Título
-    $this->Cell(100,10,'Reporte de Usuarios Administradores',0,0,'C');
+    $this->Cell(100,10,'Reporte de todos los Usuarios del Sistema',0,0,'C');
     // Salto de línea
     $this->Ln(15);
     $this->SetFont('Arial','B',11);
