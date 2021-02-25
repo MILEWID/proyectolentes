@@ -59,10 +59,10 @@ var_dump($datos);
                     <!--  eso es un comentario -->
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="validationServer03">E-mail:</label>
+                            <label for="validationServer03">Email:</label>
                             <!-- is-valid es una clase para validar campos -->
                             <input type="email" class="form-control "  name = "correoElectronico"id= "validationServer03"
-                                placeholder="ejemplo@example.com"  value="<?php echo $datos['correoElectronico'] ?>"required>
+                                placeholder="ejemplo@example.com"  value=<?php echo $datos['correoElectronico'] ?>required>
                             <div class="valid-feedback">
                                 Es correcto
                             </div>
@@ -95,7 +95,7 @@ var_dump($datos);
                                     Correcto
                                 </div>
                                 <div class="invalid-feedback">
-                                    Por favor ingrese un nombre de usuario válido
+                                    Porfavor ingrese un nombre de usuario válido
                                 </div>
                             </div>
                         </div>

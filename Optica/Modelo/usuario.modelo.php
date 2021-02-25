@@ -49,28 +49,15 @@ class CusuarioModel{
 
     }
 
-    function IngresoMod($idUsuario,$nombre, $apellido, $nombreUsuario, $correoElectronico){
-        // intanciamos la conexion
-        $conexion = new Cconexion();
-        $query="INSERT INTO usumod (ID, nombre, apellido, usuario, correo) VALUES('$idUsuario','$nombre', '$apellido', '$nombreUsuario', '$correoElectronico')";
-        $resultado= $conexion->conectar()->query($query);
-        if ($resultado){
-            return "ok";
-        }else{
-            echo "No se hace el usumod";
-        }
-    }
-
     // función modificar
     function modificar( $nombreUsuario, $idUsuario, $nombre, $apellido, $tipoUsuario, $correoElectronico, $contrasena){
 
         // intanciamos la conexion
         $con = new Cconexion();
-        $obj = new CusuarioModel();
+        $con1 = new Cconexion();
         /////////////////////////////////////////
-        /*$query="INSERT INTO usumod (ID, nombre, apellido, usuario, correo) VALUES('$idUsuario','$nombre', '$apellido', '$nombreUsuario', '$correoElectronico')";
-        $resultado = $con1->conexionPDO()->query($query);*/
-        $obj->IngresoMod($idUsuario,$nombre, $apellido, $nombreUsuario, $correoElectronico);
+        /*$query1="INSERT INTO usumod (ID, nombre, apellido, usuario, correo) VALUES('$idUsuario','$nombre', '$apellido', '$nombreUsuario', '$correoElectronico')";
+        $resultado1 = $con1->conexionPDO()->query($query1);*/
 
         // i don't understood why you do select query if you want update...            
         $query = "UPDATE usuario set nombreUsuario = '$nombreUsuario', nombre= '$nombre',apellido = '$apellido', tipoUsuario = '$tipoUsuario', correoElectronico = '$correoElectronico', contrasena = '$contrasena' WHERE idUsuario ='$idUsuario'";

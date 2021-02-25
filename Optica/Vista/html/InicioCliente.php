@@ -88,7 +88,7 @@
         OAKLEY<br>
         
       </p>
-      <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
      <img src="../imágenes/img4.jpg" class="card-img-top" alt="...">
   </div>
@@ -102,7 +102,7 @@
         Fotocromático<br>
         
     </p>
-      <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
     <img src="../imágenes/img2.jpg" class="card-img-top" alt="...">
   </div>
@@ -111,7 +111,7 @@
     <div class="card-body">
       <h5 class="card-title">DESCUENTOS</h5>
       <p class="card-text">Hasta 25% de descuento en lentes de sol, promoción válida del 18 de enero al 1 de marzo de 2021 o hasta a agotar stock a nivel nacional.</p>
-      <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
     <img src="../imágenes/img3.jpg" class="card-img-top" alt="...">
   </div>
@@ -167,7 +167,8 @@
             <div class="row text-center text-md-left">
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                     <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Óptica</h5>
-                    
+                    <P> Hace 10 años nace Óptica ... , el cual está conformado por: Óptica los Andes, el laboratorio Indulentes, Óptica Sunglass Hot, Andes Visión Clínica Oftalmológica y Eyes Illusion.
+La empresa cuenta con su local en El Oro</P>
                     
                 </div>
 
@@ -191,57 +192,54 @@
                 
 
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                 
-                    <h4 class="text-light">Contactos</h4>
-          <br>
-          <p class="text-light">
-
-               <?php
-$url="https://www.google.com.ec/maps/place/Machala/@-3.2568589,-79.9960488,13z/data=!3m1!4b1!4m5!3m4!1s0x90330e252f104ed1:0xea4e189f2b2da97e!8m2!3d-3.2581112!4d-79.9553924?hl=es-419"; 
-echo "<a class='fas fa-map-marker-alt mx-3' href='$url'></a>";
-?>
-
-            <i></i>Machala
-          </p>
-          <p  class="text-light">
-
-             <?php
-$url="https://outlook.live.com/mail/0/inbox"; 
-echo "<a class='fas fa-at mx-3' href='$url'></a>";
-?>
-
-            <i></i>ópticaVictoria@hotmail.com
-          </p>
-          <p  class="text-light">
-            <?php
-$url="https://web.whatsapp.com/"; 
-echo "<a class='fab fa-whatsapp mx-3' href='$url'></a>";
-?>
-
-            <i ></i>09980072777
-          </p>        
-          <form class="form-inline">
-            <div class="col pl-0">
-              <div class="input-group pr-5">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contacto</h5>
+                    <p>
+                        <i class="fas fa-home mr-3"></i>Riobamba
+                    </p>
+                    <p>
+                        <i class="fas fa-home mr-3"></i>optica@hotmail.com
+                    </p>
+                    <p>
+                        <i class="fas fa-home mr-3"></i>09980072777
+                    </p>
+                    <p>
+                        <i class="fas fa-home mr-3"></i>03-2950303
+                    </p>
+                    
+                </div>
                 
-                
-              </div>
+
             </div>
-          </form>
-        </div>
-        <div class="col-md-2 col-sm-12">
-          <h4 class="text-light">Síguenos</h4>
-          <p class="text-muted" >En Facebook</p>
-          <div class="column text-light">
-           
-            <?php
-$url="http://www.facebook.com"; 
-echo "<a class='fab fa-facebook-f' href='$url'></a>";
-?>
-         
-          </div>
-        </div>
-                 
+            <hr class="mb-4">
+            <div class="row align-center">
+                <div class="col-md-7 col-lg-8">
+                    <p>Copyright © 2021 Todos los derechos Reservados por: <a href="#" style="text-decoration: none;">
+                        <strong class="text-warning">Óptica</strong>
+                    </a></p>
+                    
+
+                </div>
+
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-google-plus"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-youtube"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
                 
 
             </div>

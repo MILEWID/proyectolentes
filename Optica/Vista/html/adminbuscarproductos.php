@@ -11,7 +11,7 @@
     <link rel="stylesheet"  href="<?php echo URL ?>vista/css/adminmenu.css">
     <link rel="stylesheet" href="<?php echo URL ?>vista/css/directorios.css">
     <link rel="stylesheet" href="<?php echo URL ?>vista/css/agregar.css">
-    <title>Buscar Productos</title>
+    <title>Agregar Usuarios</title>
 </head>
 
 <body>
@@ -81,7 +81,7 @@
                             </div>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="validationServer02">Género:</label>
+                            <label for="validationServer02">Sexo:</label>
                             <!-- is-valid es una clase para validar campos -->
                             <input type="text" class="form-control " name="validationServer06" id="validationServer01" readonly
                                 required>

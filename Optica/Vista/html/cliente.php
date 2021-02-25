@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>CLIENTE-ÓPTICA</title>
+  <title>CLIENTE-OPTICA</title>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous" />
@@ -22,7 +22,7 @@
     <div class="container-fluid p-0">
       <nav class="navbar navbar-expand-lg">
         <a id="logo" class="navbar-brand" href="#"> <i class="fas fa-glasses fa-1x mx-2"> </i>
-          ÓPTICA "VICTORIA"</a>
+          OPTICA "VICTORIA"</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
           aria-label="Toggle navigation">
           <i class="fas fa-align-right text-light"></i>
@@ -36,7 +36,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">ACERCA DE</a>
+              <a class="nav-link" href="#">SOBRE</a>
             </li>
             <li class="nav-item dropdown">
               <div class="dropdown">
@@ -52,6 +52,11 @@
             <li class="nav-item dropdown">
               <div class="dropdown">
                 <a href="#" class="nav-link">SERVICIOS</a>
+                <div class="dropdown-content">
+                  <a href="#"><i class="fas fa-user-check mx-2"></i>Consultas</a>
+                  <a href="#"><i class="fas fa-hand-holding-heart mx-2"></i>Tratamientos</a>
+                  <a href="#"><i class="far fa-eye mx-2"></i>L. Contacto</a>
+                </div>
               </div>
             </li>                  
             <li class="nav-item dropdown">
@@ -72,7 +77,7 @@
       <div class="row">
         <div class="col-md-7 col-sm-12  text-white">
           <h2><span class="word" id="word"></span></h2>        
-          <h1>DR. BYRON HIDALGO</h1>
+          <h1>DOCTOR NAME</h1>
           <p>
             Reciba un servicio especializado con la  mejor tecnología y precios, consulta con Nuestros Profesionales de la  Salud Visual.
           </p>
@@ -95,7 +100,7 @@
         <div class="content text-center">
           <h1>PRODUCTOS</h1>
           <p>
-            Bienvenido a la sección de productos, revisa nuestra galería para más detalles...
+            Bienvenido a la sección de productos, revisa nuestra galería para mas detalles...
           </p>
         </div>
       </div>
@@ -252,7 +257,7 @@
                         </p>                 
                       </div>                    
                       <div class="card-body">
-                        <h3 class="card-title">ÓPTICA VICTORIA</h3>
+                        <h3 class="card-title">OPTICA VICTORIA</h3>
                         <p class="card-text">
                           Establecida desde hace más de 10 años, cuenta con lo mejor en tecnología, y profesionales altamente calificados en el campo de la optometría, nos hemos identificado por brindar a nuestra estimable clientela, una atención personalizada de calidad.
                         </p>                        
@@ -299,12 +304,13 @@
     </section>
   </main>
   
-   <footer>
+  <footer>
     <div class="container-fluid p-0">
       <div class="row text-left">
         <div class="col-md-5 col-sm-5">
-           
-            <img class="imgfoot" src="<?php echo URL; ?>vista/imágenes/logopp.png" alt="Card image cap">
+          <h4 class="text-light">Sobre nosotros</h4>
+          <p class="text-muted">Hace 10 años nace Óptica ... , el cual está conformado por: Óptica los Andes, el laboratorio Indulentes, Óptica Sunglass Hot, Andes Visión Clínica Oftalmológica y Eyes Illusion.
+            La empresa cuenta con su local en El Oro</p>
           <p class="pt-4 text-muted">Copyright ©2021 Todos los derechos reservados |
             <span> Óptica Victoria</span>
           </p>
@@ -313,50 +319,35 @@
           <h4 class="text-light">Contactos</h4>
           <br>
           <p class="text-light">
-
-               <?php
-$url="https://www.google.com.ec/maps/place/Machala/@-3.2568589,-79.9960488,13z/data=!3m1!4b1!4m5!3m4!1s0x90330e252f104ed1:0xea4e189f2b2da97e!8m2!3d-3.2581112!4d-79.9553924?hl=es-419"; 
-echo "<a class='fas fa-map-marker-alt mx-3' href='$url'></a>";
-?>
-
-            <i></i>Machala
+            <i class="fas fa-map-marker-alt mx-3"></i>Riobamba
           </p>
           <p  class="text-light">
-
-             <?php
-$url="https://outlook.live.com/mail/0/inbox"; 
-echo "<a class='fas fa-at mx-3' href='$url'></a>";
-?>
-
-            <i></i>ópticaVictoria@hotmail.com
+            <i class="fas fa-at mx-3"></i>optica@hotmail.com
           </p>
           <p  class="text-light">
-            <?php
-$url="https://web.whatsapp.com/"; 
-echo "<a class='fab fa-whatsapp mx-3' href='$url'></a>";
-?>
-
-            <i ></i>09980072777
+            <i class="fab fa-whatsapp mx-3"></i>09980072777
           </p>        
           <form class="form-inline">
             <div class="col pl-0">
               <div class="input-group pr-5">
-                
-                
+                <input type="text" class="form-control bg-dark text-white" id="inlineFormInputGroupUsername2" placeholder="Email">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
               </div>
             </div>
           </form>
         </div>
         <div class="col-md-2 col-sm-12">
-          <h4 class="text-light">Síguenos</h4>
-          <p class="text-muted" >En Facebook</p>
+          <h4 class="text-light">Siguenos</h4>
+          <p class="text-muted">Nos puede encontrar en las siguientes redes sociales</p>
           <div class="column text-light">
-           
-            <?php
-$url="http://www.facebook.com"; 
-echo "<a class='fab fa-facebook-f' href='$url'></a>";
-?>
-         
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
           </div>
         </div>
       </div>
