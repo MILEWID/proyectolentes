@@ -21,7 +21,7 @@ $id = $_GET['id'];
     <script src="http://localhost/proyectolentes/Optica/Vista/js/producto.js"></script>
 
 
-    <title>Agregar Usuarios</title>
+    <title>Modificar Productos</title>
 </head>
 
 <body>
@@ -64,11 +64,11 @@ $id = $_GET['id'];
                             <!-- is-valid es una clase para validar campos -->
                                 <select class="form-select form-select" name="validationServer03" id="idTipo" aria-label=".form-select-lg example">
                                     <option selected value="Lentes de contacto">Lentes de contacto</option>
-                                    <option value="paños">paños</option>
-                                    <option value="cordones">cordones</option>
-                                    <option value="cajas de los lentes">cajas de los lentes</option>
-                                    <option value="gafas">gafas</option>
-                                    <option value="lentes">lentes</option>
+                                    <option value="paños">Paños</option>
+                                    <option value="cordones">Cordones</option>
+                                    <option value="cajas de los lentes">Cajas de los lentes</option>
+                                    <option value="gafas">Gafas</option>
+                                    <option value="lentes">Lentes</option>
                                 </select>
                         </div>
                         <div class="col-md-6 mb-3">
@@ -98,7 +98,7 @@ $id = $_GET['id'];
                             </div>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="validationServer02">Sexo:</label>
+                            <label for="validationServer02">Género:</label>
                             <!-- is-valid es una clase para validar campos -->
                             <select class="form-select form-select" name="validationServer06"  id="idSexo" aria-label=".form-select-lg example">
                                 <option selected value="Masculino">Masculino</option>

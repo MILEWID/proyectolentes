@@ -86,7 +86,7 @@
                                     Correcto
                                 </div>
                                 <div class="invalid-feedback">
-                                    Porfavor ingrese un nombre de usuario válido
+                                    Por favor ingrese un nombre de usuario válido
                                 </div>
                             </div>
                         </div>
