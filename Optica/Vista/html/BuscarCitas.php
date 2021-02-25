@@ -58,7 +58,7 @@ $datos = $valorescontrolador->fetch_assoc();
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="validationServerUsername">Motivo de consulta</label>
+                            <label for="validationServerUsername">Motivo de consulta:</label>
                             <div class="input-group">
                                 <input type="textarea" class="form-control " value="<?php echo $datos['motivo'] ?>"
                                 disabled aria-describedby="inputGroupPrepend3" readonly>

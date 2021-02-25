@@ -9,8 +9,7 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
         <link rel="stylesheet" href="<?php echo URL ?>vista/css/adminmenu.css">
     <link rel="stylesheet" href="<?php echo URL ?>vista/css/directorios.css">
-    <script src="http://localhost/proyectolentes/Optica/Vista/js/producto.js"></script>
-    <title>Administrar Usuarios</title>
+    <title>Directorio de Productos</title>
 
 </head>
 
@@ -46,11 +45,11 @@
                         <th scope="col">Tipo:</th>
                         <th scope="col">Precio:</th>
                         <th scope="col">Material</th>
-                        <th scope="col">sexo:</th>
-                        <th scope="col">opciones:</th>
+                        <th scope="col">Género:</th>
+                        <th scope="col">Opciones:</th>
                     </tr>
                 </thead>
-                <tbody id="id_table_body_product">
+                <tbody>
                     <?php
                     while($row=$valorescontrolador->fetch_assoc()){
                     ?>
@@ -64,7 +63,7 @@
                         <td><?php echo $row['material']; ?></td>
                         <td><?php echo $row['sexo']; ?></td>
                         <td>
-                            <a href="<?php echo URL; ?>productos/editar?id=<?php echo $row['id']; ?>&name=<?php echo $row['nombre']; ?>&marca=<?php echo $row['marca']; ?>&precio=<?php echo $row['precio']; ?>&material=<?php echo $row['material']; ?>" class="btn btn-light">
+                            <a href="<?php echo URL; ?>productos/editar" class="btn btn-light">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-pencil-square" viewBox="0 0 16 16">
                                     <path
@@ -97,7 +96,7 @@
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div >
+                <form action="<?php echo URL?>productos/buscarprodu" method="POST">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Buscar Productos</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -106,14 +105,14 @@
                         Ingrese el ID del usuario a buscar:
                         <div class="row">
                             <div class="col-8">
-                                <input type="text"  id="idProducto" class="form-control" placeholder="ej: 10" name="id" required>
+                                <input type="text" class="form-control" placeholder="ej: 10" name="id" required> 
                             </div>
                             <div class="col-4">
-                                <input type="submit" value="Buscar" onclick="producto_id()" class="btn-dark">
+                                <input type="submit" value="Buscar" class="btn-dark">
                             </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>

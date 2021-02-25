@@ -1,9 +1,6 @@
-<?php
-$id = $_GET['id'];
-?>
-
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,28 +11,21 @@ $id = $_GET['id'];
     <link rel="stylesheet"  href="<?php echo URL ?>vista/css/adminmenu.css">
     <link rel="stylesheet" href="<?php echo URL ?>vista/css/directorios.css">
     <link rel="stylesheet" href="<?php echo URL ?>vista/css/agregar.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-
-    <script src="http://localhost/proyectolentes/Optica/Vista/js/producto.js"></script>
-
-
-    <title>Agregar Usuarios</title>
+    <title>Modificar Producto</title>
 </head>
 
 <body>
     <?php include "menu.php" ?>
     <div class="container">
         <div class="row justify-content-center">
-            <div>
+            <form action="../../Modelo/registrar.php" method="POST">
                 <class class="form-row">
-                    <div class="h1">MODIFICAR PRODUCTO # <span><?php echo $id?></php></span></div>
+                    <div class="h1">MODIFICAR PRODUCTO # <span>1234</span></div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="validationServer02">Nombre:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control " name="validationServer01" value="<?php echo $_GET['name']?>" id="idNombre" placeholder="lentes"
+                            <input type="text" class="form-control " name="validationServer01" id="validationServer02" placeholder="lentes"
                                 required>
                             <div class="valid-feedback">
                                 Correcto
@@ -47,7 +37,7 @@ $id = $_GET['id'];
                         <div class="col-md-6 mb-3">
                             <label for="validationServer01">Marca:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control"  value="<?php echo $_GET['marca']?>" name="validationServer02" id="idMarca" placeholder="vitalia"
+                            <input type="text" class="form-control " name="validationServer02" id="validationServer01" placeholder="vitalia"
                                 required>
                             <div class="valid-feedback">
                                 Es correcto
@@ -62,19 +52,19 @@ $id = $_GET['id'];
                         <div class="col-md-6 mb-3">
                             <label for="validationServer02">Tipo:</label>
                             <!-- is-valid es una clase para validar campos -->
-                                <select class="form-select form-select" name="validationServer03" id="idTipo" aria-label=".form-select-lg example">
-                                    <option selected value="Lentes de contacto">Lentes de contacto</option>
-                                    <option value="paños">paños</option>
-                                    <option value="cordones">cordones</option>
-                                    <option value="cajas de los lentes">cajas de los lentes</option>
-                                    <option value="gafas">gafas</option>
-                                    <option value="lentes">lentes</option>
+                                <select class="form-select form-select" name="validationServer03" aria-label=".form-select-lg example">
+                                    <option selected value="Cliente">Lentes de contacto</option>
+                                    <option value="Administrador">Paños</option>
+                                    <option value="Administrador">Cordones</option>
+                                    <option value="Administrador">Cajas de los lentes</option>
+                                    <option value="Administrador">Gafas</option>
+                                    <option value="Administrador">Lentes</option>
                                 </select>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="validationServer01">Precio:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control" value="<?php echo $_GET['precio']?>" name="validationServer04" id="idPrecio" placeholder="5$"
+                            <input type="text" class="form-control " name="validationServer04" id="validationServer01" placeholder="5$"
                                 required>
                             <div class="valid-feedback">
                                 Es correcto
@@ -88,7 +78,7 @@ $id = $_GET['id'];
                         <div class="col-md-6 mb-3">
                             <label for="validationServer01">Material:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control" value="<?php echo $_GET['material']?>" name="validationServer05" id="idMaterial" placeholder="lino"
+                            <input type="text" class="form-control " name="validationServer05" id="validationServer01" placeholder="lino"
                                 required>
                             <div class="valid-feedback">
                                 Es correcto
@@ -98,19 +88,19 @@ $id = $_GET['id'];
                             </div>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="validationServer02">Sexo:</label>
+                            <label for="validationServer02">Género:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <select class="form-select form-select" name="validationServer06"  id="idSexo" aria-label=".form-select-lg example">
-                                <option selected value="Masculino">Masculino</option>
-                                <option value="Femenino">Femenino</option>
+                            <select class="form-select form-select" name="validationServer06" aria-label=".form-select-lg example">
+                                <option selected value="Cliente">Masculino</option>
+                                <option value="Administrador">Femenino</option>
                             </select>
                         </div>
 
                     </div>
         </div>
-        <button class="btn btn-primary" onclick="modificarPro(<?php echo $id?>)" type="submit">GUARDAR DATOS</button>
+        <button class="btn btn-primary" type="submit">GUARDAR DATOS</button>
         <a class="btn btn-dark" href="<?php echo URL; ?>/productos">CANCELAR</a>
-        </div>
+        </form>
     </div>
     </div>
 

@@ -15,5 +15,19 @@ class ReporteModelo{
         $resultado= $conexion->conectar()->query($query);
         return $resultado;
     }
+    
+    function reporteusuarios(){
+        $conexion = new Cconexion();
+        $query="SELECT * FROM `usuario`";
+        $resultado= $conexion->conectar()->query($query);
+        return $resultado;
+    }
+
+    function reporteTipoLentes(){
+        $conexion = new Cconexion();
+        $query="SELECT * FROM `producto`";
+        $resultado= $conexion->conectar()->query($query);
+        return $resultado;
+    }
 }
 ?>
