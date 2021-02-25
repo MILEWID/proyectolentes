@@ -263,7 +263,7 @@
           <form class="form-inline">
             <div class="col pl-0">
               <div class="input-group pr-5">
-                <input type="text" class="form-control bg-dark text-white" id="inlineFormInputGroupUsername2" placeholder="Email">
+                
                 <div class="input-group-prepend">
                   <div class="input-group-text">
                     <i class="fas fa-arrow-right"></i>
@@ -278,9 +278,7 @@
           <p class="text-muted">Nos puede encontrar en las siguientes redes sociales</p>
           <div class="column text-light">
             <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-youtube"></i>
+            
           </div>
         </div>
       </div>
