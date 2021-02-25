@@ -100,7 +100,7 @@
         <div class="content text-center">
           <h1>PRODUCTOS</h1>
           <p>
-            Bienvenido a la sección de productos, revisa nuestra galería para mas detalles...
+            Bienvenido a la sección de productos, revisa nuestra galería para más detalles...
           </p>
         </div>
       </div>
