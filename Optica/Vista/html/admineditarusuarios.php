@@ -21,6 +21,20 @@ var_dump($datos);
     <title>Editar Usuarios</title>
 </head>
 
+<script type="text/javascript">
+    function ConfirmModificar()
+    {
+        var respuesta=confirm("¿Está seguro que desea modificar la información del usuario?");
+            if (respuesta==true)
+            {
+                return true;
+            } else{
+                return false;
+            }
+    }
+
+</script>
+
 <body>
     <?php include "menu.php" ?>
     <div class="container" >
@@ -108,7 +122,7 @@ var_dump($datos);
                         </div>
                     </div>
         </div>
-        <button class="btn btn-primary editbtn" type="submit">GUARDAR CAMBIOS</button>
+        <button class="btn btn-primary editbtn" type="submit" onclick="return ConfirmModificar()">GUARDAR CAMBIOS</button>
         <a class="btn btn-dark" href="<?php echo URL; ?>/usuario">CANCELAR</a>
         </form>
     </div>
