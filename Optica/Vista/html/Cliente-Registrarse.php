@@ -34,7 +34,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">SOBRE</a>
+              <a class="nav-link" href="#">ACERCA DE</a>
             </li>             
             <li class="nav-item dropdown">
               <div class="dropdown">
@@ -275,12 +275,8 @@
           <form class="form-inline">
             <div class="col pl-0">
               <div class="input-group pr-5">
-                <input type="text" class="form-control bg-dark text-white" id="inlineFormInputGroupUsername2" placeholder="E-mail">
-                <div class="input-group-prepend">
-                  <div class="input-group-text">
-                    <i class="fas fa-arrow-right"></i>
-                  </div>
-                </div>
+                
+                
               </div>
             </div>
           </form>
@@ -289,8 +285,9 @@
           <h4 class="text-light">Siguenos</h4>
           <p class="text-muted">Encuéntranos en Facebook</p>
           <div class="column text-light">
-            <i class="fab fa-facebook-f"></i>
-            
+           
+            <a class="fab fa-facebook-f" ></a>
+         
           </div>
         </div>
       </div>

@@ -262,11 +262,7 @@
             <div class="col pl-0">
               <div class="input-group pr-5">
                 
-                <div class="input-group-prepend">
-                  <div class="input-group-text">
-                    <i class="fas fa-arrow-right"></i>
-                  </div>
-                </div>
+               
               </div>
             </div>
           </form>
