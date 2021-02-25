@@ -64,7 +64,7 @@
                         <div class="col-md-6 mb-3">
                             <label for="validationServer01">Precio:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control"  name="validationServer04" id="validationServer01" placeholder="5$"
+                            <input type="text" class="form-control"  name="validationServer04" min=10 max=1000 id="validationServer01" placeholder="5$"
                                 required>
                             <div class="valid-feedback">
                                 Es correcto

@@ -29,6 +29,13 @@ class CitaModelo{
         return $resultado;
     }
 
+    function mostrarByDatos($nombre, $apellido){
+        $conexion = new Cconexion();
+        $query="SELECT * FROM citas WHERE nombre = '$nombre' and apellido = '$apellido'";
+        $resultado= $conexion->conectar()->query($query);
+        return $resultado;
+    }
+
     function buscar($id){
         $conexion = new Cconexion();
         $query="SELECT * FROM citas WHERE id = '$id'";

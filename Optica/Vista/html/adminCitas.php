@@ -135,10 +135,16 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body container">
-                        Ingrese el ID de la cita a buscar:
+                        Ingrese los datos para buscar su cita:
                         <div class="row">
                             <div class="col-8">
-                                <input type="text" class="form-control" placeholder="ej: 10" name="id" required> 
+                            <label for="nombre">Nombre: </label>
+                                <input type="text" class="form-control" placeholder="Escriba el nombre" name="nombre" required> 
+                            </div>
+                            <br> <br> <br>
+                            <div class="col-8">
+                            <label for="apellido">Apellido: </label>
+                                <input type="text" class="form-control" placeholder="Escriba el apellido" name="apellido" required> 
                             </div>
                             <div class="col-4">
                                 <input type="submit" value="Buscar" class="btn-dark">
