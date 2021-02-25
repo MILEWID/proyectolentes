@@ -62,7 +62,7 @@ var_dump($datos);
                             <label for="validationServer03">E-mail:</label>
                             <!-- is-valid es una clase para validar campos -->
                             <input type="email" class="form-control "  name = "correoElectronico"id= "validationServer03"
-                                placeholder="ejemplo@example.com"  value=<?php echo $datos['correoElectronico'] ?>required>
+                                placeholder="ejemplo@example.com"  value="<?php echo $datos['correoElectronico'] ?>"required>
                             <div class="valid-feedback">
                                 Es correcto
                             </div>
