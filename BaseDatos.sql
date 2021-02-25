@@ -69,7 +69,8 @@ INSERT INTO `usuario` (`nombreUsuario`, `idUsuario`, `nombre`, `apellido`, `tipo
 --
 
 CREATE TABLE `citas` (
-  `id` int(100) NOT NULL,
+  `id_auto` int AUTO_INCREMENT PRIMARY KEY,
+  `id` varchar(10) NOT NULL,
   `nombre` varchar(50) NOT NULL,
   `apellido` varchar(50) NOT NULL,
   `fecha` date NOT NULL,

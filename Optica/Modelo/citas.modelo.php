@@ -58,7 +58,7 @@ class CitaModelo{
         if ($resultado){
             return "ok";
         }else{
-            echo "No existe la cita con ella :c, asi que no se pudo eliminar 😢😿";
+            echo "No existe ninguna cita ";
         }
     }
 }
