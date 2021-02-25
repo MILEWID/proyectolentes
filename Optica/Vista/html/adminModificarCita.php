@@ -59,7 +59,7 @@ $datos = $valorescontrolador->fetch_assoc();
                         <div class="col-md-6 mb-3">
                             <label for="validationServer03">Fecha de consulta:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="date" class="form-control " name="fecha" id="validationServer03" value=<?php echo $datos['fecha'] ?>
+                            <input type="date" class="form-control " name="fecha" id="validationServer03" min="2021-02-20" max="2032-05-28" min="09:30" max="17:30" value=<?php echo $datos['fecha'] ?>
                                 required>
                             <div class="valid-feedback">
                                 Es correcto
