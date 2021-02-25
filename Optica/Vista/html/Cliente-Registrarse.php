@@ -255,9 +255,7 @@
     <div class="container-fluid p-0">
       <div class="row text-left">
         <div class="col-md-5 col-sm-5">
-          <h4 class="text-light">Sobre nosotros</h4>
-          <p class="text-muted">Hace 10 años nace Óptica Victoria, el cual está conformado por: Óptica Victoria, el laboratorio Indulentes, Óptica Sunglass Hot, Andes Visión Clínica Oftalmológica y Eyes Illusion.
-            La empresa cuenta con su local en la ciudad de Machala</p>
+        
           <p class="pt-4 text-muted">Copyright ©2021 Todos los derechos reservados |
             <span> Óptica Victoria</span>
           </p>
@@ -292,9 +290,7 @@
           <p class="text-muted">Nos puedes encontrar en nuestras redes sociales</p>
           <div class="column text-light">
             <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-youtube"></i>
+           
           </div>
         </div>
       </div>

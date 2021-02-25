@@ -184,7 +184,7 @@
 
                     <div class="form-floating">
                         <textarea class="form-control" id="id_inputMotivos" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                        <label for="floatingTextarea2">Comments</label>
+                        <label for="floatingTextarea2">Comentarios</label>
                     </div>
 
                     <div class="col-4">
