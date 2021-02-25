@@ -161,86 +161,63 @@
     </section>
 
 
-    <footer class="bg-dark text-white pt-5 pb-4">
-
-        <div class="container text-center text-md-left">
-            <div class="row text-center text-md-left">
-                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Óptica</h5>
-                    
-                    
-                </div>
-
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Productos</h5>
-                    <p>
-                        <a href="#" class="text-white" style="text-decoration: none;">Lunas</a>
-                    </p>
-                    <p>
-                        <a href="#" class="text-white" style="text-decoration: none;">Armazones</a>
-                    </p>
-                    <p>
-                        <a href="#" class="text-white" style="text-decoration: none;">Cadenas para lentes</a>
-                    </p>
-                    <p>
-                        <a href="#" class="text-white" style="text-decoration: none;">Kit de limpieza</a>
-                    </p>
-                    
-                </div>
-
-                
-
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contacto</h5>
-                    <p>
-                        <i class="fas fa-home mr-3"></i>Riobamba
-                    </p>
-                    <p>
-                        <i class="fas fa-home mr-3"></i>optica@hotmail.com
-                    </p>
-                    <p>
-                        <i class="fas fa-home mr-3"></i>09980072777
-                    </p>
-                    <p>
-                        <i class="fas fa-home mr-3"></i>03-2950303
-                    </p>
-                    
-                </div>
-                
-
-            </div>
-            <hr class="mb-4">
-            <div class="row align-center">
-                <div class="col-md-7 col-lg-8">
-                    <p>Copyright © 2021 Todos los derechos Reservados por: <a href="#" style="text-decoration: none;">
-                        <strong class="text-warning">Óptica</strong>
-                    </a></p>
-                    
-
-                </div>
-
-                <div class="col-md-5 col-lg-4">
-                    <div class="text-center text-md-right">
-                        <ul class="list-unstyled list-inline">
-                            <li class="list-inline-item">
-                                 <a class="fab fa-facebook-f" href="www.facebook.com" target="_blank"></a>
-                            </li>
-                           
-                            
-                        </ul>
-                    </div>
-
-
-                </div>
-                
-
-            </div>
-
+    <footer>
+    <div class="container-fluid p-0">
+      <div class="row text-left">
+        <div class="col-md-5 col-sm-5">
+         <img class="imgfoot" src="<?php echo URL; ?>vista/imágenes/logopp.png" alt="Card image cap">
+          <p class="pt-4 text-muted">Copyright ©2021 Todos los derechos reservados |
+            <span> Óptica Victoria</span>
+          </p>
         </div>
+        <div class="col-md-5 col-sm-12">
+          <h4 class="text-light">Contactos</h4>
+          <br>
+          <p class="text-light">
+           
+             <?php
+$url="https://outlook.live.com/owa/"; 
+echo "<a class='fas fa-map-marker-alt mx-3' href='$url'></a>";
+?> Machala
+          </p>
+          <p  class="text-light">
+            <?php
+$url="https://www.google.com.ec/maps/place/Machala/@-3.2568589,-79.9960488,13z/data=!3m1!4b1!4m5!3m4!1s0x90330e252f104ed1:0xea4e189f2b2da97e!8m2!3d-3.2581112!4d-79.9553924?hl=es-419"; 
+echo "<a class='fas fa-at mx-3' href='$url'></a>";
+?> 
+            ópticaVictoria@hotmail.com
+          </p>
+          <p  class="text-light">
+ <?php
+$url=" https://web.whatsapp.com/"; 
+echo "<a class='fab fa-whatsapp mx-3' href='$url'></a>";
+?> 
 
-        
-        
-    </footer>
+           0960051989
+          </p>        
+          <form class="form-inline">
+            <div class="col pl-0">
+              <div class="input-group pr-5">
+               
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-2 col-sm-12">
+          <h4 class="text-light">Síguenos</h4>
+          <p class="text-muted">En Facebook</p>
+          <div class="column text-light">
+<?php
+$url="https://m.facebook.com/profile.php?id=107756200792351&ref=content_filter"; 
+echo "<a class='fab fa-facebook-f' href='$url'></a>";
+?> 
+
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"

@@ -1,6 +1,6 @@
 <?php
 // Definir constante URL 
-define("URL","http://localhost/GitHub/proyectolentes/proyectolentes/Optica/");
+define("URL","http://localhost/proyectolentes/Optica/");
 
 // incluimos los archivos principales para el funcionamiento de la app
 include("./libs/app.php");
