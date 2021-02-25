@@ -145,6 +145,7 @@ class Usuario extends Controlador{
             $resultado = $consulta->modificar($nombreUsuario, $idUsuario,$nombre ,$apellido,$tipoUsuario, $correoElectronico,$contrasena);
             if($resultado == 'ok'){
                 header("location:" .URL. "usuario");
+                
             }
             else{
                 echo 'algo salio mal';
