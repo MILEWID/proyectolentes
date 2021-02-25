@@ -77,9 +77,9 @@
       <div class="row">
         <div class="col-md-7 col-sm-12  text-white">
           <h2><span class="word" id="word"></span></h2>        
-          <h1>DOCTOR NAME</h1>
+          <h1>Dr. Byron Hidalgo</h1>
           <p>
-            Reciba un servicio especializado con la  mejor tecnología y precios, consulta con Nuestros Profesionales de la  Salud Visual.
+            Reciba un servicio especializado con la  mejor tecnología y precios, consulta con nuestros profesionales acerca de tu Salud Visual.
           </p>
           <button class="btn btn-light px-5 py-2 primary-btn"><i class="fas fa-user-edit mx-2"></i>
             RESERVAR CITA
@@ -147,9 +147,7 @@
 
       <div class="purchase text-center">
         <h1>"Prueba Nuestros Servicios"</h1>
-        <p class="container text-center">
-          Nuestra Visión tiene como objetivo mejorar la calidad de vida de sus pacientes a través de un servicio especializado en el cuidado de la salud visual. 
-        </p>
+        
         <div class="cards">
           <div class="d-flex flex-row justify-content-center flex-wrap">
             <div class="card">
@@ -269,7 +267,7 @@
                       </div>    
                       <div class="card-body">
                         
-                        <p class="text-black-50">OPTICA VICTORIA</p>                      
+                        <p class="text-black-50">ÓPTICA VICTORIA</p>                      
                       </div>
                     </div>
                   </div>
