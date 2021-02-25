@@ -149,8 +149,8 @@
             <div class="col-sm-4">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Reporte de usuarios hombres</h5>
-                        <p class="card-text">El reporte muestra los usuarios hombres que han sido refitrados</p>
+                        <h5 class="card-title">Reporte Extra</h5>
+                        <p class="card-text">Reporte</p>
                         <a href="#" class="btn btn-dark">Descargar pdf
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-file-earmark-text-fill" viewBox="0 0 16 16">
