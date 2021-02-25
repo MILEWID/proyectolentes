@@ -88,7 +88,7 @@
         OAKLEY<br>
         
       </p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
     </div>
      <img src="../imágenes/img4.jpg" class="card-img-top" alt="...">
   </div>
@@ -102,7 +102,7 @@
         Fotocromático<br>
         
     </p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
     </div>
     <img src="../imágenes/img2.jpg" class="card-img-top" alt="...">
   </div>
@@ -111,7 +111,7 @@
     <div class="card-body">
       <h5 class="card-title">DESCUENTOS</h5>
       <p class="card-text">Hasta 25% de descuento en lentes de sol, promoción válida del 18 de enero al 1 de marzo de 2021 o hasta a agotar stock a nivel nacional.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
     </div>
     <img src="../imágenes/img3.jpg" class="card-img-top" alt="...">
   </div>
@@ -167,8 +167,7 @@
             <div class="row text-center text-md-left">
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                     <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Óptica</h5>
-                    <P> Hace 10 años nace Óptica ... , el cual está conformado por: Óptica los Andes, el laboratorio Indulentes, Óptica Sunglass Hot, Andes Visión Clínica Oftalmológica y Eyes Illusion.
-La empresa cuenta con su local en El Oro</P>
+                    
                     
                 </div>
 
@@ -224,7 +223,7 @@ La empresa cuenta con su local en El Oro</P>
                     <div class="text-center text-md-right">
                         <ul class="list-unstyled list-inline">
                             <li class="list-inline-item">
-                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
+                                 <a class="fab fa-facebook-f" href="www.facebook.com" target="_blank"></a>
                             </li>
                            
                             

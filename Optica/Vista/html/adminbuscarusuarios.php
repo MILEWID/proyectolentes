@@ -43,7 +43,7 @@ $datos = $valorescontrolador->fetch_assoc();
                     <!--  eso es un comentario -->
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label >Email:</label>
+                            <label >E-mail:</label>
                             <!-- is-valid es una clase para validar campos -->
                             <input type="email" class="form-control " id="validationServer03"
                             disabled required value="<?php echo $datos['correoElectronico'] ?>" readonly>

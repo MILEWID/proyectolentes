@@ -41,10 +41,10 @@
                     <tr>
                         <th scope="col">Identificador</th>
                         <th scope="col">Nombre:</th>
-                        <th scope="col">Apellido</th>
+                        <th scope="col">Apellido:</th>
                         <th scope="col">Nombre de Usuario:</th>
                         <th scope="col">Correo:</th>
-                        <th scope="col">Tipo de Usuario</th>
+                        <th scope="col">Tipo de Usuario:</th>
                         <th scope="col">Opciones:</th>
                     </tr>
                 </thead>
