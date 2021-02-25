@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="<?php echo URL ?>vista/css/adminmenu.css">
     <link rel="stylesheet" href="<?php echo URL ?>vista/css/directorios.css">
     <script src="http://localhost/proyectolentes/Optica/Vista/js/producto.js"></script>
-    <title>Administrar Usuarios</title>
+    <title>Productos</title>
 
 </head>
 

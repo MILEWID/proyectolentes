@@ -17,7 +17,7 @@
     <div class="container-fluid p-0">
       <nav class="navbar navbar-expand-lg">
         <a id="logo" class="navbar-brand" href="#"> <i class="fas fa-glasses fa-1x mx-2"> </i>
-          OPTICA "VICTORIA"</a>
+          ÓPTICA "VICTORIA"</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
           aria-label="Toggle navigation">
           <i class="fas fa-align-right text-light"></i>
@@ -31,7 +31,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">SOBRE</a>
+              <a class="nav-link" href="#">ACERCA DE</a>
             </li>             
             <li class="nav-item dropdown">
               <div class="dropdown">
@@ -241,9 +241,7 @@
     <div class="container-fluid p-0">
       <div class="row text-left">
         <div class="col-md-5 col-sm-5">
-          <h4 class="text-light">Sobre nosotros</h4>
-          <p class="text-muted">Hace 10 años nace Óptica ... , el cual está conformado por: Óptica los Andes, el laboratorio Indulentes, Óptica Sunglass Hot, Andes Visión Clínica Oftalmológica y Eyes Illusion.
-            La empresa cuenta con su local en El Oro</p>
+          <img src="" alt="">
           <p class="pt-4 text-muted">Copyright ©2021 Todos los derechos reservados |
             <span> Óptica Victoria</span>
           </p>
@@ -263,19 +261,14 @@
           <form class="form-inline">
             <div class="col pl-0">
               <div class="input-group pr-5">
-                <input type="text" class="form-control bg-dark text-white" id="inlineFormInputGroupUsername2" placeholder="Email">
-                <div class="input-group-prepend">
-                  <div class="input-group-text">
-                    <i class="fas fa-arrow-right"></i>
-                  </div>
-                </div>
+               
               </div>
             </div>
           </form>
         </div>
         <div class="col-md-2 col-sm-12">
           <h4 class="text-light">Siguenos</h4>
-          <p class="text-muted">Nos puede encontrar en las siguientes redes sociales</p>
+          <p class="text-muted">En Facebook</p>
           <div class="column text-light">
             <i class="fab fa-facebook-f"></i>
        
