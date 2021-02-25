@@ -275,7 +275,7 @@ echo "<a class='fas fa-map-marker-alt mx-3' href='$url'></a>";
 $url="https://www.google.com.ec/maps/place/Machala/@-3.2568589,-79.9960488,13z/data=!3m1!4b1!4m5!3m4!1s0x90330e252f104ed1:0xea4e189f2b2da97e!8m2!3d-3.2581112!4d-79.9553924?hl=es-419"; 
 echo "<a class='fas fa-at mx-3' href='$url'></a>";
 ?> 
-            ópticaVictoria@hotmail.com
+            opticaVictoria@hotmail.com
           </p>
           <p  class="text-light">
  <?php
