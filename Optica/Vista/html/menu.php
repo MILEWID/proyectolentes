@@ -2,7 +2,7 @@
     <div class="franja"></div>
     <nav class="     navbar-expand-lg navbar navbar-dark bg-dark row">
         <div class="logo col-4">
-            <a class="navbar-brand" href="#">OPTICA VICTORIA</a>
+            <a class="navbar-brand" href="#">ÓPTICA VICTORIA</a>
             </button>
         </div>
         <div class="collapse navbar-collapse col-8  " id="navbarNav">

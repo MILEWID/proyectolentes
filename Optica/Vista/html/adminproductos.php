@@ -46,8 +46,8 @@
                         <th scope="col">Tipo:</th>
                         <th scope="col">Precio:</th>
                         <th scope="col">Material</th>
-                        <th scope="col">sexo:</th>
-                        <th scope="col">opciones:</th>
+                        <th scope="col">Género:</th>
+                        <th scope="col">Opciones:</th>
                     </tr>
                 </thead>
                 <tbody id="id_table_body_product">
