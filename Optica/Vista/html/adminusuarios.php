@@ -62,8 +62,8 @@
                         <td><?php echo $row['tipoUsuario']; ?></td>
                         <td>
                             
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#eliminarModal">  eliminar </button>
-                            <!--<a data-bs-target="#eliminarModal" href="<?php echo URL; ?>usuario/editar?id=<?php echo $row['idUsuario'];?> " class="btn btn-light">-->
+                        
+                            <a data-bs-target="#eliminarModal" href="<?php echo URL; ?>usuario/editar?id=<?php echo $row['idUsuario'];?> " class="btn btn-light">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-pencil-square" viewBox="0 0 16 16">
                                     <path
@@ -73,6 +73,7 @@
                                 </svg>
                             </a>
 
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#eliminarModal" href="<?php echo URL; ?>usuario/eliminarControlador?id=<?php echo $row['idUsuario']; ?>">  eliminar </button>
 
                             <a href="<?php echo URL; ?>usuario/eliminarControlador?id=<?php echo $row['idUsuario']; ?>" class="btn btn-danger">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
