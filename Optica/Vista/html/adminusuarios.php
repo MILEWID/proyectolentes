@@ -9,7 +9,7 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php echo URL ?>vista/css/adminmenu.css">
     <link rel="stylesheet" href="<?php echo URL ?>vista/css/directorios.css">
-    <title>Administrar Usuarios</title>
+    <title>Directorio Usuarios</title>
 
 </head>
 
@@ -39,12 +39,12 @@
             <table class="table table-striped table-dark">
                 <thead>
                     <tr>
-                        <th scope="col">Identificador</th>
+                        <th scope="col">Identificador:</th>
                         <th scope="col">Nombre:</th>
-                        <th scope="col">Apellido</th>
+                        <th scope="col">Apellido:</th>
                         <th scope="col">Nombre de Usuario:</th>
                         <th scope="col">Correo:</th>
-                        <th scope="col">Tipo de Usuario</th>
+                        <th scope="col">Tipo de Usuario:</th>
                         <th scope="col">Opciones:</th>
                     </tr>
                 </thead>
@@ -133,7 +133,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ¿Está seguro que desea eliminar a este Usuario?
+        ¿Está seguro que desea eliminar a este usuario?
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>

@@ -9,7 +9,7 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
         <link rel="stylesheet" href="<?php echo URL ?>vista/css/adminmenu.css">
     <link rel="stylesheet" href="<?php echo URL ?>vista/css/directorios.css">
-    <title>Administrar Usuarios</title>
+    <title>Directorio de Productos</title>
 
 </head>
 
@@ -45,8 +45,8 @@
                         <th scope="col">Tipo:</th>
                         <th scope="col">Precio:</th>
                         <th scope="col">Material</th>
-                        <th scope="col">sexo:</th>
-                        <th scope="col">opciones:</th>
+                        <th scope="col">Género:</th>
+                        <th scope="col">Opciones:</th>
                     </tr>
                 </thead>
                 <tbody>

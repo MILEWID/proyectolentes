@@ -62,7 +62,7 @@ $datos = $valorescontrolador->fetch_assoc();
                             <input type="date" class="form-control " name="fecha" id="validationServer03" min="2021-02-20" max="2032-05-28" min="09:30" max="17:30" value=<?php echo $datos['fecha'] ?>
                                 required>
                             <div class="valid-feedback">
-                                Es correcto
+                                Es Correcto
                             </div>
                             <div class="invalid-feedback">
                                 Es Incorrecto
