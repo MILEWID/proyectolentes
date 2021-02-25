@@ -88,7 +88,7 @@
         OAKLEY<br>
         
       </p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
     </div>
      <img src="../imágenes/img4.jpg" class="card-img-top" alt="...">
   </div>
@@ -102,7 +102,7 @@
         Fotocromático<br>
         
     </p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
     </div>
     <img src="../imágenes/img2.jpg" class="card-img-top" alt="...">
   </div>
@@ -111,7 +111,7 @@
     <div class="card-body">
       <h5 class="card-title">DESCUENTOS</h5>
       <p class="card-text">Hasta 25% de descuento en lentes de sol, promoción válida del 18 de enero al 1 de marzo de 2021 o hasta a agotar stock a nivel nacional.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
     </div>
     <img src="../imágenes/img3.jpg" class="card-img-top" alt="...">
   </div>
@@ -223,7 +223,7 @@
                     <div class="text-center text-md-right">
                         <ul class="list-unstyled list-inline">
                             <li class="list-inline-item">
-                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
+                                 <a class="fab fa-facebook-f" href="www.facebook.com" target="_blank"></a>
                             </li>
                            
                             

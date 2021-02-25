@@ -241,7 +241,7 @@
     <div class="container-fluid p-0">
       <div class="row text-left">
         <div class="col-md-5 col-sm-5">
-          <img src="" alt="">
+          <img class="imgfoot" src="<?php echo URL; ?>vista/imágenes/logopp.png" alt="Card image cap">
           <p class="pt-4 text-muted">Copyright ©2021 Todos los derechos reservados |
             <span> Óptica Victoria</span>
           </p>
