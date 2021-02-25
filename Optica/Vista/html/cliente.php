@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>CLIENTE-OPTICA</title>
+  <title>CLIENTE-ÓPTICA</title>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous" />
@@ -22,7 +22,7 @@
     <div class="container-fluid p-0">
       <nav class="navbar navbar-expand-lg">
         <a id="logo" class="navbar-brand" href="#"> <i class="fas fa-glasses fa-1x mx-2"> </i>
-          OPTICA "VICTORIA"</a>
+          ÓPTICA "VICTORIA"</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
           aria-label="Toggle navigation">
           <i class="fas fa-align-right text-light"></i>
@@ -36,7 +36,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">SOBRE</a>
+              <a class="nav-link" href="#">ACERCA DE</a>
             </li>
             <li class="nav-item dropdown">
               <div class="dropdown">
@@ -77,9 +77,9 @@
       <div class="row">
         <div class="col-md-7 col-sm-12  text-white">
           <h2><span class="word" id="word"></span></h2>        
-          <h1>DOCTOR NAME</h1>
+          <h1>Dr. Byron Hidalgo</h1>
           <p>
-            Reciba un servicio especializado con la  mejor tecnología y precios, consulta con Nuestros Profesionales de la  Salud Visual.
+            Reciba un servicio especializado con la  mejor tecnología y precios, consulta con nuestros profesionales acerca de tu Salud Visual.
           </p>
           <button class="btn btn-light px-5 py-2 primary-btn"><i class="fas fa-user-edit mx-2"></i>
             RESERVAR CITA
@@ -100,7 +100,7 @@
         <div class="content text-center">
           <h1>PRODUCTOS</h1>
           <p>
-            Bienvenido a la sección de productos, revisa nuestra galería para mas detalles...
+            Bienvenido a la sección de productos, revisa nuestra galería para más detalles...
           </p>
         </div>
       </div>
@@ -147,9 +147,7 @@
 
       <div class="purchase text-center">
         <h1>"Prueba Nuestros Servicios"</h1>
-        <p class="container text-center">
-          Nuestra Visión tiene como objetivo mejorar la calidad de vida de sus pacientes a través de un servicio especializado en el cuidado de la salud visual. 
-        </p>
+        
         <div class="cards">
           <div class="d-flex flex-row justify-content-center flex-wrap">
             <div class="card">
@@ -174,7 +172,7 @@
 
             <div class="card">
               <div class="inner">
-                <img class="card-img-top" src="<?php echo URL; ?>vista/imágenes/Tratamientos_Servicio.jpg" alt="Card image cap">
+                <img class="card-img-top" src="<?php echo URL; ?>vista/imágenes/lunass.jfif" alt="Card image cap">
               </div>
               <div class="card-body">
                 <div class="title">
@@ -218,35 +216,23 @@
     <section class="section-3 container-fluid p-0 text-center">
       <div class="row">
         <div class="col-md-12 col-sm-12">
-          <h1>Conoce nuestros horarios de atención</h1>          
+          <h1>Conoce nuestros horarios de atención</h1> 
+
+   <h2>Lunes-Viernes: </h2>  <br><br>
+          <h2>08h:00 - 18h:00 </h2>  <br>  <br>
+           
+            <h2>Sábado-Domingo: </h2>  <br><br>   
+           <h2>08h:00 - 16h:00 </h2>      
         </div>
       </div>    
     </section>
     
     <!-- Section 4 -->
     <section class="section-4">
-      <div class="container text-center">
-        <h1 class="text-dark">MISIÓN Y VISIÓN</h1>
-        <p class="text-secondary">subtitulo ......</p>
-      </div>
+     
       <div class="team row ">
-        <div class="col-md-4 col-12 text-center">
-            <div class="card mr-2 d-inline-block shadow-lg">
-              <div>
-                <p class="banner-card">
-                  <i class="fas fa-child fa-7x"></i>
-                </p>                 
-              </div>
-                <div class="card-body">
-                  <h3 class="card-title">MISIÓN</h3>
-                  <p class="card-text">
-                    Ofrecer un servicio integral mediante la combinación de valores, calidad de atención y asesoría, de manera que éstos satisfagan las necesidades y expectativas de nuestros clientes, produciendo un impacto positivo en sus vidas y crecimiento personal.
-                  </p>
-                  <p class="text-black-50">ÓPTICA VICTORIA</p>                 
-                </div>
-              </div>
-        </div>
-        <div class="col-md-4 col-12">
+       
+       <div class="col-md-4 col-12">
             <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
                 <div class="carousel-inner text-center">
                   <div class="carousel-item active">
@@ -257,11 +243,9 @@
                         </p>                 
                       </div>                    
                       <div class="card-body">
-                        <h3 class="card-title">OPTICA VICTORIA</h3>
-                        <p class="card-text">
-                          Establecida desde hace más de 10 años, cuenta con lo mejor en tecnología, y profesionales altamente calificados en el campo de la optometría, nos hemos identificado por brindar a nuestra estimable clientela, una atención personalizada de calidad.
-                        </p>                        
-                        <p class="text-black-50">NOMBRE PROPIETARIO</p>
+                        <h3 class="card-title">ÓPTICA VICTORIA</h3>
+                                          
+                        <p class="text-black-50">Dr. Byron Hidalgo</p>
                       </div>
                     </div>
                   </div>
@@ -273,44 +257,93 @@
                         </p>                 
                       </div>    
                       <div class="card-body">
-                        <h3 class="card-title">PROPIETARIO</h3>
-                        <p class="card-text">
-                          Establecida desde hace más de 15 años, cuenta con lo mejor en tecnología, y profesionales altamente calificados en el campo de la optometría, nos hemos identificado por brindar a nuestra estimable clientela, una atención personalizada de calidad.
-                        </p>  
-                        <p class="text-black-50">OPTICA VICTORIA</p>                      
+                        
+                        <p class="text-black-50">ÓPTICA VICTORIA</p>                      
                       </div>
                     </div>
                   </div>
               </div>
         </div>
         </div>
-        <div class="col-md-4 col-12 text-center">
-            <div class="card mr-2 d-inline-block shadow-lg">
-                <div>
-                  <p class="banner-card">
-                    <i class="fas fa-globe-americas fa-7x"></i>
-                  </p>                 
-                </div>
-                <div class="card-body">
-                  <h3 class="card-title">VISIÓN</h3>
-                  <p class="card-text">                
-                    Consolidarnos como la mejor opcion óptica para satisfacer sus necesidades, y seguiremos siendo los líderes como la cadena de ópticas de mayor cobertura nacional bajo el amparo de la tecnología, productividad, talento humano y un profundo espíritu de servicio.                   
-                  </p> 
-                  <p class="text-black-50">OPTICA VICTORIA</p>                              
-                </div>
+        
+
+         <div class="col-md-4 col-12">
+            <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
+                <div class="carousel-inner text-center">
+                  <div class="carousel-item active">
+                    <div class="card mr-2 d-inline-block shadow">
+                      <div>
+                        <p class="banner-card">
+                          <i class="fas fa-glasses fa-7x"></i>
+                        </p>                 
+                      </div>                    
+                      <div class="card-body">
+                        <h3 class="card-title">ÓPTICA VICTORIA</h3>
+                                          
+                        <p class="text-black-50">Dr. Byron Hidalgo</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card  d-inline-block mr-2 shadow">
+                      <div>
+                        <p class="banner-card">
+                          <i class="fas fa-user-md fa-7x"></i>
+                        </p>                 
+                      </div>    
+                      <div class="card-body">
+                        
+                        <p class="text-black-50">ÓPTICA VICTORIA</p>                      
+                      </div>
+                    </div>
+                  </div>
               </div>
+        </div>
+        </div>
+
+
+         <div class="col-md-4 col-12">
+            <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
+                <div class="carousel-inner text-center">
+                  <div class="carousel-item active">
+                    <div class="card mr-2 d-inline-block shadow">
+                      <div>
+                        <p class="banner-card">
+                          <i class="fas fa-glasses fa-7x"></i>
+                        </p>                 
+                      </div>                    
+                      <div class="card-body">
+                        <h3 class="card-title">ÓPTICA VICTORIA</h3>
+                                          
+                        <p class="text-black-50">Dr. Byron Hidalgo</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card  d-inline-block mr-2 shadow">
+                      <div>
+                        <p class="banner-card">
+                          <i class="fas fa-user-md fa-7x"></i>
+                        </p>                 
+                      </div>    
+                      <div class="card-body">
+                        
+                        <p class="text-black-50">ÓPTICA VICTORIA</p>                      
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
         </div>
       </div>
     </section>
   </main>
   
-  <footer>
+   <footer>
     <div class="container-fluid p-0">
       <div class="row text-left">
         <div class="col-md-5 col-sm-5">
-          <h4 class="text-light">Sobre nosotros</h4>
-          <p class="text-muted">Hace 10 años nace Óptica ... , el cual está conformado por: Óptica los Andes, el laboratorio Indulentes, Óptica Sunglass Hot, Andes Visión Clínica Oftalmológica y Eyes Illusion.
-            La empresa cuenta con su local en El Oro</p>
+         <img class="imgfoot" src="<?php echo URL; ?>vista/imágenes/logopp.png" alt="Card image cap">
           <p class="pt-4 text-muted">Copyright ©2021 Todos los derechos reservados |
             <span> Óptica Victoria</span>
           </p>
@@ -319,35 +352,45 @@
           <h4 class="text-light">Contactos</h4>
           <br>
           <p class="text-light">
-            <i class="fas fa-map-marker-alt mx-3"></i>Riobamba
+           
+             <?php
+$url="https://outlook.live.com/owa/"; 
+echo "<a class='fas fa-map-marker-alt mx-3' href='$url'></a>";
+?> Machala
           </p>
           <p  class="text-light">
-            <i class="fas fa-at mx-3"></i>optica@hotmail.com
+            <?php
+$url="https://www.google.com.ec/maps/place/Machala/@-3.2568589,-79.9960488,13z/data=!3m1!4b1!4m5!3m4!1s0x90330e252f104ed1:0xea4e189f2b2da97e!8m2!3d-3.2581112!4d-79.9553924?hl=es-419"; 
+echo "<a class='fas fa-at mx-3' href='$url'></a>";
+?> 
+            optivictoria@gmail.com
           </p>
           <p  class="text-light">
-            <i class="fab fa-whatsapp mx-3"></i>09980072777
+ <?php
+$url=" https://web.whatsapp.com/"; 
+echo "<a class='fab fa-whatsapp mx-3' href='$url'></a>";
+?> 
+
+           0960051989
           </p>        
           <form class="form-inline">
             <div class="col pl-0">
               <div class="input-group pr-5">
-                <input type="text" class="form-control bg-dark text-white" id="inlineFormInputGroupUsername2" placeholder="Email">
-                <div class="input-group-prepend">
-                  <div class="input-group-text">
-                    <i class="fas fa-arrow-right"></i>
-                  </div>
-                </div>
+               
               </div>
             </div>
           </form>
         </div>
         <div class="col-md-2 col-sm-12">
-          <h4 class="text-light">Siguenos</h4>
-          <p class="text-muted">Nos puede encontrar en las siguientes redes sociales</p>
+          <h4 class="text-light">Síguenos</h4>
+          <p class="text-muted">En Facebook</p>
           <div class="column text-light">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-youtube"></i>
+<?php
+$url="https://m.facebook.com/profile.php?id=107756200792351&ref=content_filter"; 
+echo "<a class='fab fa-facebook-f' href='$url'></a>";
+?> 
+
+           
           </div>
         </div>
       </div>

@@ -79,7 +79,7 @@
     </div>
 </header>
     <div class="container">
-        <div class="h1">DIRECTORIO DE PRODUCTOS</div>
+        <div class="h1">PRODUCTOS DISPONIBLES </div>
         <div class="row justify-content-end">
             
                 <button type="button" class="btn btn-dark col-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -101,7 +101,7 @@
                         <th scope="col">Tipo:</th>
                         <th scope="col">Precio:</th>
                         <th scope="col">Material</th>
-                        <th scope="col">sexo:</th>
+                        <th scope="col">Género:</th>
                        
                     </tr>
                 </thead>
