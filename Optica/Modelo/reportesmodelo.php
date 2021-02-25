@@ -24,5 +24,11 @@ class ReporteModelo{
     }
 
 
+    function reporteTipoLentes(){
+        $conexion = new Cconexion();
+        $query="SELECT * FROM `producto`";
+        $resultado= $conexion->conectar()->query($query);
+        return $resultado;
+    }
 }
 ?>
