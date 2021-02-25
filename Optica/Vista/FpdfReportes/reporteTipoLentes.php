@@ -28,9 +28,7 @@ function Header()
     $this->Cell(40,10,'NOMBRE',1,0,'C',0);
     $this->Cell(40,10,'MARCA',1,0,'C',0);
     $this->Cell(40,10,'TIPO',1,0,'C',0);
-    $this->Cell(40,10,'PRECIO',1,0,'C',0);
-
-   // $this->Cell(60,10,utf8_decode('CORREO ELECTRÓNICO'),1,1,'C',0);
+    $this->Cell(40,10,'PRECIO',1,1,'C',0);
 }
 
 // Pie de página
@@ -56,7 +54,7 @@ while($row=$valorescontrolador->fetch_assoc()){
   $pdf->Cell(40,10,$row['nombre'],1,0,'C',0);
   $pdf->Cell(40,10,$row['marca'],1,0,'C',0);
   $pdf->Cell(40,10,$row['tipo'],1,0,'C',0);
-  $pdf->Cell(60,10,$row['precio'],1,0,'C',0);
+  $pdf->Cell(40,10,$row['precio'],1,1,'C',0);
 }
 $pdf->Output();
 ?>
