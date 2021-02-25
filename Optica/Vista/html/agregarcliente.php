@@ -241,9 +241,7 @@
     <div class="container-fluid p-0">
       <div class="row text-left">
         <div class="col-md-5 col-sm-5">
-          <h4 class="text-light">Sobre nosotros</h4>
-          <p class="text-muted">Hace 10 años nace Óptica ... , el cual está conformado por: Óptica los Andes, el laboratorio Indulentes, Óptica Sunglass Hot, Andes Visión Clínica Oftalmológica y Eyes Illusion.
-            La empresa cuenta con su local en El Oro</p>
+          <img class="card-img-top" src="../imágenes/logop.jpg" alt="Card image cap">
           <p class="pt-4 text-muted">Copyright ©2021 Todos los derechos reservados |
             <span> Óptica Victoria</span>
           </p>
@@ -275,7 +273,7 @@
         </div>
         <div class="col-md-2 col-sm-12">
           <h4 class="text-light">Siguenos</h4>
-          <p class="text-muted">Nos puede encontrar en las siguientes redes sociales</p>
+          <p class="text-muted">Encuéntranos en Facebook</p>
           <div class="column text-light">
             <i class="fab fa-facebook-f"></i>
             
