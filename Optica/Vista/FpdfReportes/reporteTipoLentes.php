@@ -26,9 +26,11 @@ function Header()
 
     $this->Cell(10,10,'ID',1,0,'C',0);
     $this->Cell(40,10,'NOMBRE',1,0,'C',0);
-    $this->Cell(40,10,'APELLIDO',1,0,'C',0);
-    $this->Cell(40,10,'USUARIO',1,0,'C',0);
-    $this->Cell(60,10,utf8_decode('CORREO ELECTRÓNICO'),1,1,'C',0);
+    $this->Cell(40,10,'MARCA',1,0,'C',0);
+    $this->Cell(40,10,'TIPO',1,0,'C',0);
+    $this->Cell(40,10,'PRECIO',1,0,'C',0);
+
+   // $this->Cell(60,10,utf8_decode('CORREO ELECTRÓNICO'),1,1,'C',0);
 }
 
 // Pie de página
@@ -50,11 +52,11 @@ $pdf = new PDF();
 $pdf->AddPage();
 $pdf->SetFont('Arial','B',10);
 while($row=$valorescontrolador->fetch_assoc()){
-  $pdf->Cell(10,10,$row['idUsuario'],1,0,'C',0);
+  $pdf->Cell(10,10,$row['id'],1,0,'C',0);
   $pdf->Cell(40,10,$row['nombre'],1,0,'C',0);
-  $pdf->Cell(40,10,$row['apellido'],1,0,'C',0);
-  $pdf->Cell(40,10,$row['nombreUsuario'],1,0,'C',0);
-  $pdf->Cell(60,10,$row['correoElectronico'],1,1,'C',0);
+  $pdf->Cell(40,10,$row['marca'],1,0,'C',0);
+  $pdf->Cell(40,10,$row['tipo'],1,0,'C',0);
+  $pdf->Cell(60,10,$row['precio'],1,0,'C',0);
 }
 $pdf->Output();
 ?>
