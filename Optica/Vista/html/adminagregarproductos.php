@@ -11,7 +11,7 @@
     <link rel="stylesheet"  href="<?php echo URL ?>vista/css/adminmenu.css">
     <link rel="stylesheet" href="<?php echo URL ?>vista/css/directorios.css">
     <link rel="stylesheet" href="<?php echo URL ?>vista/css/agregar.css">
-    <title>Agregar Usuarios</title>
+    <title>Agregar Productos</title>
 </head>
 
 <body>
@@ -54,11 +54,11 @@
                             <!-- is-valid es una clase para validar campos -->
                                 <select class="form-select form-select" name="validationServer03" aria-label=".form-select-lg example">
                                     <option selected value="Lentes de contacto">Lentes de contacto</option>
-                                    <option value="paños">paños</option>
-                                    <option value="cordones">cordones</option>
-                                    <option value="coaja de los lentes">cajas de los lentes</option>
-                                    <option value="gafas">gafas</option>
-                                    <option value="lentes">lentes</option>
+                                    <option value="paños">Paños</option>
+                                    <option value="cordones">Cordones</option>
+                                    <option value="coaja de los lentes">Cajas de los lentes</option>
+                                    <option value="gafas">Gafas</option>
+                                    <option value="lentes">Lentes</option>
                                 </select>
                         </div>
                         <div class="col-md-6 mb-3">
@@ -88,7 +88,7 @@
                             </div>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="validationServer02">Sexo:</label>
+                            <label for="validationServer02">Género:</label>
                             <!-- is-valid es una clase para validar campos -->
                             <select class="form-select form-select" name="validationServer06" aria-label=".form-select-lg example">
                                 <option selected value="Masculino">Masculino</option>
