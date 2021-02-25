@@ -15,5 +15,14 @@ class ReporteModelo{
         $resultado= $conexion->conectar()->query($query);
         return $resultado;
     }
+
+    function reporteusuarios(){
+        $conexion = new Cconexion();
+        $query="SELECT * FROM `usuario`";
+        $resultado= $conexion->conectar()->query($query);
+        return $resultado;
+    }
+
+
 }
 ?>

@@ -23,4 +23,10 @@ class reportes extends Controlador
         $result  = $consulta->reportemodcli();
         parent::cargarvista("FpdfReportes/reporteModCliente", $result);
     }
+
+    function reporteusuarios(){
+        $consulta = new ReporteModelo();
+        $result  = $consulta->reporteusuarios();
+        parent::cargarvista("FpdfReportes/reporteusuarios", $result);
+    }
 }
