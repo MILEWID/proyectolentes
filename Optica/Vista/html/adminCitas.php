@@ -59,7 +59,7 @@
                         <th scope="col">Fecha</th>
                         <th scope="col">Hora</th>
                         <th scope="col">Motivo</th>
-                        <th scope="col">Opciones:</th>
+                        <th scope="col">Opciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -184,7 +184,7 @@
 
                     <div class="form-floating">
                         <textarea class="form-control" id="id_inputMotivos" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                        <label for="floatingTextarea2">Comments</label>
+                        <label for="floatingTextarea2">Comentarios</label>
                     </div>
 
                     <div class="col-4">

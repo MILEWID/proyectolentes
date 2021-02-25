@@ -37,8 +37,8 @@
             <div class="col-sm-4">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Reporte 5 lentes mas vendidos</h5>
-                        <p class="card-text">Genera un reporte de los 5 modelos de lentes mas vendidos</p>
+                        <h5 class="card-title">Reporte 5 lentes más vendidos</h5>
+                        <p class="card-text">Genera un reporte de los 5 modelos de lentes más vendidos</p>
                         <a href="#" class="btn btn-dark">Descargar pdf
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-file-earmark-text-fill" viewBox="0 0 16 16">
@@ -86,7 +86,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Reporte modificación de clientes</h5>
-                        <p class="card-text">Reporte de los clientes modificado en el sistema .</p>
+                        <p class="card-text">Reporte de los clientes modificado en el sistema</p>
                         <a href="<?php echo URL ?>reportes/reporteModcLI" class="btn btn-dark">Descargar pdf
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-file-earmark-text-fill" viewBox="0 0 16 16">
@@ -101,7 +101,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Reporte de usuarios</h5>
-                        <p class="card-text">Reporte de la totalidad de usuarios .</p>
+                        <p class="card-text">Reporte de la totalidad de usuarios</p>
                         <a href="<?php echo URL ?>reportes/reporteusuarios" class="btn btn-dark">Descargar pdf
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-file-earmark-text-fill" viewBox="0 0 16 16">

@@ -25,6 +25,16 @@ class Productos extends Controlador
 
     }
 
+    function mostrarproductos(){
+         // se obtienen los datos del modelo producto (BDD)
+         $consulta = new ProductoModelo();
+         $result  = $consulta->mostrar();
+ 
+         // ejecutan el metodo heredado de controlador para cargar la vista
+         // y se le pasa los datos a la vista
+         parent::cargarvista("html/clientesmostrarproductos",$result);
+    }
+
     // funcion que permite ingresar los productos
     function ingresarProdu(){
         //verificar nombre de variable aun no existe (como ella :'v) 
