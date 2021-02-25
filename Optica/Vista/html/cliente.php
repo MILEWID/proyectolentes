@@ -40,7 +40,7 @@
             </li>
             <li class="nav-item dropdown">
               <div class="dropdown">
-                <a href="#" class="nav-link">PRODUCTOS</a>
+                <a href="<?php echo URL?>productos/mostrarproductos" class="nav-link">PRODUCTOS</a>
                 <div class="dropdown-content">
                   <a href="#"><i class="fas fa-glasses mx-2"></i>Lentes</a>
                   <a href="#"><i class="far fa-eye mx-2"></i>Lunas</a>
