@@ -73,7 +73,7 @@
 
 
 
-                    $sql = "select * from cita";
+                    $sql = "select * from citas";
                     $datos = null;
                     $cont =0 ;
                     $result = mysqli_query($conexion,$sql);
