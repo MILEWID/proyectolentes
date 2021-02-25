@@ -108,15 +108,22 @@ class Usuario extends Controlador{
     }
 
         function buscarUsuario(){
-        if(isset($_POST['id'])){
+        if(isset($_POST['nombre' ]) && isset($_POST['apellido'])){
 
             $registro = new CusuarioModel();
-            $resultado= $registro->mostrarByID($_POST['id']);
-            parent::cargarvista("html/adminbuscarusuarios",$resultado);
+            $resultado= $registro->buscarU($_POST['nombre'], $_POST['apellido']); 
+            if(isset ($resultado)){
+                
+                echo "Usuario no encontrado";
+               // header("Location: ".URL."usuario/mostrarcontrolador");
+            } else{
+                parent::cargarvista("html/adminbuscarusuarios",$resultado);
+            }
+ 
         }
         else{
             echo "No es posible";
-        }
+        } 
     }
 
     // carga la vista para editar los usuarios

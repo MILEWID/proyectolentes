@@ -33,9 +33,9 @@ class CusuarioModel{
         }
     }
 //buscar
-    function buscarU($idUsuario){
+    function buscarU($nombre, $apellido){
         $conexion = new Cconexion();
-        $query="SELECT * FROM usuario WHERE idUsuario = '$idUsuario'";
+        $query="SELECT * FROM usuario WHERE nombre='$nombre' AND apellido='$apellido'";
         $resultado= $conexion->conectar()->query($query);
         return $resultado;
     }
