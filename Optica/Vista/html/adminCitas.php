@@ -59,7 +59,7 @@
                         <th scope="col">Fecha</th>
                         <th scope="col">Hora</th>
                         <th scope="col">Motivo</th>
-                        <th scope="col">Opciones:</th>
+                        <th scope="col">Opciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -73,7 +73,7 @@
 
 
 
-                    $sql = "select * from cita";
+                    $sql = "select * from citas";
                     $datos = null;
                     $cont =0 ;
                     $result = mysqli_query($conexion,$sql);

@@ -50,7 +50,7 @@
                     <!--  eso es un comentario -->
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="validationServer03">Email:</label>
+                            <label for="validationServer03">E-mail:</label>
                             <!-- is-valid es una clase para validar campos -->
                             <input type="email" class="form-control " name="validationServer03" id="validationServer03"
                                 placeholder="ejemplo@example.com" required>
@@ -86,7 +86,7 @@
                                     Correcto
                                 </div>
                                 <div class="invalid-feedback">
-                                    Porfavor ingrese un nombre de usuario válido
+                                    Por favor ingrese un nombre de usuario válido
                                 </div>
                             </div>
                         </div>
