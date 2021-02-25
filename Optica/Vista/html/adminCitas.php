@@ -5,10 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
     <link rel="stylesheet" href="<?php echo URL ?>vista/css/adminListaCita.css">
     <link rel="stylesheet" href="<?php echo URL ?>vista/css/directorios.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script src="http://localhost/proyectolentes/Optica/Vista/js/citas.js"></script>
+
+
     <title>Administrar Citas</title>
 
 </head>
@@ -18,14 +32,14 @@
     <div class="container">
         <div class="h1">DIRECTORIO DE CITAS</div>
         <div class="row justify-content-end">
-            <a href="<?php echo URL; ?>usuario/registrar" type="button" class="btn btn-primary col-2">
+            <button type="button" class="btn btn-primary col-2" data-bs-toggle="modal" data-bs-target="#exampleModalCrear">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-plus-circle" viewBox="0 0 16 16">
                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                     <path
                         d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
                 </svg>
-                AGREGAR</a>
+                AGREGAR</button>
             <button type="button" class="btn btn-dark col-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
                     viewBox="0 0 16 16">
@@ -50,7 +64,21 @@
                 </thead>
                 <tbody>
                     <?php
-                    while($row=$valorescontrolador->fetch_assoc()){
+
+
+                    $conexion = mysqli_connect('localhost','root','','bdoptica',3306);
+                    if (!$conexion){
+                        echo "error".mysqli_connect_error();
+                    }
+
+
+
+                    $sql = "select * from cita";
+                    $datos = null;
+                    $cont =0 ;
+                    $result = mysqli_query($conexion,$sql);
+
+                    while($row=mysqli_fetch_array($result)){
                     ?>
 
                     <tr>
@@ -121,6 +149,54 @@
             </div>
         </div>
     </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCrear" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Agregar Cita</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" id="id_inputNames"  class="form-control" placeholder="Nombres" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <input type="text"  id="id_inputApes" class="form-control" placeholder="Apellidos" aria-label="Last name">
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="row">
+                        <div class="col">
+                            <input type="date" id="id_inputDate" class="form-control" placeholder="" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <input type="time" id="id_inputTime" class="form-control" placeholder="Last name" aria-label="Last name">
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="form-floating">
+                        <textarea class="form-control" id="id_inputMotivos" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Comments</label>
+                    </div>
+
+                    <div class="col-4">
+                        <input type="submit" value="Guardar" class="btn-dark" onclick="insertCita()">
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 

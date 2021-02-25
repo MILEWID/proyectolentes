@@ -72,7 +72,7 @@
                         <h5 class="card-title">Reporte Ingresos de Clientes</h5>
                         <p class="card-text">Reporte de los clientes ingresados al sistema describe los clientes
                             existentes</p>
-                        <a href="#" class="btn btn-dark">Descargar pdf
+                        <a href="http://localhost/proyectolentes/Optica/Vista/FpdfReportes/reportUserRegister.php" class="btn btn-dark">Descargar pdf
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-file-earmark-text-fill" viewBox="0 0 16 16">
                                 <path
@@ -136,7 +136,7 @@
                         <h5 class="card-title">Reporte productos para hombres</h5>
                         <p class="card-text">En este reporte se encuentran los porductos que han sido vendidos para
                             hombres</p>
-                        <a href="#" class="btn btn-dark">Descargar pdf
+                        <a href="http://localhost/proyectolentes/Optica/Vista/FpdfReportes/reportHProducto.php" class="btn btn-dark">Descargar pdf
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-file-earmark-text-fill" viewBox="0 0 16 16">
                                 <path

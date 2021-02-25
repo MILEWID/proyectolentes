@@ -64,7 +64,7 @@
                         <div class="col-md-6 mb-3">
                             <label for="validationServer01">Precio:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control " name="validationServer04" id="validationServer01" placeholder="5$"
+                            <input type="text" class="form-control"  name="validationServer04" id="validationServer01" placeholder="5$"
                                 required>
                             <div class="valid-feedback">
                                 Es correcto
@@ -111,9 +111,11 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <script src="../js/jquery-3.2.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $("#menu").load("adminmenu.html header");
     </script>
+
 
 </body>
 
