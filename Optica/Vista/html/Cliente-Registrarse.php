@@ -264,13 +264,26 @@
           <h4 class="text-light">Contactos</h4>
           <br>
           <p class="text-light">
-            <i class="fas fa-map-marker-alt mx-3"></i>Machala
+           
+             <?php
+$url="https://outlook.live.com/owa/"; 
+echo "<a class='fas fa-map-marker-alt mx-3' href='$url'></a>";
+?> Machala
           </p>
           <p  class="text-light">
-            <i class="fas fa-at mx-3"></i>ópticaVictoria@hotmail.com
+            <?php
+$url="https://www.google.com.ec/maps/place/Machala/@-3.2568589,-79.9960488,13z/data=!3m1!4b1!4m5!3m4!1s0x90330e252f104ed1:0xea4e189f2b2da97e!8m2!3d-3.2581112!4d-79.9553924?hl=es-419"; 
+echo "<a class='fas fa-at mx-3' href='$url'></a>";
+?> 
+            ópticaVictoria@hotmail.com
           </p>
           <p  class="text-light">
-            <i class="fab fa-whatsapp mx-3"></i>09980072777
+ <?php
+$url=" https://web.whatsapp.com/"; 
+echo "<a class='fab fa-whatsapp mx-3' href='$url'></a>";
+?> 
+
+           09980072777
           </p>        
           <form class="form-inline">
             <div class="col pl-0">
