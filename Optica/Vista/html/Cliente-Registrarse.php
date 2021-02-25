@@ -283,7 +283,7 @@ $url=" https://web.whatsapp.com/";
 echo "<a class='fab fa-whatsapp mx-3' href='$url'></a>";
 ?> 
 
-           09980072777
+           0960051989
           </p>        
           <form class="form-inline">
             <div class="col pl-0">
@@ -297,7 +297,11 @@ echo "<a class='fab fa-whatsapp mx-3' href='$url'></a>";
           <h4 class="text-light">Síguenos</h4>
           <p class="text-muted">En Facebook</p>
           <div class="column text-light">
-            <i class="fab fa-facebook-f"></i>
+<?php
+$url="https://m.facebook.com/profile.php?id=107756200792351&ref=content_filter"; 
+echo "<a class='fab fa-facebook-f' href='$url'></a>";
+?> 
+
            
           </div>
         </div>
