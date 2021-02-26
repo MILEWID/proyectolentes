@@ -22,6 +22,7 @@ function insertCita()
         if(json_parse.status_code == 200)
         {
             alert("guardando....")
+            document.location.reload();
         }else
         {
             alert("no se puedo guardar")

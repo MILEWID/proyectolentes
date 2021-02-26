@@ -4,7 +4,7 @@ include("conexionprueba.php");
 class CitaModelo{
     function registrarCita($id, $nombre, $apellido, $fecha, $hora, $motivo){
         $nuevaconexion = new Cconexion();
-        $query = "INSERT INTO cita (id, nombre, apellido, fecha, hora, motivo) VALUES('$id', '$nombre', '$apellido', '$fecha', '$hora', '$motivo')";
+        $query = "INSERT INTO citas (id, nombre, apellido, fecha, hora, motivo) VALUES('$id', '$nombre', '$apellido', '$fecha', '$hora', '$motivo')";
         $resul = $nuevaconexion->conectar()->query($query);
         //imprimir el valor de resul
         var_dump ($resul);
@@ -60,7 +60,7 @@ class CitaModelo{
     function eliminarCita($id){
         // intanciamos la conexion
         $conexion = new Cconexion();
-        $query = "DELETE FROM cita WHERE id=$id";
+        $query = "DELETE FROM citas WHERE id=$id";
         $resultado = $conexion->conectar()->query($query);
         if ($resultado){
             return "ok";
