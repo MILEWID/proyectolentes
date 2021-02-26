@@ -26,7 +26,7 @@
 <div class="container-fluid p-0">
       <nav class="navbar navbar-expand-lg">
         <a id="logo" class="navbar-brand" href="#"> <i class="fas fa-glasses fa-1x mx-2"> </i>
-          OPTICA "VICTORIA"</a>
+          ÓPTICA "VICTORIA"</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
           aria-label="Toggle navigation">
           <i class="fas fa-align-right text-light"></i>
@@ -75,7 +75,7 @@
                         <th scope="col">Marca</th>
                         <th scope="col">Tipo:</th>
                         <th scope="col">Precio:</th>
-                        <th scope="col">Material</th>
+                        <th scope="col">Material:</th>
                         <th scope="col">Género:</th>
                        
                     </tr>
