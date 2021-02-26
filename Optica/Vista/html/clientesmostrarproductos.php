@@ -35,7 +35,7 @@
           <div class="mr-auto"></div>
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#">INICIO
+              <a class="nav-link" href="<?php echo URL ?>ingreso/cliente">INICIO
                 <span class="sr-only">(current)</span>
               </a>
             </li>
@@ -45,32 +45,16 @@
             <li class="nav-item dropdown">
               <div class="dropdown">
                 <a href="<?php echo URL?>productos/mostrarproductos" class="nav-link">PRODUCTOS</a>
-                <div class="dropdown-content">
-                  <a href="#"><i class="fas fa-glasses mx-2"></i>Lentes</a>
-                  <a href="#"><i class="far fa-eye mx-2"></i>Lunas</a>
-                  <a href="#"><i class="fas fa-magic mx-2"></i>Armazones</a>
-                  <a href="#"><i class="fas fa-shopping-bag mx-2"></i>Kit de Limpieza</a>
-                </div>
               </div>
             </li>
             <li class="nav-item dropdown">
               <div class="dropdown">
                 <a href="#" class="nav-link">SERVICIOS</a>
-                <div class="dropdown-content">
-                  <a href="#"><i class="fas fa-user-check mx-2"></i>Consultas</a>
-                  <a href="#"><i class="fas fa-hand-holding-heart mx-2"></i>Tratamientos</a>
-                  <a href="#"><i class="far fa-eye mx-2"></i>L. Contacto</a>
-                </div>
               </div>
             </li>                  
             <li class="nav-item dropdown">
               <div class="dropdown">
-                <a class="nav-link" href="#"><i class="fas fa-user-circle fa-2x mx-2"></i>Usuario</a>
-                <div class="dropdown-content">
-                  <a href="#"><i class="far fa-calendar-alt mx-2"></i>Agenda - Citas</a>
-                  <a href="#"><i class="far fa-question-circle mx-2"></i>Ayuda</a>
-                  <a href="#"><i class="fas fa-sign-out-alt mx-2"></i>Salir</a>
-                </div>
+                <a class="nav-link" href="<?php echo URL ?>"><i class="fas fa-user-circle fa-2x mx-2"></i>SALIR</a>
               </div>
             </li>
           </ul>

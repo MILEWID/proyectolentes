@@ -17,7 +17,9 @@ class Ingreso extends Controlador
 		// ejecutan el metodo heredado de controlador para cargar la vista
 		parent::cargarvista("html/Cliente-Registrarse");
 	}
-
+	function cliente(){
+		parent::cargarvista("html/cliente");
+	}
 
 	function loginc(){
 		// isset valida la existencia de una variable en memoria 
@@ -36,7 +38,7 @@ class Ingreso extends Controlador
 				if($tipousuario == "Administrador"){
 					header("location: ".URL."productos");
 				} else{
-					parent::cargarvista("html/cliente");
+					header("location: ".URL."ingreso/cliente");
 				}
 			} else {
 			
