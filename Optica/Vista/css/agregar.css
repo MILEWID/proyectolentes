@@ -19,3 +19,8 @@ body{
 .btn-primary , .btn-dark{
     width: 20%;
 }
+
+#error{
+    text-align: center;
+    color: red;
+}
