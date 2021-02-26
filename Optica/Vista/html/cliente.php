@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
     crossorigin="anonymous">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link rel="stylesheet" href="<?php echo URL; ?>vista/css/cliente.css" />
   <link rel="stylesheet" href="<?php echo URL; ?>vista/css/mobile-style.css">
 
@@ -36,7 +37,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">ACERCA DE</a>
+              <a class="nav-link" href="<?php echo URL?>html/">ACERCA DE</a>
             </li>
             <li class="nav-item dropdown">
               <div class="dropdown">
@@ -63,7 +64,7 @@
               <div class="dropdown">
                 <a class="nav-link" href="#"><i class="fas fa-user-circle fa-2x mx-2"></i>Usuario</a>
                 <div class="dropdown-content">
-                  <a href="#"><i class="far fa-calendar-alt mx-2"></i>Agenda - Citas</a>
+                  <a data-bs-toggle="modal" data-bs-target="#exampleModal" ><i class="far fa-calendar-alt mx-2"></i>Agenda - Citas</a>
                   <a href="#"><i class="far fa-question-circle mx-2"></i>Ayuda</a>
                   <a href="#"><i class="fas fa-sign-out-alt mx-2"></i>Salir</a>
                 </div>
@@ -396,7 +397,52 @@ echo "<a class='fab fa-facebook-f' href='$url'></a>";
       </div>
     </div>
   </footer>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Agregar Cita</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body container">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" id="id_inputNames"  class="form-control" placeholder="Nombres" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <input type="text"  id="id_inputApes" class="form-control" placeholder="Apellidos" aria-label="Last name">
+                        </div>
+                    </div>
 
+                    <br>
+
+                    <div class="row">
+                        <div class="col">
+                            <input type="date" id="id_inputDate" class="form-control" placeholder="" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <input type="time" id="id_inputTime" class="form-control" placeholder="Last name" aria-label="Last name">
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="form-floating">
+                        <textarea class="form-control" id="id_inputMotivos" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Comentarios</label>
+                    </div>
+
+                    <div class="col-4">
+                        <input type="submit" value="Guardar" class="btn-dark" onclick="insertCita()">
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
