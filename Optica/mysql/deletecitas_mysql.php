@@ -13,7 +13,7 @@ mysqli_begin_transaction($conexion);
 mysqli_autocommit($conexion,false);
 
 
-$sql = "delete from cita where id = $id";
+$sql = "delete from citas where id = $id";
 
 //echo $sql;
 

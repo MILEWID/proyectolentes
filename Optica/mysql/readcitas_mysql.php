@@ -10,7 +10,7 @@ mysqli_begin_transaction($conexion);
 mysqli_autocommit($conexion,false);
 
 
-$sql = "select * from cita";
+$sql = "select * from citas";
 $datos = null;
 $cont =0 ;
 

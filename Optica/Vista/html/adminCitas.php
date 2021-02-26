@@ -78,6 +78,9 @@
                     $cont =0 ;
                     $result = mysqli_query($conexion,$sql);
 
+                    if($result && mysqli_num_rows($result)>0)
+                    {
+
                     while($row=mysqli_fetch_array($result)){
                     ?>
 
@@ -111,6 +114,7 @@
                         </td>
                       </tr> 
                     <?php
+                    }
                     }
                     ?>
                 </tbody>
