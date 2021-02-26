@@ -30,5 +30,12 @@ class ReporteModelo{
         $resultado= $conexion->conectar()->query($query);
         return $resultado;
     }
+
+    function reporteCitas(){
+        $conexion = new Cconexion();
+        $query="SELECT * FROM `citas`";
+        $resultado= $conexion->conectar()->query($query);
+        return $resultado;
+    }
 }
 ?>
