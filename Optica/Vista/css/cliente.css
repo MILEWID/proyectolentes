@@ -12,14 +12,14 @@ body{
 
 header{
   width: 100%;
-  height: 120px;
+  height: 780px;
   padding-bottom: 40em;
 }
 
 .word { 
   background-color: #fcfcfc;
   font-family: Arial;
-  font-size: 10px;
+  font-size: 35px;
   color: rgb(27, 27, 27);
   line-height: 1.4em;
   height: 1.4em;
@@ -38,6 +38,9 @@ header{
   top: 5px;
   bottom: 5px;
   right: 7px;
+}
+header p{
+  font-size: 20px;
 }
 
 
@@ -65,7 +68,7 @@ header a {
 
 
 header img{
-  height: 400px;
+  height: 500px;
   padding-top: 90px;
 }
 
