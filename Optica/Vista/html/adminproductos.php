@@ -72,8 +72,9 @@
                                     <path fill-rule="evenodd"
                                         d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
                                 </svg>
-                            </a>
-                            <a href="<?php echo URL; ?>productos/eliminarProdu?id=<?php echo $row['id'];?> "  class="btn btn-danger" >
+                            </a>  
+                            <button class="btn btn-danger" onclick="return ConfirmEliminar()">
+                            <a href="<?php echo URL; ?>productos/eliminarProdu?id=<?php echo $row['id'];?> "   >
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-trash" viewBox="0 0 16 16">
                                     <path
@@ -82,6 +83,8 @@
                                         d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
                                 </svg>
                             </a>
+                            </button>
+          
                         </td>
                       </tr> 
                     <?php
@@ -93,6 +96,19 @@
         
 
     </div>
+
+    <script>
+          function ConfirmEliminar()
+    {
+        var respuesta=confirm("¿Está seguro que desea eliminar  este  usuario?");
+            if (respuesta==true)
+            {
+                return true;
+            } else{
+                return false;
+            }
+    }
+    </script>
 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">

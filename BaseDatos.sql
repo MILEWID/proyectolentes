@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 19-02-2021 a las 02:50:26
+-- Tiempo de generación: 26-02-2021 a las 03:51:53
 -- Versión del servidor: 10.4.11-MariaDB
 -- Versión de PHP: 7.4.5
 
@@ -24,6 +24,29 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `citas`
+--
+
+CREATE TABLE `citas` (
+  `id` int(250) NOT NULL,
+  `nombre` varchar(100) NOT NULL,
+  `apellido` varchar(50) NOT NULL,
+  `fecha` date NOT NULL,
+  `hora` time NOT NULL,
+  `motivo` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `citas`
+--
+
+INSERT INTO `citas` (`id`, `nombre`, `apellido`, `fecha`, `hora`, `motivo`) VALUES
+(1, 'Dennys', 'Rojas', '2021-02-25', '18:00:00', 'revisión rutinaria'),
+(2, 'Pepito', 'Pérez', '2021-03-10', '10:00:00', 'CAMBIO DE LUNAS DE LENTES');
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `producto`
 --
 
@@ -36,6 +59,14 @@ CREATE TABLE `producto` (
   `material` varchar(50) NOT NULL,
   `sexo` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `producto`
+--
+
+INSERT INTO `producto` (`id`, `nombre`, `marca`, `tipo`, `precio`, `material`, `sexo`) VALUES
+(1, 'Lentes', 'RayBan', 'Lentes de contacto', 125, 'Vidrio', 'Masculino'),
+(4, 'Gafas de sol', 'Cualquiera', 'lentes', 100000, 'Cualquiera', 'Femenino');
 
 -- --------------------------------------------------------
 
@@ -58,26 +89,39 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`nombreUsuario`, `idUsuario`, `nombre`, `apellido`, `tipoUsuario`, `correoElectronico`, `contrasena`) VALUES
-('maria', 5, 'Maria', 'Cando', '1', 'ejemplo@correo.com', 'asdf'),
-('maria1', 7, 'Maria', 'Cando', '1', 'ejemplo1@correo.com', 'fwqe'),
-('sebas', 8, 'Sebas', 'Mena', '2', 'sebas@gmail.com', 'sebas'),
-('jessymilena', 9, 'Jessy', 'Ballesteros', 'Administrador', 'jessy@milena.com', 'asdbasd45565+'),
-('maria2', 10, 'Maria', 'Cando', 'Cliente', 'ejemplo2@correo.com', 'ad');
+('dennysprueba', 17, 'Dennys', 'Rojas', 'Administrador', 'abc@abc.abc', '123abc'),
+('dennyspruba2', 18, 'Dennys', 'Rojas', 'Cliente', 'abcd@abc.abc', '123abcefg12'),
+('dennysrojas11111', 23, 'Dennys', 'Rojas', 'Cliente', 'drsasd@hotmadsail.com', '1235'),
+('sebasballesteros1', 24, 'Sebas', 'Ballesteros', 'Cliente', 'jessy@milena.comzrequiredrequired', '12345');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usumod`
+--
+
+CREATE TABLE `usumod` (
+  `ID` int(100) NOT NULL,
+  `nombre` varchar(100) NOT NULL,
+  `apellido` varchar(100) NOT NULL,
+  `usuario` varchar(100) NOT NULL,
+  `correo` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `usumod`
+--
+
+INSERT INTO `usumod` (`ID`, `nombre`, `apellido`, `usuario`, `correo`) VALUES
+(25, 'asdasd', 'sfasd', 'dennysrojas123', 'correods@gmail.com');
 
 --
 -- Índices para tablas volcadas
 --
 
-CREATE TABLE `citas` (
-  `id_auto` int AUTO_INCREMENT PRIMARY KEY,
-  `id` varchar(10) NOT NULL,
-  `nombre` varchar(50) NOT NULL,
-  `apellido` varchar(50) NOT NULL,
-  `fecha` date NOT NULL,
-  `hora` time NOT NULL,
-  `motivo` varchar(500) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
+--
+-- Indices de la tabla `citas`
+--
 ALTER TABLE `citas`
   ADD PRIMARY KEY (`id`);
 
@@ -96,20 +140,38 @@ ALTER TABLE `usuario`
   ADD UNIQUE KEY `correo` (`correoElectronico`);
 
 --
+-- Indices de la tabla `usumod`
+--
+ALTER TABLE `usumod`
+  ADD PRIMARY KEY (`ID`);
+
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
+
+--
+-- AUTO_INCREMENT de la tabla `citas`
+--
+ALTER TABLE `citas`
+  MODIFY `id` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `producto`
 --
 ALTER TABLE `producto`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `idUsuario` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `idUsuario` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+
+--
+-- AUTO_INCREMENT de la tabla `usumod`
+--
+ALTER TABLE `usumod`
+  MODIFY `ID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
