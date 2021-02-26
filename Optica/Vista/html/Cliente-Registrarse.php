@@ -176,7 +176,7 @@
         <div class="modal-body">
           <form method= "post" action="<?php echo URL?>ingreso/loginc/" name="form-registro" id="formulariolog">
 
-              <!-- USUARIO -->
+<!--             
 
           <div class="formulario__grupo" id="grupo__usuario2">
             <label for="nombre-usuario2" class="formulario__label">Usuario</label>
@@ -187,7 +187,7 @@
             <p class="formulario__input-error">El usuario ingresado debe tener de 4 a 16 digitos (solo puede contener números y letras)</p>
           </div>
           
-          <!-- CONTRASEÑA -->
+     
           
           <div class="formulario__grupo" id="grupo__contraseña">
             <label for="contraseña-cliente2" class="formulario__label">Contraseña</label>
@@ -206,7 +206,7 @@
 <div class="formulario__mensaje-exito">         
 <button type="submit" >Ingresar</button>
 <p class="mensaje-exito" id="mensaje-exito2">Cuenta creada correctamente!</p>
-</div>
+</div> -->
 
             <label for="nombre-usuario">Usuario: </label>
             <p><input type="text" id="nombre-usuario" name="nombre_usuario"> </input> </p>          

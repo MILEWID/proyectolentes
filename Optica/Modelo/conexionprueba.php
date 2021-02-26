@@ -5,7 +5,6 @@ class Cconexion{
 
         return $conexion;
     }
-
     function conexionPDO(){
         try {
             //Creamos la conexión PDO por medio de una instancia de su clase
