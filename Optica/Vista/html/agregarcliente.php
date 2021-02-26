@@ -237,11 +237,11 @@
   </main>
 
   
-  <footer>
+   <footer>
     <div class="container-fluid p-0">
       <div class="row text-left">
         <div class="col-md-5 col-sm-5">
-          <img class="imgfoot" src="<?php echo URL; ?>vista/imágenes/logopp.png" alt="Card image cap">
+         <img class="imgfoot" src="../imágenes/opti.jpg" >
           <p class="pt-4 text-muted">Copyright ©2021 Todos los derechos reservados |
             <span> Óptica Victoria</span>
           </p>
@@ -250,13 +250,19 @@
           <h4 class="text-light">Contactos</h4>
           <br>
           <p class="text-light">
-            <i class="fas fa-map-marker-alt mx-3"></i>Riobamba
+           
+             
+<a class='fas fa-map-marker-alt mx-3' href="https://outlook.live.com/owa/"></a>
+Machala
           </p>
           <p  class="text-light">
-            <i class="fas fa-at mx-3"></i>optica@hotmail.com
+           <a class='fas fa-at mx-3' href="https://www.google.com.ec/maps/place/Machala/@-3.2568589,-79.9960488,13z/data=!3m1!4b1!4m5!3m4!1s0x90330e252f104ed1:0xea4e189f2b2da97e!8m2!3d-3.2581112!4d-79.9553924?hl=es-419"></a>
+            optivictoria@gmail.com
           </p>
           <p  class="text-light">
-            <i class="fab fa-whatsapp mx-3"></i>09980072777
+<a class='fab fa-whatsapp mx-3' href=" https://web.whatsapp.com/"></a>
+
+           0960051989
           </p>        
           <form class="form-inline">
             <div class="col pl-0">
@@ -267,11 +273,12 @@
           </form>
         </div>
         <div class="col-md-2 col-sm-12">
-          <h4 class="text-light">Siguenos</h4>
+          <h4 class="text-light">Síguenos</h4>
           <p class="text-muted">En Facebook</p>
           <div class="column text-light">
-            <i class="fab fa-facebook-f"></i>
-       
+<a class='fab fa-facebook-f' href="https://m.facebook.com/profile.php?id=107756200792351&ref=content_filter"></a>
+
+           
           </div>
         </div>
       </div>
