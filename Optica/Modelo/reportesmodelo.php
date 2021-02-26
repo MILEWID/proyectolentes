@@ -37,5 +37,13 @@ class ReporteModelo{
         $resultado= $conexion->conectar()->query($query);
         return $resultado;
     }
+
+    function reporteTopLente(){
+        $conexion = new Cconexion();
+        $query="SELECT * FROM `producto` ORDER BY `precio` DESC LIMIT 5";
+        $resultado= $conexion->conectar()->query($query);
+        return $resultado;
+
+    }
 }
 ?>
