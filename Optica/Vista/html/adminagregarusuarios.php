@@ -25,7 +25,7 @@
                         <div class="col-md-6 mb-3">
                             <label for="validationServer01">Nombre:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control " name="validationServer01" id="validationServer01" placeholder="María Paula"
+                            <input type="text" class="form-control " name="validationServer01" id="validationServer01" placeholder="María Paula" pattern="[a-zA-Z ]{2,50}" title="debe ingresar letras de 2 a 50 caracteres"
                                 required>
                             <div class="valid-feedback">
                                 Es correcto
@@ -37,7 +37,7 @@
                         <div class="col-md-6 mb-3">
                             <label for="validationServer02">Apellido:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control " name="validationServer02" id="validationServer02" placeholder="Cando Chimbo"
+                            <input type="text" class="form-control " name="validationServer02" id="validationServer02" placeholder="Cando Chimbo" pattern="[a-zA-Z ]{2,50}" title="debe ingresar letras de 2 a 50 caracteres"
                                 required>
                             <div class="valid-feedback">
                                 Correcto
@@ -81,7 +81,7 @@
                                     <span class="input-group-text" id="inputGroupPrepend3">@</span>
                                 </div>
                                 <input type="text" class="form-control " name="validationServerUsername" id="validationServerUsername"
-                                    placeholder="@mariapaula" aria-describedby="inputGroupPrepend3" required>
+                                    placeholder="@mariapaula" aria-describedby="inputGroupPrepend3" required  pattern="[a-zA-Z ]{2,100}" title="debe ingresar letras de 2 a 100 caracteres">
                                 <div class="valid-feedback">
                                     Correcto
                                 </div>

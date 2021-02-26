@@ -116,7 +116,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body container">
-                        Ingrese el ID del usuario a buscar:
+                        Ingrese el ID del producto a buscar:
                         <div class="row">
                             <div class="col-8">
                                 <input type="text"  id="idProducto" class="form-control" placeholder="ej: 10" name="id" required>

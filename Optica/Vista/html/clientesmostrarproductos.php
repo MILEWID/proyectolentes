@@ -80,16 +80,7 @@
 </header>
     <div class="container">
         <div class="h1">PRODUCTOS DISPONIBLES </div>
-        <div class="row justify-content-end">
-            
-                <button type="button" class="btn btn-dark col-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
-                    viewBox="0 0 16 16">
-                    <path
-                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                </svg>
-                BUSCAR</button>
-        </div>
+  
 
         <div class="table-responsive">
             <table class="table table-striped table-dark">
@@ -129,29 +120,7 @@
 
     </div>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div >
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Buscar Productos</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body container">
-                        Ingrese el ID del usuario a buscar:
-                        <div class="row">
-                            <div class="col-8">
-                                <input type="text"  id="idProducto" class="form-control" placeholder="ej: 10" name="id" required>
-                            </div>
-                            <div class="col-4">
-                                <input type="submit" value="Buscar" onclick="producto_id()" class="btn-dark">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
     <script src="<?php echo URL ?>vista/js/jquery-3.2.1.min.js"></script>
     <script>

@@ -25,7 +25,7 @@
                         <div class="col-md-6 mb-3">
                             <label for="validationServer02">Nombre:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control " name="validationServer01" id="validationServer02" placeholder="lentes"
+                            <input type="text" class="form-control " name="validationServer01" id="validationServer02" placeholder="lentes" tabindex="1" pattern="[a-zA-Z ]{2,100}" title="debe ingresar letras de 2 a 100 caracteres">
                                 required>
                             <div class="valid-feedback">
                                 Correcto
@@ -37,7 +37,7 @@
                         <div class="col-md-6 mb-3">
                             <label for="validationServer01">Marca:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control " name="validationServer02" id="validationServer01" placeholder="vitalia"
+                            <input type="text" class="form-control " name="validationServer02"  id="validationServer01" placeholder="vitalia"
                                 required>
                             <div class="valid-feedback">
                                 Es correcto
@@ -64,7 +64,7 @@
                         <div class="col-md-6 mb-3">
                             <label for="validationServer01">Precio:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control"  name="validationServer04" min=10 max=1000 id="validationServer01" placeholder="5$"
+                            <input type="number" class="form-control"  name="validationServer04" min=10 max=500 id="validationServer01" placeholder="5$"
                                 required>
                             <div class="valid-feedback">
                                 Es correcto
@@ -78,8 +78,8 @@
                         <div class="col-md-6 mb-3">
                             <label for="validationServer01">Material:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control " name="validationServer05" id="validationServer01" placeholder="lino"
-                                required>
+                            <input type="text" class="form-control " name="validationServer05" id="validationServer01" placeholder="lino" pattern="[a-zA-Z ]{2,50}" title="debe ingresar letras de 2 a 50 caracteres"
+                                required >
                             <div class="valid-feedback">
                                 Es correcto
                             </div>

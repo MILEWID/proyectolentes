@@ -49,7 +49,7 @@ $datos= $valorescontrolador->fetch_assoc();
                             <label for="validationServer01">Nombre:</label>
                             <!-- is-valid es una clase para validar campos -->
                             <input type="text" class="form-control "  name="nombre" id="validationServer01" placeholder="María Paula" value=<?php echo $datos['nombre'] ?>
-                                required>
+                                required pattern="[a-zA-Z ]{2,50}" title="debe ingresar letras de 2 a 50 caracteres">
                             <div class="valid-feedback">
                                 Es correcto
                             </div>
@@ -61,7 +61,7 @@ $datos= $valorescontrolador->fetch_assoc();
                             <label for="validationServer02">Apellido:</label>
                             <!-- is-valid es una clase para validar campos -->
                             <input type="text" class="form-control " name="apellido" id="validationServer02" placeholder="Cando Chimbo" value=<?php echo $datos['apellido'] ?>
-                                required>
+                                required pattern="[a-zA-Z ]{2,100}" title="debe ingresar letras de 2 a 50 caracteres">
                             <div class="valid-feedback">
                                 Correcto
                             </div>
@@ -104,7 +104,7 @@ $datos= $valorescontrolador->fetch_assoc();
                                     <span class="input-group-text" id="inputGroupPrepend3">@</span>
                                 </div>
                                 <input type="text" class="form-control " id="validationServerUser" name="nombreUsuario"
-                                    placeholder="@mariapaula" aria-describedby="inputGroupPrepend3" name value=<?php echo $datos['nombreUsuario'] ?> required>
+                                    placeholder="@mariapaula" aria-describedby="inputGroupPrepend3" name value=<?php echo $datos['nombreUsuario'] ?> required pattern="[a-zA-Z ]{2,100}" title="debe ingresar letras de 2 a 100 caracteres">
                                 <div class="valid-feedback">
                                     Correcto
                                 </div>

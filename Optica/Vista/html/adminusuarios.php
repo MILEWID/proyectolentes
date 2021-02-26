@@ -107,7 +107,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body container">
-                        Ingrese el ID del usuario a buscar:
+                        Ingrese el Nombre y Apellido del usuario a buscar:
                         <div class="row">
                             <div class="col-4">
                                 <input type="text" class="form-control" placeholder="ej: nombre" name="nombre" required> 
