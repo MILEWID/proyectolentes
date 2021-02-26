@@ -89,27 +89,76 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">   
-          <h3 class="modal-title" id="exampleModalLabel" style="text-align: center;"><i class="fas fa-users"></i>  REGISTRARSE</h3>                  
+          <h3 class="modal-title" id="exampleModalLabel" style="text-align: center;"><i class="fas fa-users"></i> CREAR  - ÓPTICA VICTORIA</h3>                  
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-        <form action="<?php echo URL; ?>usuario/registrarcontroladorCliente" method="POST">
-            <label for="nombre-usuario"> Nombre de Usuario</label>
-            <p><input type="text" name="nombre-usuario" id="nombre-usuario"> </input> </p>
-            <label for="nombre-cliente"> Nombre </label>
-            <p><input type="text"  name="nombre-cliente" id="nombre-cliente"> </input> </p>           
-            <label for="apellido-cliente"> Apellido </label>
-            <p><input type="text" name="apellido-cliente" id="apellido-cliente"> </input></p>       
-            <label for="correo-cliente"> Correo </label>
-            <p><input type="email" name="correo-cliente" id="correo-cliente"></input></p> 
-            <label for="contraseña-cliente">Contraseña</label>
-            <p><input type="password"  name="contrasena-cliente" id="contraseña-cliente"> </input></p>              
-            <input type="submit" value="Crear Cuenta" class="btn btn-primary"></input>
-            <p></p>              
-            <input type="button" value="Cancelar"class="btn btn-warning"> </input>          
-          </form>
+        <form action="<?php echo URL; ?>usuario/registrarcontroladorCliente" method="POST" class="formulario" id="formulario">
+           
+           <!-- USUARIO -->
+           <div class="formulario__grupo" id="grupo__usuario">
+                <label for="nombre-usuario" class="formulario__label">Usuario</label>
+                <div class="formulario__grupo-input">
+                  <input type="text" name="nombre-usuario" id="nombre-usuario" class="formulario__input"> </input>
+                  <i class="formulario__validación-estado fas fa-times-circle"></i>
+                </div>         
+                <p class="formulario__input-error">El usuario ingresado debe tener de 4 a 16 digitos (solo puede contener números y letras)</p>
+           </div>
+   
+            <!-- NOMBRE -->
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre-cliente" class="formulario__label">Nombre</label>
+                <div class="formulario__grupo-input">
+                  <input type="text" name="nombre-cliente" id="nombre-cliente" class="formulario__input"> </input>
+                  <i class="formulario__validación-estado fas fa-times-circle"></i>
+                </div>         
+                <p class="formulario__input-error">El nombre ingresado solo pude contener letras</p>
+           </div>
+   
+            <!-- APELLIDO -->
+            <div class="formulario__grupo" id="grupo__apellido">
+                <label for="apellido-cliente" class="formulario__label">Apellido</label>
+                <div class="formulario__grupo-input">
+                  <input type="text" name="apellido-cliente" id="apellido-cliente" class="formulario__input"> </input>
+                  <i class="formulario__validación-estado fas fa-times-circle"></i>
+                </div>         
+                <p class="formulario__input-error">El apellido ingresado solo pude contener letras</p>
+           </div>
+   
+             <!-- CORREO -->
+             <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo-cliente" class="formulario__label">Correo</label>
+                <div class="formulario__grupo-input">
+                  <input type="email" name="correo-cliente" id="correo-cliente" class="formulario__input"> </input>
+                  <i class="formulario__validación-estado fas fa-times-circle"></i>
+                </div>         
+                <p class="formulario__input-error">El correo ingresado no es válido</p>
+           </div>
+   
+             <!-- CONTRASEÑA -->
+             <div class="formulario__grupo" id="grupo__contrasena">
+                <label for="contrasena-cliente" class="formulario__label">Contraseña</label>
+                <div class="formulario__grupo-input">
+                  <input type="password" name="contrasena-cliente" id="contrasena-cliente" class="formulario__input"> </input>
+                  <i class="formulario__validación-estado fas fa-times-circle"></i>
+                </div>         
+                <p class="formulario__input-error">La contraseña ingresada debe contener de 4 a 12 caracteres</p>
+           </div>      
+           
+           <div class="formulario__mensaje" id="formulario__mensaje">
+             <p><i class="fas fa-exclamation-triangle"></i><b> Error: </b>Por favor rellenar los datos correctamente. </p>
+           </div>
+           
+           <div class="formulario__mensaje-exito">         
+             <button type="submit" >Crear Cuenta</button>
+             <p class="mensaje-exito" id="mensaje-exito">Cuenta creada correctamente!</p>
+             
+           </div>
+   
+           </form>
+          
         </div>      
       </div>
     </div>
@@ -125,7 +174,40 @@
           </button>
         </div>
         <div class="modal-body">
-          <form method= "post" action="<?php echo URL?>ingreso/loginc/" name="form-registro">
+          <form method= "post" action="<?php echo URL?>ingreso/loginc/" name="form-registro" id="formulariolog">
+
+              <!-- USUARIO -->
+
+          <div class="formulario__grupo" id="grupo__usuario2">
+            <label for="nombre-usuario2" class="formulario__label">Usuario</label>
+            <div class="formulario__grupo-input">
+              <input type="text" name="nombre-usuario2" id="nombre-usuario2" class="formulario__input"> </input>
+              <i class="formulario__validación-estado fas fa-times-circle"></i>
+            </div>         
+            <p class="formulario__input-error">El usuario ingresado debe tener de 4 a 16 digitos (solo puede contener números y letras)</p>
+          </div>
+          
+          <!-- CONTRASEÑA -->
+          
+          <div class="formulario__grupo" id="grupo__contraseña">
+            <label for="contraseña-cliente2" class="formulario__label">Contraseña</label>
+            <div class="formulario__grupo-input">
+ <input type="password" name="contraseña-cliente2" id="contraseña-cliente2" class="formulario__input"> </input>
+ <i class="formulario__validación-estado fas fa-times-circle"></i>
+</div>         
+<p class="formulario__input-error">La contraseña ingresada debe contener de 4 a 12 caracteres</p>
+</div>
+
+
+<div class="formulario__mensaje" id="formulario__mensaje2">
+<p><i class="fas fa-exclamation-triangle"></i><b> Error: </b>Por favor rellenar los datos correctamente. </p>
+</div>
+
+<div class="formulario__mensaje-exito">         
+<button type="submit" >Ingresar</button>
+<p class="mensaje-exito" id="mensaje-exito2">Cuenta creada correctamente!</p>
+</div>
+
             <label for="nombre-usuario">Usuario: </label>
             <p><input type="text" id="nombre-usuario" name="nombre_usuario"> </input> </p>          
             <label for="contraseña-cliente" >Contraseña: </label>
@@ -317,4 +399,5 @@ echo "<a class='fab fa-facebook-f' href='$url'></a>";
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
   crossorigin="anonymous"></script>
   <script src="<?php echo URL; ?>vista/js/cliente.js"></script>
+  <script src="<?php echo URL; ?>vista/js/ValidarFormulario.js"></script>
 </html>
