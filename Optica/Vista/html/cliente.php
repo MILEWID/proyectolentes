@@ -73,20 +73,20 @@
         </div>
       </nav>
     </div>
-    <div class="container text-center">
+    <div class="container text-center" >
       <div class="row">
         <div class="col-md-7 col-sm-12  text-white">
-          <h2><span class="word" id="word"></span></h2>        
+          <span class="word" id="word"></span>     
           <h1>Dr. Byron Hidalgo</h1>
           <p>
-            Reciba un servicio especializado con la  mejor tecnología y precios, consulta con nuestros profesionales acerca de tu Salud Visual.
+            Reciba un servicio especializado con la  mejor tecnología y precios...
           </p>
           <button class="btn btn-light px-5 py-2 primary-btn"><i class="fas fa-user-edit mx-2"></i>
             RESERVAR CITA
           </button>
         </div>
         <div class="col-md-5 col-sm-12">
-          <img src="<?php echo URL; ?>vista/imágenes/undraw_doctors_white_cliente.svg" alt="doctor" class="img-fluid" />
+          <img src="<?php echo URL; ?>vista/imágenes/undraw_doctors_white_cliente.svg" alt="doctor" />
         </div>
       </div>
     </div>
@@ -403,7 +403,7 @@ echo "<a class='fab fa-facebook-f' href='$url'></a>";
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 
-  <script src="<?php echo URL; ?>vistas/js/cliente.js"></script>
+    <script src="<?php echo URL; ?>vista/js/cliente.js"></script>
 </body>
 
 </html>
