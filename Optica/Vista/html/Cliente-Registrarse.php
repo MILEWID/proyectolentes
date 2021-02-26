@@ -34,7 +34,9 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">ACERCA DE</a>
+  
+              
+              <a class="nav-link" href="#" >ACERCA DE</a>
             </li>             
             <li class="nav-item dropdown">
               <div class="dropdown">
