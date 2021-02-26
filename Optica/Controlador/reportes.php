@@ -41,4 +41,10 @@ class reportes extends Controlador
         $result  = $consulta->reporteCitas();
         parent::cargarvista("FpdfReportes/reporteExtra", $result);
     }
+
+    function reporteTop(){
+        $consulta = new ReporteModelo();
+        $result  = $consulta->reporteTopLente();
+        parent::cargarvista("FpdfReportes/reporteTopLentes", $result);
+    }
 }
