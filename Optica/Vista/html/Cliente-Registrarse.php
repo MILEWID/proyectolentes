@@ -34,7 +34,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">ACERCA DE</a>
+              <a class="nav-link" href="<?php echo URL; ?>vista/html/acercade.html">ACERCA DE</a>
             </li>             
             <li class="nav-item dropdown">
               <div class="dropdown">
@@ -176,7 +176,7 @@
         <div class="modal-body">
           <form method= "post" action="<?php echo URL?>ingreso/loginc/" name="form-registro" id="formulariolog">
 
-              <!-- USUARIO -->
+<!--             
 
           <div class="formulario__grupo" id="grupo__usuario2">
             <label for="nombre-usuario2" class="formulario__label">Usuario</label>
@@ -187,7 +187,7 @@
             <p class="formulario__input-error">El usuario ingresado debe tener de 4 a 16 digitos (solo puede contener números y letras)</p>
           </div>
           
-          <!-- CONTRASEÑA -->
+     
           
           <div class="formulario__grupo" id="grupo__contraseña">
             <label for="contraseña-cliente2" class="formulario__label">Contraseña</label>
@@ -206,7 +206,7 @@
 <div class="formulario__mensaje-exito">         
 <button type="submit" >Ingresar</button>
 <p class="mensaje-exito" id="mensaje-exito2">Cuenta creada correctamente!</p>
-</div>
+</div> -->
 
             <label for="nombre-usuario">Usuario: </label>
             <p><input type="text" id="nombre-usuario" name="nombre_usuario"> </input> </p>          
@@ -357,7 +357,7 @@ echo "<a class='fas fa-map-marker-alt mx-3' href='$url'></a>";
 $url="https://www.google.com.ec/maps/place/Machala/@-3.2568589,-79.9960488,13z/data=!3m1!4b1!4m5!3m4!1s0x90330e252f104ed1:0xea4e189f2b2da97e!8m2!3d-3.2581112!4d-79.9553924?hl=es-419"; 
 echo "<a class='fas fa-at mx-3' href='$url'></a>";
 ?> 
-            opticaVictoria@hotmail.com
+            optivictoria@gmail.com
           </p>
           <p  class="text-light">
  <?php
