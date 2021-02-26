@@ -18,7 +18,7 @@ mysqli_begin_transaction($conexion);
 mysqli_autocommit($conexion,false);
 
 
-$sql = "insert into cita(nombre,apellido,fecha,hora,motivo) 
+$sql = "insert into citas(nombre,apellido,fecha,hora,motivo) 
         values('".$name."','".$ape."','".$fecha."','".$hora."','".$motivo."')";
 
 
