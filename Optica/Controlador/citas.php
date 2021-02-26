@@ -56,7 +56,8 @@ class Citas extends Controlador
             $consulta = new CitaModelo();
             $resultado = $consulta->mostrarByDatos($_POST['nombre'], $_POST['apellido']);
             if(isset ($resultado)){
-                echo "Usuario no encontrado";
+                //echo "Usuario no encontrado";
+                parent::cargarvista("html/NoCita",$resultado);
             }
             else{
                 parent::cargarvista("html/BuscarCitas",$resultado);
