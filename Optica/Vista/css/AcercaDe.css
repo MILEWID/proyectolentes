@@ -46,8 +46,34 @@ header a {
 }
 
 .imgfoot{
-  width: 120px;
+  width: 420px;
   height: 120px;
+}
+
+.parr{
+  margin-top: 70px;
+  margin-left: 190px;
+  margin-right: 190px;
+  margin-bottom: 70px;
+
+}
+
+.lema{
+  color: #21675F;
+
+}
+
+
+.m{
+  padding: 20px;
+  margin-left: 400px;
+  margin-right: 400px;
+  /*margin-right: 600px;*/
+}
+
+.marcas{
+  background-color: #00324b;
+  color: white;
 }
 
 .dropdown-content {
@@ -92,4 +118,311 @@ header .navbar-brand {
 
 header .nav-link:hover {
   color: black;
+}
+
+.section-1{
+  z-index: 0; 
+  width: 100%;
+  height: 610px;
+}
+
+.section-1 img{
+  width: 100%;
+  height: 600px;
+}
+
+/* Section 2 */
+ .section-2{
+   padding-bottom: 100px;
+ }
+
+.purchase > h1 {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  font-family: var(--Lobster);
+  color: black;
+}
+
+.purchase > p {
+  color:black;
+  font-size: 3vmin;
+  padding-bottom: 70px;
+}
+
+.purchase .cards .card {
+  width: 20rem;
+  margin: 3vmin 3vmin;
+}
+
+.cards div {
+  padding: 0;
+  margin: 0;  
+}
+
+
+
+.card{
+  box-shadow: #000000;
+  border: none;
+}
+
+.card-body{
+  background: var(--bggradient);
+}
+
+.cards .title {
+  background: rgba(252, 252, 252, 0.199);
+  color:black;
+  font-size: 2vmin;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-family: var(--Patua);
+}
+
+.card .card-text {
+  color: white;
+  padding: 40px;
+  padding-bottom: 40px;
+  font-size: 18px;
+  font-family: var(--Sniglet-font);
+
+}
+
+
+.card-body .pricing {
+  background: rgba(208, 241, 241, 0.199);
+  border-top-right-radius: 170px;
+  border-top-left-radius: 170px;
+  padding-bottom: 5px;
+}
+
+.card-body .pricing > h1 {
+  font-size: 10vmin;
+}
+
+.inner{
+  overflow: hidden;
+}
+
+.inner img{
+  transition: all 1.5s ease;
+}
+
+.inner:hover img{
+  transform: scale(1.5);
+}
+
+
+
+
+footer {
+  background: rgba(0, 0, 0, 0.815);
+  overflow-x: hidden;
+  padding: 14vmin 18vmin;
+}
+
+footer p > span {
+  color: #ff512f;
+}
+
+footer input {
+  border: none !important;
+}
+
+footer input::placeholder {
+  color: white !important;
+}
+
+footer .input-group .input-group-text {
+  background: var(--bggradient);
+  border: none;
+}
+
+footer .column i {
+  color: #dd2476;
+}
+
+
+footer .column i + i {
+  padding: 0 0.5em;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.815);
+  z-index: 9999;
+  transition: all 1.5s ease;
+}
+
+/* section 4 */
+
+.section-4 .container h1 {
+  font-size: 6vmin;
+  padding-top: 14vmin;
+}
+
+.section-4 .team {
+  padding: 10vmin 4vmin;
+}
+
+.section-4 .card {
+  width: 22em;
+  margin-top: 10vmin;
+}
+
+.section-4 .card .card-text {
+  padding: 0.5em;
+}
+
+.section-4 .card-body > a {
+  font-size: 1.5em;
+}
+
+.section-4 .banner-card{
+ padding-top: 60px;
+}
+
+.section-4 .carousel-item {
+  padding-left: 3rem;
+}
+
+.border-radius {
+  border-radius: 340px;
+  width: 60%;
+}
+
+/* formularios*/
+
+.modal-header {
+  background: #5CB9BE;
+  color: white;
+}
+
+.formulario__grupo{
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.formulario__label{
+  display: block;
+  font-weight: 700;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.formulario__grupo-input{
+  position: relative;
+}
+
+.formulario__input{
+  width: 100%;
+  background: rgb(228, 228, 228);
+  border: 2px solid transparent;
+  border-radius: 3px;
+  height:  40px;
+  padding: 0px 40px 0 5px;
+  transition: .3s ease all;
+}
+
+.formulario__input:focus{
+  border: 2px solid #0069D9;
+  outline: none;
+  box-sizing: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error{
+  font-size: 12px;
+  margin-bottom: 0;
+  padding: 10px 0;
+  display: none;
+}
+
+.formulario__input-error-activo{
+  display: block;
+}
+
+.formulario__validación-estado{
+  position: absolute;
+  right: 10px;
+  bottom: 12px;
+  z-index: 100;
+  opacity: 0;
+  font-size: 16px;
+}
+
+.formulario__mensaje{
+  margin-top: 20px;
+  margin-right: 8px;
+  margin-left: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 45px;
+  padding: 0 15px;
+  height: 45px;
+  background: rgb(228, 76, 76);
+  border-radius: 3px;
+  color: #000000;
+  display: none;
+}
+
+.formulario__mensaje p{
+  margin: 0;
+}
+
+.formulario__mensaje-activo{
+  display: block;
+}
+
+.formulario__mensaje-exito{
+  margin-top: 15px;
+  color: green;
+  text-align: center;  
+}
+
+.formulario__mensaje-exito button{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background: #000000;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+  width: 40%;
+  height: 40px;
+}
+
+.visi{
+ color: #14AA99;
+}
+
+.mensaje-exito{
+  display: none;
+}
+
+.mensaje-exito-activo{
+  
+  display: block;
+}
+
+
+/* estilos validaciones js */
+
+.formulario__grupo-correcto .formulario__validación-estado{
+  color: rgb(103, 221, 103);
+  opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label{
+  color: #b92709;
+}
+
+.formulario__grupo-incorrecto .formulario__validación-estado{
+  color: #b92709;
+  opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input{
+  border: 2px solid #b92709;
 }
