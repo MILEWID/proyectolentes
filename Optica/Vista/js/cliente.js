@@ -27,11 +27,7 @@ $(window).scroll(function () {
 
 
 
-/**
- *
- *  sticky navigation
- *
- */
+
 
 let navbar = $(".navbar");
 

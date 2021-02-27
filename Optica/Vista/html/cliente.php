@@ -108,8 +108,7 @@
       <div class="container-fluid text-center">
         <div class="numbers d-flex flex-md-row flex-wrap justify-content-center">
 
-          <div class="rect">
-            <h1>20</h1>
+          <div class="rect">      
             <p>LENTES</p>
             <div class="container">
               <img src="<?php echo URL; ?>vista/imágenes/Lentes de Sol_Productos.jpg" alt="" class="img-fluid">
@@ -117,8 +116,7 @@
             <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5"><i class="fas fa-plus-circle mx-2"></i>Ver más</a>           
           </div>
 
-          <div class="rect">
-            <h1>100</h1>
+          <div class="rect"> 
             <p>LUNAS</p>
             <div class="container">
               <img src="<?php echo URL; ?>vista/imágenes/Lentes de Sol_Productos.jpg" alt="" class="img-fluid">
@@ -126,7 +124,6 @@
             <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5"><i class="fas fa-plus-circle mx-2"></i>Ver más</a>    
           </div>
           <div class="rect">
-            <h1>56</h1>
             <p>ARMAZONES</p>
             <div class="container">
               <img src="<?php echo URL; ?>vista/imágenes/Lentes de Sol_Productos.jpg" alt="" class="img-fluid">
@@ -134,8 +131,7 @@
             <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5"><i class="fas fa-plus-circle mx-2"></i>Ver más</a>      
           </div>
 
-          <div class="rect">
-            <h1>91</h1>
+          <div class="rect">  
             <p>KIT DE LIMPIEZA</p>
             <div class="container">
               <img src="<?php echo URL; ?>vista/imágenes/Lentes de Sol_Productos.jpg" alt="" class="img-fluid">
@@ -162,8 +158,7 @@
                 <p class="card-text">
                   Realiza un control de tu estado de salud visual para prevenir posibles problemas patológicos.                
                 </p>
-                <div class="pricing">
-                  <h1>$50.99</h1>
+                <div class="pricing">                  
                   <br>
                   <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5"><i class="fas fa-user-edit mx-2"></i>Agendar Cita</a>
                 </div>
@@ -182,10 +177,9 @@
                 <p class="card-text">
                   Realiza un control de tu estado de salud visual para prevenir posibles problemas patológicos.                
                 </p>
-                <div class="pricing">
-                  <h1>$100.99</h1>
+                <div class="pricing">              
                   <br>
-                  <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5"><i class="fas fa-user-edit mx-2"></i>Agendar Cita</a>
+                  <a href="#" style="" class="btn btn-dark px-5 py-2 primary-btn mb-5"><i class="fas fa-user-edit mx-2"></i>Agendar Cita</a>
                 </div>
               </div>
             </div>
@@ -200,12 +194,9 @@
                 </div>
                 <p class="card-text">
                   Realiza un control de tu estado de salud visual para prevenir posibles problemas patológicos.                
-                </p>
-                <div class="pricing">
-                  <h1>$45.99</h1>
-                  <br>
+                </p>                                                      
                   <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5"><i class="fas fa-user-edit mx-2"></i>Agendar Cita</a>
-                </div>
+              
               </div>
             </div>
 
@@ -232,7 +223,6 @@
     <section class="section-4">
      
       <div class="team row ">
-       
        <div class="col-md-4 col-12">
             <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
                 <div class="carousel-inner text-center">
@@ -409,10 +399,10 @@ echo "<a class='fab fa-facebook-f' href='$url'></a>";
                 <div class="modal-body container">
                     <div class="row">
                         <div class="col">
-                            <input type="text" id="id_inputNames"  class="form-control" placeholder="Nombres" aria-label="First name">
+                            <input type="text" id="id_inputNames"  class="form-control" placeholder="Nombres" aria-label="First name"  pattern="[a-zA-ZÀ-ÿ\s]{1,40}">
                         </div>
                         <div class="col">
-                            <input type="text"  id="id_inputApes" class="form-control" placeholder="Apellidos" aria-label="Last name">
+                            <input type="text"  id="id_inputApes" class="form-control" placeholder="Apellidos" aria-label="Last name" pattern="[a-zA-ZÀ-ÿ\s]{1,40}">
                         </div>
                     </div>
 
@@ -420,10 +410,11 @@ echo "<a class='fab fa-facebook-f' href='$url'></a>";
 
                     <div class="row">
                         <div class="col">
-                            <input type="date" id="id_inputDate" class="form-control" placeholder="" aria-label="First name">
+                            <input type="date" id="id_inputDate" class="form-control" placeholder="" aria-label="First name" min="2021-02-27" max="2041-05-28">
                         </div>
                         <div class="col">
-                            <input type="time" id="id_inputTime" class="form-control" placeholder="Last name" aria-label="Last name">
+                            <input type="time" id="id_inputTime" class="form-control" placeholder="Last name" aria-label="Last name" min="09:00" max="17:30">
+                            
                         </div>
                     </div>
                     <br>
