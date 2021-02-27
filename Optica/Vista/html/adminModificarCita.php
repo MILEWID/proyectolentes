@@ -32,7 +32,7 @@ $datos = $valorescontrolador->fetch_assoc();
                                  ?>">
                                 <label for="validationServer01">Nombre:</label>
                                 <!-- is-valid es una clase para validar campos -->
-                                <input type="text" class="form-control " pattern="[A-Za-z]+" title="Ingrese solo letras" name="nombre" minlength="2" maxlength="40" id="validationServer01" value=<?php echo $datos['nombre'] ?>
+                                <input type="text" class="form-control " pattern="[A-Za-z]+" title="Ingrese solo letras" name="nombre" minlength="2" maxlength="50" id="validationServer01" value=<?php echo $datos['nombre'] ?>
                                      required>
                                 <div class="valid-feedback">
                                     Es correcto
@@ -44,7 +44,7 @@ $datos = $valorescontrolador->fetch_assoc();
                             <div class="col-md-6 mb-3">
                                 <label for="validationServer02">Apellido:</label>
                                 <!-- is-valid es una clase para validar campos -->
-                                <input type="text" class="form-control " pattern="[A-Za-z]+" title="Ingrese solo letras" name="apellido" minlength="2" maxlength="40" id="validationServer02" value=<?php echo $datos['apellido'] ?>
+                                <input type="text" class="form-control " pattern="[A-Za-z]+" title="Ingrese solo letras" name="apellido" minlength="2" maxlength="50" id="validationServer02" value=<?php echo $datos['apellido'] ?>
                                     required>
                                 <div class="valid-feedback">
                                     Correcto
