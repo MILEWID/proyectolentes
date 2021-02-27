@@ -73,20 +73,42 @@ class Citas extends Controlador
     }
 
     function buscarcita2(){
+        $resultado = 0;
         if(isset($_POST['nombre']) && isset($_POST['apellido'])){
             $consulta = new CitaModelo();
             $resultado = $consulta->mostrarByDatos($_POST['nombre'], $_POST['apellido']);
-            if($resultado){
+            if( empty ($resultado)){
                 //echo "Usuario no encontrado";
-                parent::cargarvista("html/BuscarCitas",$resultado);
+                parent::cargarvista("html/NoCita",$resultado);
             }
             else{
-                //parent::cargarvista("html/BuscarCitas",$resultado);
-                echo "Usuario no encontrado";
+                parent::cargarvista("html/BuscarCitas",$resultado);
+                //echo "Usuario no encontrado";
             }
         }
         else{
-            //parent::cargarvista("html/NoCita",$resultado);
+            parent::cargarvista("html/NoCita",$resultado);
+        }
+    }
+
+    function buscarcita3(){
+        if(isset($_POST['nombre'] )){
+            if(isset($_POST['apellido'] )){
+            $consulta = new CitaModelo();
+            $resultado = $consulta->mostrarByDatos($_POST['nombre'], $_POST['apellido']);
+            if(isset ($resultado)){
+                echo "Usuario no encontrado";
+            }
+            else{
+                parent::cargarvista("html/BuscarCitas",$resultado);
+            }
+            }
+            else{
+                echo "no llega apellido";
+            }
+        }
+        else{
+            echo "no llega";
         }
     }
 
