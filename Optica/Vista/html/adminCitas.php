@@ -182,10 +182,10 @@
                 <div class="modal-body container">
                     <div class="row">
                         <div class="col">
-                            <input type="text" id="id_inputNames"  class="form-control" placeholder="Nombres" aria-label="First name">
+                            <input type="text" id="id_inputNames" pattern="[A-Za-z]+"  title="Ingrese solo letras" minlength="2" maxlength="50"  class="form-control" placeholder="Nombres" aria-label="First name">
                         </div>
                         <div class="col">
-                            <input type="text"  id="id_inputApes" class="form-control" placeholder="Apellidos" aria-label="Last name">
+                            <input type="text"  id="id_inputApes" pattern="[A-Za-z]+"  title="Ingrese solo letras" minlength="2" maxlength="50" class="form-control" placeholder="Apellidos" aria-label="Last name">
                         </div>
                     </div>
 
@@ -193,16 +193,16 @@
 
                     <div class="row">
                         <div class="col">
-                            <input type="date" id="id_inputDate" class="form-control" placeholder="" aria-label="First name">
+                            <input type="date" id="id_inputDate" min="2021-02-27" max="2041-05-28" class="form-control" placeholder="" aria-label="First name">
                         </div>
                         <div class="col">
-                            <input type="time" id="id_inputTime" class="form-control" placeholder="Last name" aria-label="Last name">
+                            <input type="time" id="id_inputTime" min="09:00" max="17:30" class="form-control" placeholder="Last name" aria-label="Last name">
                         </div>
                     </div>
                     <br>
 
                     <div class="form-floating">
-                        <textarea class="form-control" id="id_inputMotivos" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <textarea class="form-control" id="id_inputMotivos" minlength="2" maxlength="250" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
                         <label for="floatingTextarea2">Comentarios</label>
                     </div>
 
