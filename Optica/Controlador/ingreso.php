@@ -42,8 +42,8 @@ class Ingreso extends Controlador
 				}
 			} else {
 				
-			//parent::cargarvista("html/NoIngreso");
-			echo "La contraseña o usuario no coinciden";
+			parent::cargarvista("html/NoIngreso");
+			//echo "La contraseña o usuario no coinciden";
 			}
 		} 
 	}
