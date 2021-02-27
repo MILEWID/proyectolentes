@@ -110,11 +110,11 @@
                         Ingrese el Nombre y Apellido del usuario a buscar:
                         <div class="row">
                             <div class="col-4">
-                                <input type="text" class="form-control" placeholder="ej: nombre" name="nombre" required> 
+                                <input type="text" class="form-control" pattern="[A-Za-z]+"  title="Ingrese solo letras" minlength="2" maxlength="50" placeholder="ej: nombre" name="nombre" required> 
                             </div>
 
                             <div class="col-4">
-                                <input type="text" class="form-control" placeholder="ej: apellido" name="apellido" required> 
+                                <input type="text" class="form-control" pattern="[A-Za-z]+"  title="Ingrese solo letras" minlength="2" maxlength="50" placeholder="ej: apellido" name="apellido" required> 
                             </div>
                             <div class="col-4">
                                 <input type="submit" value="Buscar" class="btn-dark">

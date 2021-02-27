@@ -41,7 +41,7 @@ class Ingreso extends Controlador
 					header("location: ".URL."ingreso/cliente");
 				}
 			} else {
-			
+				
 			parent::cargarvista("html/NoIngreso");
 			//echo "La contraseña o usuario no coinciden";
 			}

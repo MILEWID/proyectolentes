@@ -212,7 +212,7 @@
             <p><input type="text" id="nombre-usuario" name="nombre_usuario" class="formulario_input"> </input> </p>          
             <label for="contraseña-cliente" >Contraseña: </label>
             <p><input type="password" id="contraseña-cliente" name="contraseña_cliente"> </input></p>  
-            <p><a href="">¿Olvidaste tu contraseña?</a></p>        
+            <p><a href=""></a></p>        
             <input type="submit" value="Ingresar" class="btn btn-primary"></input>
             <p></p>
             <input type="button" value="Cancelar"class="btn btn-warning"> </input>          

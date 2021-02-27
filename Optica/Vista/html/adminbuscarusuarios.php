@@ -25,19 +25,19 @@ $datos = $valorescontrolador->fetch_assoc();
         <div class="row justify-content-center">
             <form>
                 <class class="form-row">
-                    <div class="h1"> USUARIO # <span name="idUsuario"><?php echo $datos['idUsuario'] ?></span></div>
+                  <div class="h1"> DATOS DEL USUARIO # <span name="idUsuario"><?php echo $datos['idUsuario'] ?></span></div>
                
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="validationServer01">Nombre:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control "  value="<?php echo $datos['nombre'] ?>"  disabled required readonly>
+                            <input type="text" class="form-control "  pattern="[A-Za-z]+"  title="Ingrese solo letras" minlength="2" maxlength="50" value="<?php echo $datos['nombre'] ?>"  disabled required readonly>
              
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="validationServer02">Apellido:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control "  disabled
+                            <input type="text" class="form-control "  disabled pattern="[A-Za-z]+"  title="Ingrese solo letras" minlength="2" maxlength="50"
                                 required value="<?php echo $datos['apellido'] ?>" readonly>
                         </div>
                     </div>
