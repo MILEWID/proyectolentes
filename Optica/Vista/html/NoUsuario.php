@@ -1,11 +1,12 @@
 <?php
-//$datos = $valorescontrolador->fetch_assoc();
+$datos = $valorescontrolador->fetch_assoc();
 ?>
 
 
 <!DOCTYPE html>
 <html lang="es">
 <!--hola-->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,8 +31,8 @@
                <h3 id="aviso">EL REGISTRO NO SE ENCONTRÓ EN LA BASE DATOS</h2>
 
                <br> <br>
-        <a href="<?php echo URL ?>usuario" class="btn btn-primary" type="submit">LISTO</a>
-        <a class="btn btn-dark" href="<?php echo URL ?>usuario">CANCELAR</a>
+        <a href="<?php echo URL ?>" class="btn btn-primary" type="submit">LISTO</a>
+        <a class="btn btn-dark" href="<?php echo URL ?>">CANCELAR</a>
         </form>
     </div>
     </div>

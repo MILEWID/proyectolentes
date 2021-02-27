@@ -16,7 +16,7 @@
     <link rel="stylesheet"  href="<?php echo URL ?>vista/css/adminmenu.css">
     <link rel="stylesheet" href="<?php echo URL ?>vista/css/directorios.css">
     <link rel="stylesheet" href="<?php echo URL ?>vista/css/agregar.css">
-    <title> Usuario </title>
+    <title> Ingreso </title>
 </head>
 
 <body>
