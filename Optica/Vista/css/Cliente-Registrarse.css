@@ -269,6 +269,10 @@ footer .column i + i {
 
 /* formularios*/
 
+input{
+  width: 100%;
+}
+
 .modal-header {
   background: #5CB9BE;
   color: white;

@@ -209,7 +209,7 @@
 </div> -->
 
             <label for="nombre-usuario">Usuario: </label>
-            <p><input type="text" id="nombre-usuario" name="nombre_usuario"> </input> </p>          
+            <p><input type="text" id="nombre-usuario" name="nombre_usuario" class="formulario_input"> </input> </p>          
             <label for="contraseña-cliente" >Contraseña: </label>
             <p><input type="password" id="contraseña-cliente" name="contraseña_cliente"> </input></p>  
             <p><a href="">¿Olvidaste tu contraseña?</a></p>        
