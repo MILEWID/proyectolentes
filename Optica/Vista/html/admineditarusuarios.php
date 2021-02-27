@@ -104,7 +104,7 @@ $datos= $valorescontrolador->fetch_assoc();
                                     <span class="input-group-text" id="inputGroupPrepend3">@</span>
                                 </div>
                                 <input type="text" class="form-control " id="validationServerUser" name="nombreUsuario"
-                                    placeholder="@mariapaula" aria-describedby="inputGroupPrepend3" name value=<?php echo $datos['nombreUsuario'] ?> required pattern="[a-zA-Z ]{2,100}" title="debe ingresar letras de 2 a 100 caracteres">
+                                    placeholder="@mariapaula" aria-describedby="inputGroupPrepend3" name value=<?php echo $datos['nombreUsuario'] ?> required pattern="{4,16}" title="debe ingresar letras de 2 a 100 caracteres">
                                 <div class="valid-feedback">
                                     Correcto
                                 </div>
