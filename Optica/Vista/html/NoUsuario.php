@@ -1,5 +1,5 @@
 <?php
-$datos = $valorescontrolador->fetch_assoc();
+//$datos = $valorescontrolador->fetch_assoc();
 ?>
 
 
