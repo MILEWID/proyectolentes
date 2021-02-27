@@ -43,7 +43,7 @@ class Citas extends Controlador
         $result = $consulta->registrarCita($id, $nombre, $apellido, $fecha, $hora, $motivo);
         // se valida si la consulta fue existosa
         if ($consulta == "okey"){
-            echo "Si se guardo";
+            echo "Sí se guardó";
         }
         else{
             echo $result;
@@ -153,10 +153,10 @@ class Citas extends Controlador
                 header("location:" .URL. "citas");
             }
             else{
-                echo 'algo salio mal';
+                echo 'algo salió mal';
             }           
         }else{
-            echo "no llego";
+            echo "no llegó";
         }
     }
 
