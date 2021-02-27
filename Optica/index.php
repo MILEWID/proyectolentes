@@ -7,5 +7,5 @@ include("./libs/app.php");
 include("./libs/controlador.php");
 include("./libs/vista.php");
 
-// se instancia e inicializa la applicacion
+// se instancia e inicializa la applicacion 
 $app = new App();
