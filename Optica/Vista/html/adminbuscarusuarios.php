@@ -25,7 +25,7 @@ $datos = $valorescontrolador->fetch_assoc();
         <div class="row justify-content-center">
             <form>
                 <class class="form-row">
-                  <div class="h1"> DATOS DEL USUARIO # <span name="idUsuario"><?php echo $datos['nombre'] ?></span></div>
+                  <div class="h1"> DATOS DEL USUARIO # <span name="idUsuario"><?php(echo($_POST['nombre' ]) && echo($_POST['apellido']))?></span></div>
                
                     <div class="row">
                         <div class="col-md-6 mb-3">
