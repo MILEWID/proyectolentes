@@ -22,7 +22,7 @@
 </head>
 
 <body>
-<header style="height: 100vh;">
+<header>
 <div class="container-fluid p-0">
       <nav class="navbar navbar-expand-lg">
         <a id="logo" class="navbar-brand" href="#"> <i class="fas fa-glasses fa-1x mx-2"> </i>
@@ -62,8 +62,12 @@
       </nav>
     </div>
 
-    
-    <div class="container">
+    <div  align="center" class="container-fluid">
+      <img  src="<?php echo URL?>Vista/imágenes/Citas.svg" alt="">
+    </div>  
+</header>
+  
+<div class="container " style="padding: 40px;">
         <div class="h1">PRODUCTOS DISPONIBLES </div>
         <div class="table-responsive">
             <table class="table table-striped table-dark">
@@ -100,8 +104,6 @@
             </table>
         </div>
     </div>
-    
-</header>
 
     <script src="<?php echo URL ?>vista/js/jquery-3.2.1.min.js"></script>
     <script>
