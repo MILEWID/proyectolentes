@@ -181,6 +181,7 @@
                 </div>
                 <div class="modal-body container">
                     <div class="row">
+                    
                         <div class="col">
                             <input type="text" id="id_inputNames" pattern="[A-Za-z]+"  title="Ingrese solo letras" minlength="2" maxlength="50"  class="form-control" placeholder="Nombres" aria-label="First name">
                         </div>
