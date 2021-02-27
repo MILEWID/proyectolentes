@@ -153,10 +153,10 @@ class Usuario extends Controlador{
                 
             }
             else{
-                echo 'algo salio mal';
+                echo 'Algo salió mal';
             }         
    } else{
-            echo "no llego";
+            echo "No llegó";
         }
    }
 }

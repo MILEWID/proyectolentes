@@ -104,7 +104,7 @@
                   <input type="text" name="nombre-usuario" id="nombre-usuario" class="formulario__input"> </input>
                   <i class="formulario__validación-estado fas fa-times-circle"></i>
                 </div>         
-                <p class="formulario__input-error">El usuario ingresado debe tener de 4 a 16 digitos (solo puede contener números y letras)</p>
+                <p class="formulario__input-error">El usuario ingresado debe tener de 4 a 16 dígitos (sólo puede contener números y letras)</p>
            </div>
    
             <!-- NOMBRE -->
@@ -114,7 +114,7 @@
                   <input type="text" name="nombre-cliente" id="nombre-cliente" class="formulario__input"> </input>
                   <i class="formulario__validación-estado fas fa-times-circle"></i>
                 </div>         
-                <p class="formulario__input-error">El nombre ingresado solo pude contener letras</p>
+                <p class="formulario__input-error">El nombre ingresado sólo puede contener letras</p>
            </div>
    
             <!-- APELLIDO -->
@@ -124,7 +124,7 @@
                   <input type="text" name="apellido-cliente" id="apellido-cliente" class="formulario__input"> </input>
                   <i class="formulario__validación-estado fas fa-times-circle"></i>
                 </div>         
-                <p class="formulario__input-error">El apellido ingresado solo pude contener letras</p>
+                <p class="formulario__input-error">El apellido ingresado sólo pude contener letras</p>
            </div>
    
              <!-- CORREO -->
