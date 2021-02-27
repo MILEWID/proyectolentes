@@ -121,7 +121,7 @@
             <p><input type="text" id="nombre-usuario"> </input> </p>          
             <label for="contraseña-cliente">Contraseña</label>
             <p><input type="password" id="contraseña-cliente"> </input></p>  
-            <p><a href="">Olvidaste tu Contraseña?</a></p>            
+            <p><a href="">¿Olvidaste tu Contraseña?</a></p>            
             <input type="submit" value="Ingresar" class="btn btn-primary"></input>
             <input type="button" value="Cancelar"class="btn btn-warning"> </input>          
           </form>
@@ -246,17 +246,30 @@
             <span> Óptica Victoria</span>
           </p>
         </div>
-        <div class="col-md-5 col-sm-12">
+       <div class="col-md-5 col-sm-12">
           <h4 class="text-light">Contactos</h4>
           <br>
           <p class="text-light">
-            <i class="fas fa-map-marker-alt mx-3"></i>Riobamba
+           
+             <?php
+$url="https://outlook.live.com/owa/"; 
+echo "<a class='fas fa-map-marker-alt mx-3' href='$url'></a>";
+?> Machala
           </p>
           <p  class="text-light">
-            <i class="fas fa-at mx-3"></i>optica@hotmail.com
+            <?php
+$url="https://www.google.com.ec/maps/place/Machala/@-3.2568589,-79.9960488,13z/data=!3m1!4b1!4m5!3m4!1s0x90330e252f104ed1:0xea4e189f2b2da97e!8m2!3d-3.2581112!4d-79.9553924?hl=es-419"; 
+echo "<a class='fas fa-at mx-3' href='$url'></a>";
+?> 
+            optivictoria@gmail.com
           </p>
           <p  class="text-light">
-            <i class="fab fa-whatsapp mx-3"></i>09980072777
+ <?php
+$url=" https://web.whatsapp.com/"; 
+echo "<a class='fab fa-whatsapp mx-3' href='$url'></a>";
+?> 
+
+           0960051989
           </p>        
           <form class="form-inline">
             <div class="col pl-0">
@@ -267,11 +280,15 @@
           </form>
         </div>
         <div class="col-md-2 col-sm-12">
-          <h4 class="text-light">Siguenos</h4>
+          <h4 class="text-light">Síguenos</h4>
           <p class="text-muted">En Facebook</p>
           <div class="column text-light">
-            <i class="fab fa-facebook-f"></i>
-       
+<?php
+$url="https://m.facebook.com/profile.php?id=107756200792351&ref=content_filter"; 
+echo "<a class='fab fa-facebook-f' href='$url'></a>";
+?> 
+
+           
           </div>
         </div>
       </div>
