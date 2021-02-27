@@ -74,7 +74,7 @@ $id = $_GET['id'];
                         <div class="col-md-6 mb-3">
                             <label for="validationServer01">Precio:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control" value="<?php echo $_GET['precio']?>" name="validationServer04" id="idPrecio" placeholder="5$" min=10 max=500
+                            <input type="number" class="form-control" value="<?php echo $_GET['precio']?>" name="validationServer04" id="idPrecio" placeholder="5$" min=10 max=500
                                 required>
                             <div class="valid-feedback">
                                 Es correcto
