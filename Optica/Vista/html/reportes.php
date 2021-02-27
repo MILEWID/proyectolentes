@@ -101,7 +101,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Reporte de usuarios</h5>
-                        <p class="card-text">Reporte de la totalidad de usuarios</p>
+                        <p class="card-text">Reporte de la totalidad de usuarios en el sistema</p>
                         <a href="<?php echo URL ?>reportes/reporteusuarios" class="btn btn-dark">Descargar pdf
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-file-earmark-text-fill" viewBox="0 0 16 16">
@@ -118,7 +118,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Reporte productos para mujeres</h5>
-                        <p class="card-text">En este reporte se encuentran los porductos que han sido vendidos para
+                        <p class="card-text">En este reporte se encuentran los productos que han sido vendidos para
                             mujeres</p>
                          <a href="http://localhost/proyectolentes/Optica/Vista/FpdfReportes/reportMProducto.php" class="btn btn-dark">Descargar pdf
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -134,7 +134,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Reporte productos para hombres</h5>
-                        <p class="card-text">En este reporte se encuentran los porductos que han sido vendidos para
+                        <p class="card-text">En este reporte se encuentran los productos que han sido vendidos para
                             hombres</p>
                         <a href="http://localhost/proyectolentes/Optica/Vista/FpdfReportes/reportHProducto.php" class="btn btn-dark">Descargar pdf
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -150,7 +150,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Reporte Citas Agendadas</h5>
-                        <p class="card-text">Reporte para visualizar las citas existentes.</p>
+                        <p class="card-text">Reporte para visualizar las citas existentes en el sistema</p>
                         <a href="<?php echo URL ?>reportes/reportecitas" class="btn btn-dark">Descargar pdf
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-file-earmark-text-fill" viewBox="0 0 16 16">
