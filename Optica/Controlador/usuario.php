@@ -115,12 +115,11 @@ class Usuario extends Controlador{
             if(isset ($resultado)){
                parent::cargarvista("html/adminbuscarusuarios",$resultado);
                // echo "Usuario no encontrado";
-               // parent::cargarvista("html/NoUsuario",$resultado);
                // header("Location: ".URL."usuario/mostrarcontrolador");
             } else{
                // parent::cargarvista("html/adminbuscarusuarios",$resultado);
-            // parent::cargarvista("html/NoUsuario",$resultado);
-               echo "Usuario no encontrado";
+            // parent::cargarvista("html/UsuarioNoEncontrado",$resultado);
+              echo "Usuario no encontrado";
             }
  
         }

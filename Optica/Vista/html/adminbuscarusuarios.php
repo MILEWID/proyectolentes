@@ -25,7 +25,7 @@ $datos = $valorescontrolador->fetch_assoc();
         <div class="row justify-content-center">
             <form>
                 <class class="form-row">
-                  <div class="h1"> DATOS DEL USUARIO # <span name="idUsuario"><?php echo $datos['idUsuario'] ?></span></div>
+                  <div class="h1"> DATOS DEL USUARIO # <span> <?php $nombre ?></span></div>
                
                     <div class="row">
                         <div class="col-md-6 mb-3">
@@ -82,7 +82,10 @@ $datos = $valorescontrolador->fetch_assoc();
 
 
     </div>
-
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script>
+        $("#menu").load("adminmenu.html header");
+    </script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
