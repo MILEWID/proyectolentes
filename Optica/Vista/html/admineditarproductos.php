@@ -47,7 +47,7 @@ $id = $_GET['id'];
                         <div class="col-md-6 mb-3">
                             <label for="validationServer01">Marca:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control"  value="<?php echo $_GET['marca']?>" name="validationServer02" id="idMarca" placeholder="vitalia"
+                            <input type="text" class="form-control"  value="<?php echo $_GET['marca']?>" name="validationServer02" id="idMarca" placeholder="vitalia" pattern="[a-zA-Z ]{2,100}" title="debe ingresar letras de 2 a 100 caracteres"
                                 required>
                             <div class="valid-feedback">
                                 Es correcto
@@ -74,7 +74,7 @@ $id = $_GET['id'];
                         <div class="col-md-6 mb-3">
                             <label for="validationServer01">Precio:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="text" class="form-control" value="<?php echo $_GET['precio']?>" name="validationServer04" id="idPrecio" placeholder="5$"
+                            <input type="text" class="form-control" value="<?php echo $_GET['precio']?>" name="validationServer04" id="idPrecio" placeholder="5$" min=10 max=500
                                 required>
                             <div class="valid-feedback">
                                 Es correcto
