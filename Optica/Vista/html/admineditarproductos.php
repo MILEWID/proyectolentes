@@ -29,6 +29,7 @@ $id = $_GET['id'];
     <div class="container">
         <div class="row justify-content-center">
             <div>
+            
                 <class class="form-row">
                     <div class="h1">MODIFICAR PRODUCTO # <span><?php echo $id?></php></span></div>
                     <div class="row">
@@ -108,7 +109,7 @@ $id = $_GET['id'];
 
                     </div>
         </div>
-        <button class="btn btn-primary" onclick="modificarPro(<?php echo $id?>)" type="submit">GUARDAR DATOS</button>
+        <button  class="btn btn-primary" onclick="modificarPro(<?php echo $id?>)" type="submit">GUARDAR DATOS</button>
         <a class="btn btn-dark" href="<?php echo URL; ?>/productos">CANCELAR</a>
         </div>
     </div>
