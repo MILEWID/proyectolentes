@@ -22,7 +22,7 @@
 </head>
 
 <body>
-<header style="height: 100vh;">
+<header>
 <div class="container-fluid p-0">
       <nav class="navbar navbar-expand-lg">
         <a id="logo" class="navbar-brand" href="#"> <i class="fas fa-glasses fa-1x mx-2"> </i>
@@ -46,12 +46,7 @@
               <div class="dropdown">
                 <a href="<?php echo URL?>productos/mostrarproductos" class="nav-link">PRODUCTOS</a>
               </div>
-            </li>
-            <li class="nav-item dropdown">
-              <div class="dropdown">
-                <a href="#" class="nav-link">SERVICIOS</a>
-              </div>
-            </li>                  
+            </li>                    
             <li class="nav-item dropdown">
               <div class="dropdown">
                 <a class="nav-link" href="<?php echo URL ?>"><i class="fas fa-user-circle fa-2x mx-2"></i>SALIR</a>
@@ -62,8 +57,12 @@
       </nav>
     </div>
 
-    
-    <div class="container">
+    <div  align="center" class="container-fluid">
+      <img  src="<?php echo URL?>Vista/imágenes/Citas.svg" alt="">
+    </div>  
+</header>
+  
+<div class="container " style="padding: 40px;">
         <div class="h1">PRODUCTOS DISPONIBLES </div>
         <div class="table-responsive">
             <table class="table table-striped table-dark">
@@ -100,8 +99,6 @@
             </table>
         </div>
     </div>
-    
-</header>
 
     <script src="<?php echo URL ?>vista/js/jquery-3.2.1.min.js"></script>
     <script>
