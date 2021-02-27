@@ -70,7 +70,7 @@ $datos = $valorescontrolador->fetch_assoc();
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="validationServer04">Hora:</label>
-                            <input type="time"  class="form-control" name="hora" min="09:00" max="17:00" id="validationServer04" value=<?php echo $datos['hora'] ?>
+                            <input type="time"  class="form-control" name="hora" min="09:00" max="17:30" id="validationServer04" value=<?php echo $datos['hora'] ?>
                                 >
                             <div class="valid-feedback">
                                 Correcto
