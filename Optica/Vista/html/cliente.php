@@ -65,8 +65,8 @@
                 <a class="nav-link" href="#"><i class="fas fa-user-circle fa-2x mx-2"></i>Usuario</a>
                 <div class="dropdown-content">
                   <a hhref="#" data-bs-toggle="modal" data-bs-target="#exampleModal" ><i class="far fa-calendar-alt mx-2"></i>Agendar Cita</a>
-                  <a href="#"><i class="far fa-question-circle mx-2"></i>Ayuda</a>
-                  <a href="#"><i class="fas fa-sign-out-alt mx-2"></i>Salir</a>
+                  <a href="https://drive.google.com/file/d/1lxnK4WbC19hfrqt0rFDVtca6xSiBafku/view?usp=sharing"><i class="far fa-question-circle mx-2"></i>Ayuda</a>
+                  <a href="<?php echo URL?>ingreso"><i class="fas fa-sign-out-alt mx-2"></i>Salir</a>
                 </div>
               </div>
             </li>
