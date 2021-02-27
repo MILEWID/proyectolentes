@@ -46,12 +46,7 @@
               <div class="dropdown">
                 <a href="<?php echo URL?>productos/mostrarproductos" class="nav-link">PRODUCTOS</a>
               </div>
-            </li>
-            <li class="nav-item dropdown">
-              <div class="dropdown">
-                <a href="#" class="nav-link">SERVICIOS</a>
-              </div>
-            </li>                  
+            </li>                    
             <li class="nav-item dropdown">
               <div class="dropdown">
                 <a class="nav-link" href="<?php echo URL ?>"><i class="fas fa-user-circle fa-2x mx-2"></i>SALIR</a>
