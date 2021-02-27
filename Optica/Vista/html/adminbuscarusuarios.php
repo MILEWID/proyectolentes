@@ -26,7 +26,7 @@ $datos = $valorescontrolador->fetch_assoc();
             <form>
                 <class class="form-row">
                     <div class="h1"> USUARIO # <span name="idUsuario"><?php echo $datos['idUsuario'] ?></span></div>
-                 <!--   <div class="h1"> DATOS DEL USUARIO: <span> <?php echo $datos['idUsuario'] ?> </span></div>-->
+               
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="validationServer01">Nombre:</label>

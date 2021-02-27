@@ -113,11 +113,14 @@ class Usuario extends Controlador{
             $registro = new CusuarioModel();
             $resultado= $registro->buscarU($_POST['nombre'], $_POST['apellido']); 
             if(isset ($resultado)){
-                
+               // parent::cargarvista("html/adminbuscarusuarios",$resultado);
                 echo "Usuario no encontrado";
+               // parent::cargarvista("html/NoUsuario",$resultado);
                // header("Location: ".URL."usuario/mostrarcontrolador");
             } else{
                 parent::cargarvista("html/adminbuscarusuarios",$resultado);
+            // parent::cargarvista("html/NoUsuario",$resultado);
+              //  echo "Usuario no encontrado";
             }
  
         }
