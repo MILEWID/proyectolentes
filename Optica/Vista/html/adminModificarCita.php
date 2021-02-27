@@ -32,7 +32,7 @@ $datos = $valorescontrolador->fetch_assoc();
                                  ?>">
                                 <label for="validationServer01">Nombre:</label>
                                 <!-- is-valid es una clase para validar campos -->
-                                <input type="text" class="form-control " name="nombre" id="validationServer01" value=<?php echo $datos['nombre'] ?>
+                                <input type="text" class="form-control " pattern="[A-Za-z]+" title="Ingrese solo letras" name="nombre" minlength="2" maxlength="40" id="validationServer01" value=<?php echo $datos['nombre'] ?>
                                      required>
                                 <div class="valid-feedback">
                                     Es correcto
@@ -44,7 +44,7 @@ $datos = $valorescontrolador->fetch_assoc();
                             <div class="col-md-6 mb-3">
                                 <label for="validationServer02">Apellido:</label>
                                 <!-- is-valid es una clase para validar campos -->
-                                <input type="text" class="form-control " name="apellido" id="validationServer02" value=<?php echo $datos['apellido'] ?>
+                                <input type="text" class="form-control " pattern="[A-Za-z]+" title="Ingrese solo letras" name="apellido" minlength="2" maxlength="40" id="validationServer02" value=<?php echo $datos['apellido'] ?>
                                     required>
                                 <div class="valid-feedback">
                                     Correcto
@@ -59,7 +59,7 @@ $datos = $valorescontrolador->fetch_assoc();
                         <div class="col-md-6 mb-3">
                             <label for="validationServer03">Fecha de consulta:</label>
                             <!-- is-valid es una clase para validar campos -->
-                            <input type="date" class="form-control " name="fecha" id="validationServer03" value=<?php echo $datos['fecha'] ?>
+                            <input type="date" class="form-control " name="fecha" min="2021-02-27" max="2041-05-28" id="validationServer03" value=<?php echo $datos['fecha'] ?>
                                 required>
                             <div class="valid-feedback">
                                 Es correcto
@@ -70,7 +70,7 @@ $datos = $valorescontrolador->fetch_assoc();
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="validationServer04">Hora:</label>
-                            <input type="time"  class="form-control" name="hora" id="validationServer04" value=<?php echo $datos['hora'] ?>
+                            <input type="time"  class="form-control" name="hora" min="09:00" max="17:00" id="validationServer04" value=<?php echo $datos['hora'] ?>
                                 >
                             <div class="valid-feedback">
                                 Correcto
@@ -84,7 +84,7 @@ $datos = $valorescontrolador->fetch_assoc();
                             <div class="col-md-6 mb-3">
                                 <div class="form-group col-md-6">
                                     <label for="validationServer05">Motivo de consulta: </label>
-                                    <input type="textarea"  id="validationServer05" class="form-control" name="motivo" value="<?php echo $datos['motivo'] ?>" required>
+                                    <input type="textarea"  id="validationServer05" minlength="5" maxlength="150" class="form-control" name="motivo" value="<?php echo $datos['motivo'] ?>" required>
                                 </div>
                             </div>
                         </div>
