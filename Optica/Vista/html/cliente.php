@@ -223,7 +223,7 @@
     <section class="section-4">
      
       <div class="team row ">
-       <div class="col-md-4 col-12">
+         <div class="col>
             <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
                 <div class="carousel-inner text-center">
                   <div class="carousel-item active">
@@ -256,77 +256,6 @@
               </div>
         </div>
         </div>
-        
-
-         <div class="col-md-4 col-12">
-            <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
-                <div class="carousel-inner text-center">
-                  <div class="carousel-item active">
-                    <div class="card mr-2 d-inline-block shadow">
-                      <div>
-                        <p class="banner-card">
-                          <i class="fas fa-glasses fa-7x"></i>
-                        </p>                 
-                      </div>                    
-                      <div class="card-body">
-                        <h3 class="card-title">ÓPTICA VICTORIA</h3>
-                                          
-                        <p class="text-black-50">Dr. Byron Hidalgo</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="card  d-inline-block mr-2 shadow">
-                      <div>
-                        <p class="banner-card">
-                          <i class="fas fa-user-md fa-7x"></i>
-                        </p>                 
-                      </div>    
-                      <div class="card-body">
-                        
-                        <p class="text-black-50">ÓPTICA VICTORIA</p>                      
-                      </div>
-                    </div>
-                  </div>
-              </div>
-        </div>
-        </div>
-
-
-         <div class="col-md-4 col-12">
-            <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
-                <div class="carousel-inner text-center">
-                  <div class="carousel-item active">
-                    <div class="card mr-2 d-inline-block shadow">
-                      <div>
-                        <p class="banner-card">
-                          <i class="fas fa-glasses fa-7x"></i>
-                        </p>                 
-                      </div>                    
-                      <div class="card-body">
-                        <h3 class="card-title">ÓPTICA VICTORIA</h3>
-                                          
-                        <p class="text-black-50">Dr. Byron Hidalgo</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="card  d-inline-block mr-2 shadow">
-                      <div>
-                        <p class="banner-card">
-                          <i class="fas fa-user-md fa-7x"></i>
-                        </p>                 
-                      </div>    
-                      <div class="card-body">
-                        
-                        <p class="text-black-50">ÓPTICA VICTORIA</p>                      
-                      </div>
-                    </div>
-                  </div>
-              </div>
-        </div>
-        </div>
-      </div>
     </section>
   </main>
   
