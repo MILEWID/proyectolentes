@@ -99,7 +99,7 @@
     <script type="text/javascript">
     function ConfirmEliminar(id)
     {
-        var respuesta=confirm("¿Está seguro que desea eliminar el Produto?");
+        var respuesta=confirm("¿Está seguro que desea eliminar el usuario?");
             if (respuesta==true)
             {
                 window.location.href= "<?php echo URL; ?>productos/eliminarProdu?id= "+id+"";
