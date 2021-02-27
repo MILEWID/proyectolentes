@@ -44,7 +44,7 @@ $datos = $valorescontrolador->fetch_assoc();
                             <div class="col-md-6 mb-3">
                                 <label for="validationServer02">Apellido:</label>
                                 <!-- is-valid es una clase para validar campos -->
-                                <input type="text" class="form-control " pattern="[A-Za-z]+" title="Ingrese solo letras" name="apellido" minlength="2" maxlength="49" id="validationServer02" value=<?php echo $datos['apellido'] ?>
+                                <input type="text" class="form-control " pattern="[A-Za-z]+" title="Ingrese solo letras" name="apellido" minlength="2" maxlength="49"  id="validationServer02" value=<?php echo $datos['apellido'] ?>
                                     required>
                                 <div class="valid-feedback">
                                     Correcto
